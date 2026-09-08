@@ -1,6 +1,6 @@
 {
   "schema_version": "broker-monitor.report.v3",
-  "generated_at": "2026-09-08T14:24:31.484Z",
+  "generated_at": "2026-09-08T14:52:41.666Z",
   "market_date": "2026-09-08",
   "source_strategy": "hybrid_arjum_primary_pluang_enrichment",
   "refresh": true,
@@ -478,7 +478,16 @@
         {
           "rank": 1,
           "broker_code": "AK",
-          "structural": null,
+          "structural": {
+            "broker_name": "UBS SEKURITAS INDONESIA",
+            "bval": 109502479300,
+            "sval": 90624486900,
+            "nval": 18877992400,
+            "nvol": 25474900,
+            "bfrq": 11728,
+            "sfrq": 13294,
+            "net_value_intensity": 0.09433007834203605
+          },
           "recent_5_business_day_approx": {
             "bval": 17845376500,
             "sval": 12597707500,
@@ -506,15 +515,24 @@
             "note": "Visible in Pluang top buyer list."
           },
           "classification": {
-            "status": "NO_STRUCTURAL_DATA",
-            "confidence": "low",
-            "reason": "Broker was not visible in the structural Arjum result."
+            "status": "STRONG_ACCUMULATION",
+            "confidence": "medium",
+            "reason": "Structural, recent, and today flows are all positive."
           }
         },
         {
           "rank": 2,
           "broker_code": "BK",
-          "structural": null,
+          "structural": {
+            "broker_name": "J.P. MORGAN SEKURITAS INDONESIA",
+            "bval": 28135748800,
+            "sval": 18228677100,
+            "nval": 9907071700,
+            "nvol": 16982100,
+            "bfrq": 3922,
+            "sfrq": 3522,
+            "net_value_intensity": 0.2136782998535953
+          },
           "recent_5_business_day_approx": null,
           "today": null,
           "pluang_today_average_price": {
@@ -526,15 +544,24 @@
             "note": "Visible in Pluang top seller list."
           },
           "classification": {
-            "status": "NO_STRUCTURAL_DATA",
-            "confidence": "low",
-            "reason": "Broker was not visible in the structural Arjum result."
+            "status": "ACCUMULATION_OR_HOLD",
+            "confidence": "medium",
+            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
           }
         },
         {
           "rank": 3,
           "broker_code": "CP",
-          "structural": null,
+          "structural": {
+            "broker_name": "KB VALBURY SEKURITAS",
+            "bval": 54217253200,
+            "sval": 41905308800,
+            "nval": 12311944400,
+            "nvol": 15677100,
+            "bfrq": 6101,
+            "sfrq": 6227,
+            "net_value_intensity": 0.1280858951720409
+          },
           "recent_5_business_day_approx": {
             "bval": 7292376500,
             "sval": 3233474000,
@@ -562,15 +589,24 @@
             "note": "Visible in Pluang top buyer list."
           },
           "classification": {
-            "status": "NO_STRUCTURAL_DATA",
-            "confidence": "low",
-            "reason": "Broker was not visible in the structural Arjum result."
+            "status": "STRONG_ACCUMULATION",
+            "confidence": "medium",
+            "reason": "Structural, recent, and today flows are all positive."
           }
         },
         {
           "rank": 4,
           "broker_code": "PD",
-          "structural": null,
+          "structural": {
+            "broker_name": "INDO PREMIER SEKURITAS",
+            "bval": 66324512700,
+            "sval": 56307622800,
+            "nval": 10016889900,
+            "nvol": 16060300,
+            "bfrq": 10961,
+            "sfrq": 9562,
+            "net_value_intensity": 0.08168242246747795
+          },
           "recent_5_business_day_approx": {
             "bval": 11928284500,
             "sval": 10993386500,
@@ -598,15 +634,24 @@
             "note": "Visible in Pluang top buyer list."
           },
           "classification": {
-            "status": "NO_STRUCTURAL_DATA",
-            "confidence": "low",
-            "reason": "Broker was not visible in the structural Arjum result."
+            "status": "STRONG_ACCUMULATION",
+            "confidence": "medium",
+            "reason": "Structural, recent, and today flows are all positive."
           }
         },
         {
           "rank": 5,
           "broker_code": "YU",
-          "structural": null,
+          "structural": {
+            "broker_name": "CGS INTERNATIONAL SEKURITAS INDONESIA",
+            "bval": 10505379500,
+            "sval": 4080978000,
+            "nval": 6424401500,
+            "nvol": 8424900,
+            "bfrq": 839,
+            "sfrq": 498,
+            "net_value_intensity": 0.4404390540955821
+          },
           "recent_5_business_day_approx": null,
           "today": null,
           "pluang_today_average_price": {
@@ -618,9 +663,9 @@
             "note": "Visible in Pluang top seller list."
           },
           "classification": {
-            "status": "NO_STRUCTURAL_DATA",
-            "confidence": "low",
-            "reason": "Broker was not visible in the structural Arjum result."
+            "status": "ACCUMULATION_OR_HOLD",
+            "confidence": "medium",
+            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
           }
         }
       ],
@@ -737,8 +782,8 @@
       "crossing_candidates": [],
       "upstream": {
         "arjum_structural": {
-          "ok": false,
-          "status": 520,
+          "ok": true,
+          "status": 200,
           "skipped": false,
           "reason": null
         },
