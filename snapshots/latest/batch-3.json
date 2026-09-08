@@ -1,6 +1,6 @@
 {
   "schema_version": "broker-monitor.report.v3",
-  "generated_at": "2026-09-08T14:52:46.792Z",
+  "generated_at": "2026-09-08T15:41:30.870Z",
   "market_date": "2026-09-08",
   "source_strategy": "hybrid_arjum_primary_pluang_enrichment",
   "refresh": true,
@@ -84,13 +84,22 @@
             "net_value_intensity": 0.9438633743654804
           },
           "today": {
+            "broker_name": "CIPTADANA SEKURITAS ASIA",
             "bval": 5778730000,
             "sval": 7138000,
             "nval": 5771592000,
+            "bvol": 17015000,
+            "svol": 21000,
             "nvol": 16994000,
             "bfrq": 482,
             "sfrq": 2,
-            "net_value_intensity": 0.9975326087632832
+            "net_value_intensity": 0.9975326087632832,
+            "side": "BUY",
+            "net_lots": 169940,
+            "side_lots": 169940,
+            "average_price": 339.62527951041545,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "pluang_today_average_price": {
             "visible": true,
@@ -129,13 +138,22 @@
             "net_value_intensity": 0.8817839577042317
           },
           "today": {
+            "broker_name": "SUCOR SEKURITAS",
             "bval": 848455000,
             "sval": 0,
             "nval": 848455000,
+            "bvol": 2496200,
+            "svol": 0,
             "nvol": 2496200,
             "bfrq": 82,
             "sfrq": 0,
-            "net_value_intensity": 1
+            "net_value_intensity": 1,
+            "side": "BUY",
+            "net_lots": 24962,
+            "side_lots": 24962,
+            "average_price": 339.8986459418316,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "pluang_today_average_price": {
             "visible": true,
@@ -164,15 +182,32 @@
             "sfrq": 810,
             "net_value_intensity": 0.004724794410419839
           },
-          "recent_5_business_day_approx": null,
+          "recent_5_business_day_approx": {
+            "bval": 165320000,
+            "sval": 855392600,
+            "nval": -690072600,
+            "nvol": -2106900,
+            "bfrq": 2,
+            "sfrq": 94,
+            "net_value_intensity": -0.6760694440335114
+          },
           "today": {
+            "broker_name": "CGS INTERNATIONAL SEKURITAS INDONESIA",
             "bval": 0,
             "sval": 12308000,
             "nval": -12308000,
+            "bvol": 0,
+            "svol": 36200,
             "nvol": -36200,
             "bfrq": 0,
             "sfrq": 2,
-            "net_value_intensity": -1
+            "net_value_intensity": -1,
+            "side": "SELL",
+            "net_lots": -362,
+            "side_lots": 362,
+            "average_price": 340,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "pluang_today_average_price": {
             "visible": false,
@@ -183,9 +218,9 @@
             "note": "Not visible in Pluang capped top-10 buyer/seller result. This does not mean zero activity."
           },
           "classification": {
-            "status": "EARLY_DISTRIBUTION",
+            "status": "DISTRIBUTION",
             "confidence": "medium",
-            "reason": "Structural accumulation remains positive, but recent or today flow has turned negative."
+            "reason": "Historical accumulator is net seller in both recent and today horizon."
           }
         },
         {
@@ -201,8 +236,33 @@
             "sfrq": 205,
             "net_value_intensity": 0.03264767500122011
           },
-          "recent_5_business_day_approx": null,
-          "today": null,
+          "recent_5_business_day_approx": {
+            "bval": 569203800,
+            "sval": 1333356600,
+            "nval": -764152800,
+            "nvol": -2249700,
+            "bfrq": 24,
+            "sfrq": 27,
+            "net_value_intensity": -0.401644436623405
+          },
+          "today": {
+            "broker_name": "PANCA GLOBAL SEKURITAS",
+            "bval": 0,
+            "sval": 84898000,
+            "nval": -84898000,
+            "bvol": 0,
+            "svol": 249700,
+            "nvol": -249700,
+            "bfrq": 0,
+            "sfrq": 10,
+            "net_value_intensity": -1,
+            "side": "SELL",
+            "net_lots": -2497,
+            "side_lots": 2497,
+            "average_price": 340,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
+          },
           "pluang_today_average_price": {
             "visible": false,
             "side": null,
@@ -212,9 +272,9 @@
             "note": "Not visible in Pluang capped top-10 buyer/seller result. This does not mean zero activity."
           },
           "classification": {
-            "status": "ACCUMULATION_OR_HOLD",
+            "status": "DISTRIBUTION",
             "confidence": "medium",
-            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
+            "reason": "Historical accumulator is net seller in both recent and today horizon."
           }
         },
         {
@@ -230,8 +290,33 @@
             "sfrq": 4093,
             "net_value_intensity": 0.3475973481626659
           },
-          "recent_5_business_day_approx": null,
-          "today": null,
+          "recent_5_business_day_approx": {
+            "bval": 1223268800,
+            "sval": 1405867800,
+            "nval": -182599000,
+            "nvol": -581200,
+            "bfrq": 318,
+            "sfrq": 324,
+            "net_value_intensity": -0.06945207791789898
+          },
+          "today": {
+            "broker_name": "INDO PREMIER SEKURITAS",
+            "bval": 216540000,
+            "sval": 261486000,
+            "nval": -44946000,
+            "bvol": 638600,
+            "svol": 771100,
+            "nvol": -132500,
+            "bfrq": 84,
+            "sfrq": 68,
+            "net_value_intensity": -0.0940241744172911,
+            "side": "SELL",
+            "net_lots": -1325,
+            "side_lots": 1325,
+            "average_price": 339.2150943396226,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
+          },
           "pluang_today_average_price": {
             "visible": false,
             "side": null,
@@ -241,74 +326,121 @@
             "note": "Not visible in Pluang capped top-10 buyer/seller result. This does not mean zero activity."
           },
           "classification": {
-            "status": "ACCUMULATION_OR_HOLD",
+            "status": "DISTRIBUTION",
             "confidence": "medium",
-            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
+            "reason": "Historical accumulator is net seller in both recent and today horizon."
           }
         }
       ],
       "today_sellers": [
         {
-          "broker_code": "YU",
-          "broker_name": "CGS INTERNATIONAL SEKURITAS INDONESIA",
-          "nval": -12308000,
-          "nvol": -36200,
-          "is_baseline_top5": true
-        },
-        {
-          "broker_code": "XA",
-          "broker_name": "NH KORINDO SEKURITAS INDONESIA",
-          "nval": -7840800,
-          "nvol": -23200,
+          "broker_code": "KK",
+          "broker_name": "PHILLIP SEKURITAS INDONESIA",
+          "nval": -2021276400,
+          "nvol": -5949200,
+          "net_lots": -59492,
+          "side_lots": 59492,
+          "average_price": 339.7560008068312,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
-          "broker_code": "HP",
-          "broker_name": "HENAN PUTIHRAI SEKURITAS",
-          "nval": -6366000,
-          "nvol": -18900,
+          "broker_code": "YP",
+          "broker_name": "MIRAE ASSET SEKURITAS INDONESIA",
+          "nval": -1190431200,
+          "nvol": -3502600,
+          "net_lots": -35026,
+          "side_lots": 35026,
+          "average_price": 339.87072460457944,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
-          "broker_code": "NI",
-          "broker_name": "BNI SEKURITAS",
-          "nval": -5524000,
-          "nvol": -15900,
+          "broker_code": "ZP",
+          "broker_name": "MAYBANK SEKURITAS INDONESIA",
+          "nval": -747733400,
+          "nvol": -2207400,
+          "net_lots": -22074,
+          "side_lots": 22074,
+          "average_price": 338.7394219443689,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
-          "broker_code": "QA",
-          "broker_name": "TUNTUN SEKURITAS INDONESIA",
-          "nval": -4360200,
-          "nvol": -12900,
+          "broker_code": "OD",
+          "broker_name": "BRI DANAREKSA SEKURITAS",
+          "nval": -686141200,
+          "nvol": -2018200,
+          "net_lots": -20182,
+          "side_lots": 20182,
+          "average_price": 339.9768110197205,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
-          "broker_code": "LS",
-          "broker_name": "RELIANCE SEKURITAS INDONESIA TBK.",
-          "nval": -237800,
-          "nvol": -700,
+          "broker_code": "CC",
+          "broker_name": "MANDIRI SEKURITAS",
+          "nval": -654426400,
+          "nvol": -1933500,
+          "net_lots": -19335,
+          "side_lots": 19335,
+          "average_price": 338.46723558313937,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
-          "broker_code": "BS",
-          "broker_name": "EQUITY SEKURITAS INDONESIA",
-          "nval": -101400,
-          "nvol": -300,
+          "broker_code": "TP",
+          "broker_name": "OCBC SEKURITAS INDONESIA",
+          "nval": -432456000,
+          "nvol": -1272000,
+          "net_lots": -12720,
+          "side_lots": 12720,
+          "average_price": 339.9811320754717,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
-          "broker_code": "YJ",
-          "broker_name": "LOTUS ANDALAN SEKURITAS",
-          "nval": -34000,
-          "nvol": -100,
+          "broker_code": "XL",
+          "broker_name": "STOCKBIT SEKURITAS DIGITAL",
+          "nval": -333021800,
+          "nvol": -988500,
+          "net_lots": -9885,
+          "side_lots": 9885,
+          "average_price": 336.896105209914,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
-          "broker_code": "HD",
-          "broker_name": "KGI SEKURITAS INDONESIA",
-          "nval": -2600,
-          "nvol": 0,
+          "broker_code": "FS",
+          "broker_name": "YUANTA SEKURITAS INDONESIA",
+          "nval": -306676000,
+          "nvol": -902000,
+          "net_lots": -9020,
+          "side_lots": 9020,
+          "average_price": 339.99556541019956,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "AT",
+          "broker_name": "PHINTRACO SEKURITAS",
+          "nval": -258335600,
+          "nvol": -759800,
+          "net_lots": -7598,
+          "side_lots": 7598,
+          "average_price": 340.0047380889708,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "AK",
+          "broker_name": "UBS SEKURITAS INDONESIA",
+          "nval": -203037000,
+          "nvol": -599000,
+          "net_lots": -5990,
+          "side_lots": 5990,
+          "average_price": 338.95993322203674,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         }
       ],
@@ -318,6 +450,10 @@
           "broker_name": "CIPTADANA SEKURITAS ASIA",
           "nval": 5771592000,
           "nvol": 16994000,
+          "net_lots": 169940,
+          "side_lots": 169940,
+          "average_price": 339.62527951041545,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": true
         },
         {
@@ -325,6 +461,10 @@
           "broker_name": "TRIMEGAH SEKURITAS INDONESIA TBK.",
           "nval": 903955400,
           "nvol": 2678600,
+          "net_lots": 26786,
+          "side_lots": 26786,
+          "average_price": 337.47308295378184,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -332,6 +472,10 @@
           "broker_name": "SUCOR SEKURITAS",
           "nval": 848455000,
           "nvol": 2496200,
+          "net_lots": 24962,
+          "side_lots": 24962,
+          "average_price": 339.8986459418316,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": true
         },
         {
@@ -339,6 +483,10 @@
           "broker_name": "RHB SEKURITAS INDONESIA",
           "nval": 61491200,
           "nvol": 180200,
+          "net_lots": 1802,
+          "side_lots": 1802,
+          "average_price": 341.23862375138737,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -346,6 +494,10 @@
           "broker_name": "PANIN SEKURITAS TBK.",
           "nval": 51311000,
           "nvol": 150700,
+          "net_lots": 1507,
+          "side_lots": 1507,
+          "average_price": 340.4844061048441,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -353,6 +505,10 @@
           "broker_name": "AJAIB SEKURITAS ASIA",
           "nval": 39827600,
           "nvol": 118600,
+          "net_lots": 1186,
+          "side_lots": 1186,
+          "average_price": 335.81450252951095,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -360,6 +516,10 @@
           "broker_name": "WATERFRONT SEKURITAS INDONESIA",
           "nval": 34000000,
           "nvol": 100000,
+          "net_lots": 1000,
+          "side_lots": 1000,
+          "average_price": 340,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -367,6 +527,10 @@
           "broker_name": "SEMESTA INDOVEST SEKURITAS",
           "nval": 23088600,
           "nvol": 68100,
+          "net_lots": 681,
+          "side_lots": 681,
+          "average_price": 339.0396475770925,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -374,6 +538,10 @@
           "broker_name": "KOREA INVESTMENT AND SEKURITAS INDONESIA",
           "nval": 5937000,
           "nvol": 17600,
+          "net_lots": 176,
+          "side_lots": 176,
+          "average_price": 337.32954545454544,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -381,6 +549,10 @@
           "broker_name": "PLUANG MAJU SEKURITAS",
           "nval": 1360000,
           "nvol": 4000,
+          "net_lots": 40,
+          "side_lots": 40,
+          "average_price": 340,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         }
       ],
@@ -390,6 +562,10 @@
           "broker_name": "TRIMEGAH SEKURITAS INDONESIA TBK.",
           "nval": 903955400,
           "nvol": 2678600,
+          "net_lots": 26786,
+          "side_lots": 26786,
+          "average_price": 337.47308295378184,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -397,6 +573,10 @@
           "broker_name": "RHB SEKURITAS INDONESIA",
           "nval": 61491200,
           "nvol": 180200,
+          "net_lots": 1802,
+          "side_lots": 1802,
+          "average_price": 341.23862375138737,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -404,6 +584,10 @@
           "broker_name": "PANIN SEKURITAS TBK.",
           "nval": 51311000,
           "nvol": 150700,
+          "net_lots": 1507,
+          "side_lots": 1507,
+          "average_price": 340.4844061048441,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -411,6 +595,10 @@
           "broker_name": "AJAIB SEKURITAS ASIA",
           "nval": 39827600,
           "nvol": 118600,
+          "net_lots": 1186,
+          "side_lots": 1186,
+          "average_price": 335.81450252951095,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -418,6 +606,10 @@
           "broker_name": "WATERFRONT SEKURITAS INDONESIA",
           "nval": 34000000,
           "nvol": 100000,
+          "net_lots": 1000,
+          "side_lots": 1000,
+          "average_price": 340,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         }
       ],
@@ -524,13 +716,22 @@
             "net_value_intensity": 0.5539821566818367
           },
           "today": {
+            "broker_name": "MAYBANK SEKURITAS INDONESIA",
             "bval": 1856314000,
             "sval": 592922500,
             "nval": 1263391500,
+            "bvol": 1458400,
+            "svol": 462900,
             "nvol": 995500,
             "bfrq": 183,
             "sfrq": 40,
-            "net_value_intensity": 0.5158307497050612
+            "net_value_intensity": 0.5158307497050612,
+            "side": "BUY",
+            "net_lots": 9955,
+            "side_lots": 9955,
+            "average_price": 1269.1024610748368,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "pluang_today_average_price": {
             "visible": true,
@@ -559,8 +760,33 @@
             "sfrq": 2049,
             "net_value_intensity": 0.017794137345466747
           },
-          "recent_5_business_day_approx": null,
-          "today": null,
+          "recent_5_business_day_approx": {
+            "bval": 821589000,
+            "sval": 4112830000,
+            "nval": -3291241000,
+            "nvol": -2616800,
+            "bfrq": 93,
+            "sfrq": 106,
+            "net_value_intensity": -0.666996661613049
+          },
+          "today": {
+            "broker_name": "CGS INTERNATIONAL SEKURITAS INDONESIA",
+            "bval": 1275000,
+            "sval": 168984000,
+            "nval": -167709000,
+            "bvol": 1000,
+            "svol": 132400,
+            "nvol": -131400,
+            "bfrq": 1,
+            "sfrq": 6,
+            "net_value_intensity": -0.9850228181770126,
+            "side": "SELL",
+            "net_lots": -1314,
+            "side_lots": 1314,
+            "average_price": 1276.324200913242,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
+          },
           "pluang_today_average_price": {
             "visible": true,
             "side": "SELL",
@@ -570,9 +796,9 @@
             "note": "Visible in Pluang top seller list."
           },
           "classification": {
-            "status": "ACCUMULATION_OR_HOLD",
+            "status": "DISTRIBUTION",
             "confidence": "medium",
-            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
+            "reason": "Historical accumulator is net seller in both recent and today horizon."
           }
         },
         {
@@ -597,7 +823,24 @@
             "sfrq": 157,
             "net_value_intensity": 0.023021477453649526
           },
-          "today": null,
+          "today": {
+            "broker_name": "RHB SEKURITAS INDONESIA",
+            "bval": 21941500,
+            "sval": 256392500,
+            "nval": -234451000,
+            "bvol": 17400,
+            "svol": 200700,
+            "nvol": -183300,
+            "bfrq": 2,
+            "sfrq": 48,
+            "net_value_intensity": -0.8423369045822645,
+            "side": "SELL",
+            "net_lots": -1833,
+            "side_lots": 1833,
+            "average_price": 1279.0561920349155,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
+          },
           "pluang_today_average_price": {
             "visible": true,
             "side": "SELL",
@@ -607,9 +850,9 @@
             "note": "Visible in Pluang top seller list."
           },
           "classification": {
-            "status": "ACCUMULATION_OR_HOLD",
+            "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
-            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
+            "reason": "Structural accumulation remains positive, but recent or today flow has turned negative."
           }
         },
         {
@@ -625,8 +868,33 @@
             "sfrq": 781,
             "net_value_intensity": 0.11831983632631676
           },
-          "recent_5_business_day_approx": null,
-          "today": null,
+          "recent_5_business_day_approx": {
+            "bval": 46044500,
+            "sval": 213870500,
+            "nval": -167826000,
+            "nvol": -133700,
+            "bfrq": 10,
+            "sfrq": 47,
+            "net_value_intensity": -0.6456957082123002
+          },
+          "today": {
+            "broker_name": "J.P. MORGAN SEKURITAS INDONESIA",
+            "bval": 0,
+            "sval": 32257500,
+            "nval": -32257500,
+            "bvol": 0,
+            "svol": 25300,
+            "nvol": -25300,
+            "bfrq": 0,
+            "sfrq": 4,
+            "net_value_intensity": -1,
+            "side": "SELL",
+            "net_lots": -253,
+            "side_lots": 253,
+            "average_price": 1275,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
+          },
           "pluang_today_average_price": {
             "visible": true,
             "side": "SELL",
@@ -636,9 +904,9 @@
             "note": "Visible in Pluang top seller list."
           },
           "classification": {
-            "status": "ACCUMULATION_OR_HOLD",
+            "status": "DISTRIBUTION",
             "confidence": "medium",
-            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
+            "reason": "Historical accumulator is net seller in both recent and today horizon."
           }
         },
         {
@@ -654,15 +922,32 @@
             "sfrq": 293,
             "net_value_intensity": 0.028974919087131186
           },
-          "recent_5_business_day_approx": null,
+          "recent_5_business_day_approx": {
+            "bval": 25888500,
+            "sval": 132812500,
+            "nval": -106924000,
+            "nvol": -83000,
+            "bfrq": 25,
+            "sfrq": 27,
+            "net_value_intensity": -0.6737449669504288
+          },
           "today": {
+            "broker_name": "BCA SEKURITAS",
             "bval": 4457500,
             "sval": 767500,
             "nval": 3690000,
+            "bvol": 3500,
+            "svol": 600,
             "nvol": 2900,
             "bfrq": 3,
             "sfrq": 2,
-            "net_value_intensity": 0.7062200956937799
+            "net_value_intensity": 0.7062200956937799,
+            "side": "BUY",
+            "net_lots": 29,
+            "side_lots": 29,
+            "average_price": 1272.4137931034484,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "pluang_today_average_price": {
             "visible": false,
@@ -673,40 +958,122 @@
             "note": "Not visible in Pluang capped top-10 buyer/seller result. This does not mean zero activity."
           },
           "classification": {
-            "status": "ACCUMULATION_OR_HOLD",
+            "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
-            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
+            "reason": "Structural accumulation remains positive, but recent or today flow has turned negative."
           }
         }
       ],
       "today_sellers": [
         {
-          "broker_code": "TF",
-          "broker_name": "LABA SEKURITAS INDONESIA",
-          "nval": -11592000,
-          "nvol": -9200,
+          "broker_code": "PD",
+          "broker_name": "INDO PREMIER SEKURITAS",
+          "nval": -784589000,
+          "nvol": -616600,
+          "net_lots": -6166,
+          "side_lots": 6166,
+          "average_price": 1272.4440480051896,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
-          "broker_code": "CP",
-          "broker_name": "KB VALBURY SEKURITAS",
-          "nval": -3712500,
-          "nvol": -2900,
+          "broker_code": "YP",
+          "broker_name": "MIRAE ASSET SEKURITAS INDONESIA",
+          "nval": -398620000,
+          "nvol": -316000,
+          "net_lots": -3160,
+          "side_lots": 3160,
+          "average_price": 1261.4556962025317,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
-          "broker_code": "MG",
-          "broker_name": "SEMESTA INDOVEST SEKURITAS",
-          "nval": -1736000,
-          "nvol": 0,
+          "broker_code": "SA",
+          "broker_name": "ELIT SUKSES SEKURITAS",
+          "nval": -361696000,
+          "nvol": -284800,
+          "net_lots": -2848,
+          "side_lots": 2848,
+          "average_price": 1270,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
-          "broker_code": "IF",
-          "broker_name": "SAMUEL SEKURITAS  INDONESIA",
-          "nval": -126000,
-          "nvol": -100,
+          "broker_code": "XA",
+          "broker_name": "NH KORINDO SEKURITAS INDONESIA",
+          "nval": -289236500,
+          "nvol": -230100,
+          "net_lots": -2301,
+          "side_lots": 2301,
+          "average_price": 1257.0034767492396,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
+        },
+        {
+          "broker_code": "DR",
+          "broker_name": "RHB SEKURITAS INDONESIA",
+          "nval": -234451000,
+          "nvol": -183300,
+          "net_lots": -1833,
+          "side_lots": 1833,
+          "average_price": 1279.0561920349155,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": true
+        },
+        {
+          "broker_code": "YU",
+          "broker_name": "CGS INTERNATIONAL SEKURITAS INDONESIA",
+          "nval": -167709000,
+          "nvol": -131400,
+          "net_lots": -1314,
+          "side_lots": 1314,
+          "average_price": 1276.324200913242,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": true
+        },
+        {
+          "broker_code": "AZ",
+          "broker_name": "SUCOR SEKURITAS",
+          "nval": -145025500,
+          "nvol": -114500,
+          "net_lots": -1145,
+          "side_lots": 1145,
+          "average_price": 1266.598253275109,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "OD",
+          "broker_name": "BRI DANAREKSA SEKURITAS",
+          "nval": -95614500,
+          "nvol": -76100,
+          "net_lots": -761,
+          "side_lots": 761,
+          "average_price": 1256.4323258869908,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "TP",
+          "broker_name": "OCBC SEKURITAS INDONESIA",
+          "nval": -88001000,
+          "nvol": -68400,
+          "net_lots": -684,
+          "side_lots": 684,
+          "average_price": 1286.56432748538,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "BK",
+          "broker_name": "J.P. MORGAN SEKURITAS INDONESIA",
+          "nval": -32257500,
+          "nvol": -25300,
+          "net_lots": -253,
+          "side_lots": 253,
+          "average_price": 1275,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": true
         }
       ],
       "today_buyers": [
@@ -715,6 +1082,10 @@
           "broker_name": "MAYBANK SEKURITAS INDONESIA",
           "nval": 1263391500,
           "nvol": 995500,
+          "net_lots": 9955,
+          "side_lots": 9955,
+          "average_price": 1269.1024610748368,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": true
         },
         {
@@ -722,6 +1093,10 @@
           "broker_name": "STOCKBIT SEKURITAS DIGITAL",
           "nval": 371231000,
           "nvol": 291100,
+          "net_lots": 2911,
+          "side_lots": 2911,
+          "average_price": 1275.269666781175,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -729,6 +1104,10 @@
           "broker_name": "PROFINDO SEKURITAS INDONESIA",
           "nval": 253682000,
           "nvol": 198800,
+          "net_lots": 1988,
+          "side_lots": 1988,
+          "average_price": 1276.066398390342,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -736,6 +1115,10 @@
           "broker_name": "PHINTRACO SEKURITAS",
           "nval": 243111000,
           "nvol": 192100,
+          "net_lots": 1921,
+          "side_lots": 1921,
+          "average_price": 1265.543987506507,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -743,6 +1126,10 @@
           "broker_name": "KOREA INVESTMENT AND SEKURITAS INDONESIA",
           "nval": 178233500,
           "nvol": 142500,
+          "net_lots": 1425,
+          "side_lots": 1425,
+          "average_price": 1250.761403508772,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -750,6 +1137,10 @@
           "broker_name": "LOTUS ANDALAN SEKURITAS",
           "nval": 170017000,
           "nvol": 133900,
+          "net_lots": 1339,
+          "side_lots": 1339,
+          "average_price": 1269.731142643764,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -757,6 +1148,10 @@
           "broker_name": "BNI SEKURITAS",
           "nval": 74855500,
           "nvol": 59000,
+          "net_lots": 590,
+          "side_lots": 590,
+          "average_price": 1268.7372881355932,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -764,6 +1159,10 @@
           "broker_name": "AJAIB SEKURITAS ASIA",
           "nval": 61477500,
           "nvol": 48300,
+          "net_lots": 483,
+          "side_lots": 483,
+          "average_price": 1272.8260869565217,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -771,6 +1170,10 @@
           "broker_name": "TRIMEGAH SEKURITAS INDONESIA TBK.",
           "nval": 19968000,
           "nvol": 15600,
+          "net_lots": 156,
+          "side_lots": 156,
+          "average_price": 1280,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -778,6 +1181,10 @@
           "broker_name": "MANDIRI SEKURITAS",
           "nval": 16980500,
           "nvol": 13600,
+          "net_lots": 136,
+          "side_lots": 136,
+          "average_price": 1248.5661764705883,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         }
       ],
@@ -787,6 +1194,10 @@
           "broker_name": "STOCKBIT SEKURITAS DIGITAL",
           "nval": 371231000,
           "nvol": 291100,
+          "net_lots": 2911,
+          "side_lots": 2911,
+          "average_price": 1275.269666781175,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -794,6 +1205,10 @@
           "broker_name": "PROFINDO SEKURITAS INDONESIA",
           "nval": 253682000,
           "nvol": 198800,
+          "net_lots": 1988,
+          "side_lots": 1988,
+          "average_price": 1276.066398390342,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -801,6 +1216,10 @@
           "broker_name": "PHINTRACO SEKURITAS",
           "nval": 243111000,
           "nvol": 192100,
+          "net_lots": 1921,
+          "side_lots": 1921,
+          "average_price": 1265.543987506507,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -808,6 +1227,10 @@
           "broker_name": "KOREA INVESTMENT AND SEKURITAS INDONESIA",
           "nval": 178233500,
           "nvol": 142500,
+          "net_lots": 1425,
+          "side_lots": 1425,
+          "average_price": 1250.761403508772,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -815,6 +1238,10 @@
           "broker_name": "LOTUS ANDALAN SEKURITAS",
           "nval": 170017000,
           "nvol": 133900,
+          "net_lots": 1339,
+          "side_lots": 1339,
+          "average_price": 1269.731142643764,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         }
       ],
@@ -936,15 +1363,32 @@
             "sfrq": 14862,
             "net_value_intensity": 0.060599831546969386
           },
-          "recent_5_business_day_approx": null,
+          "recent_5_business_day_approx": {
+            "bval": 14229040500,
+            "sval": 23563606500,
+            "nval": -9334566000,
+            "nvol": -10070100,
+            "bfrq": 1467,
+            "sfrq": 3263,
+            "net_value_intensity": -0.2469942367360508
+          },
           "today": {
+            "broker_name": "SUCOR SEKURITAS",
             "bval": 5573403000,
             "sval": 3686128000,
             "nval": 1887275000,
+            "bvol": 6261100,
+            "svol": 4153600,
             "nvol": 2107500,
             "bfrq": 721,
             "sfrq": 317,
-            "net_value_intensity": 0.20381971829890735
+            "net_value_intensity": 0.20381971829890735,
+            "side": "BUY",
+            "net_lots": 21075,
+            "side_lots": 21075,
+            "average_price": 895.5041518386714,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "pluang_today_average_price": {
             "visible": true,
@@ -955,9 +1399,9 @@
             "note": "Visible in Pluang top buyer list."
           },
           "classification": {
-            "status": "ACCUMULATION_OR_HOLD",
+            "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
-            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
+            "reason": "Structural accumulation remains positive, but recent or today flow has turned negative."
           }
         },
         {
@@ -973,8 +1417,33 @@
             "sfrq": 351,
             "net_value_intensity": 0.7108762498132487
           },
-          "recent_5_business_day_approx": null,
-          "today": null,
+          "recent_5_business_day_approx": {
+            "bval": 0,
+            "sval": 1184000000,
+            "nval": -1184000000,
+            "nvol": -1300000,
+            "bfrq": 0,
+            "sfrq": 69,
+            "net_value_intensity": -1
+          },
+          "today": {
+            "broker_name": "VERDHANA SEKURITAS INDONESIA",
+            "bval": 0,
+            "sval": 264000000,
+            "nval": -264000000,
+            "bvol": 0,
+            "svol": 300000,
+            "nvol": -300000,
+            "bfrq": 0,
+            "sfrq": 12,
+            "net_value_intensity": -1,
+            "side": "SELL",
+            "net_lots": -3000,
+            "side_lots": 3000,
+            "average_price": 880,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
+          },
           "pluang_today_average_price": {
             "visible": false,
             "side": null,
@@ -984,9 +1453,9 @@
             "note": "Not visible in Pluang capped top-10 buyer/seller result. This does not mean zero activity."
           },
           "classification": {
-            "status": "ACCUMULATION_OR_HOLD",
+            "status": "DISTRIBUTION",
             "confidence": "medium",
-            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
+            "reason": "Historical accumulator is net seller in both recent and today horizon."
           }
         },
         {
@@ -1002,8 +1471,33 @@
             "sfrq": 9982,
             "net_value_intensity": 0.008344879904877896
           },
-          "recent_5_business_day_approx": null,
-          "today": null,
+          "recent_5_business_day_approx": {
+            "bval": 4756302500,
+            "sval": 15346692500,
+            "nval": -10590390000,
+            "nvol": -11558100,
+            "bfrq": 706,
+            "sfrq": 2046,
+            "net_value_intensity": -0.5268065778258414
+          },
+          "today": {
+            "broker_name": "TRIMEGAH SEKURITAS INDONESIA TBK.",
+            "bval": 1479051000,
+            "sval": 3402775500,
+            "nval": -1923724500,
+            "bvol": 1665100,
+            "svol": 3870100,
+            "nvol": -2205000,
+            "bfrq": 137,
+            "sfrq": 467,
+            "net_value_intensity": -0.39405835090616187,
+            "side": "SELL",
+            "net_lots": -22050,
+            "side_lots": 22050,
+            "average_price": 872.4374149659864,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
+          },
           "pluang_today_average_price": {
             "visible": true,
             "side": "SELL",
@@ -1013,9 +1507,9 @@
             "note": "Visible in Pluang top seller list."
           },
           "classification": {
-            "status": "ACCUMULATION_OR_HOLD",
+            "status": "DISTRIBUTION",
             "confidence": "medium",
-            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
+            "reason": "Historical accumulator is net seller in both recent and today horizon."
           }
         },
         {
@@ -1031,8 +1525,33 @@
             "sfrq": 33055,
             "net_value_intensity": 0.026234227920278894
           },
-          "recent_5_business_day_approx": null,
-          "today": null,
+          "recent_5_business_day_approx": {
+            "bval": 19344116000,
+            "sval": 28951384000,
+            "nval": -9607268000,
+            "nvol": -10802500,
+            "bfrq": 3026,
+            "sfrq": 5596,
+            "net_value_intensity": -0.19892677371597767
+          },
+          "today": {
+            "broker_name": "INDO PREMIER SEKURITAS",
+            "bval": 5853182000,
+            "sval": 7533000000,
+            "nval": -1679818000,
+            "bvol": 6606900,
+            "svol": 8557800,
+            "nvol": -1950900,
+            "bfrq": 651,
+            "sfrq": 1425,
+            "net_value_intensity": -0.1254889557007368,
+            "side": "SELL",
+            "net_lots": -19509,
+            "side_lots": 19509,
+            "average_price": 861.0477215644062,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
+          },
           "pluang_today_average_price": {
             "visible": true,
             "side": "SELL",
@@ -1042,24 +1561,50 @@
             "note": "Visible in Pluang top seller list."
           },
           "classification": {
-            "status": "ACCUMULATION_OR_HOLD",
+            "status": "DISTRIBUTION",
             "confidence": "medium",
-            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
+            "reason": "Historical accumulator is net seller in both recent and today horizon."
           }
         },
         {
           "rank": 5,
           "broker_code": "GR",
-          "structural": null,
-          "recent_5_business_day_approx": null,
+          "structural": {
+            "broker_name": "PANIN SEKURITAS TBK.",
+            "bval": 59120982400,
+            "sval": 60620957600,
+            "nval": -1499975200,
+            "nvol": -1148000,
+            "bfrq": 7171,
+            "sfrq": 8058,
+            "net_value_intensity": -0.012526732070651268
+          },
+          "recent_5_business_day_approx": {
+            "bval": 4946937500,
+            "sval": 17484521000,
+            "nval": -12537583500,
+            "nvol": -13695900,
+            "bfrq": 518,
+            "sfrq": 1772,
+            "net_value_intensity": -0.5589285912906644
+          },
           "today": {
+            "broker_name": "PANIN SEKURITAS TBK.",
             "bval": 1181657000,
             "sval": 406482500,
             "nval": 775174500,
+            "bvol": 1325900,
+            "svol": 457200,
             "nvol": 868700,
             "bfrq": 130,
             "sfrq": 48,
-            "net_value_intensity": 0.48810227313154797
+            "net_value_intensity": 0.48810227313154797,
+            "side": "BUY",
+            "net_lots": 8687,
+            "side_lots": 8687,
+            "average_price": 892.3385518590998,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "pluang_today_average_price": {
             "visible": true,
@@ -1070,19 +1615,134 @@
             "note": "Visible in Pluang top buyer list."
           },
           "classification": {
-            "status": "NO_STRUCTURAL_DATA",
-            "confidence": "low",
-            "reason": "Broker was not visible in the structural Arjum result."
+            "status": "NOT_ACCUMULATOR",
+            "confidence": "medium",
+            "reason": "Structural net value is not positive."
           }
         }
       ],
-      "today_sellers": [],
+      "today_sellers": [
+        {
+          "broker_code": "KI",
+          "broker_name": "CIPTADANA SEKURITAS ASIA",
+          "nval": -8117515000,
+          "nvol": -9182300,
+          "net_lots": -91823,
+          "side_lots": 91823,
+          "average_price": 884.0394018927719,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "CP",
+          "broker_name": "KB VALBURY SEKURITAS",
+          "nval": -3289208500,
+          "nvol": -3725900,
+          "net_lots": -37259,
+          "side_lots": 37259,
+          "average_price": 882.7957003676964,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "MG",
+          "broker_name": "SEMESTA INDOVEST SEKURITAS",
+          "nval": -2232495500,
+          "nvol": -2564900,
+          "net_lots": -25649,
+          "side_lots": 25649,
+          "average_price": 870.40254980701,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "NI",
+          "broker_name": "BNI SEKURITAS",
+          "nval": -2151580000,
+          "nvol": -2427100,
+          "net_lots": -24271,
+          "side_lots": 24271,
+          "average_price": 886.481809566973,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "LG",
+          "broker_name": "TRIMEGAH SEKURITAS INDONESIA TBK.",
+          "nval": -1923724500,
+          "nvol": -2205000,
+          "net_lots": -22050,
+          "side_lots": 22050,
+          "average_price": 872.4374149659864,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": true
+        },
+        {
+          "broker_code": "PD",
+          "broker_name": "INDO PREMIER SEKURITAS",
+          "nval": -1679818000,
+          "nvol": -1950900,
+          "net_lots": -19509,
+          "side_lots": 19509,
+          "average_price": 861.0477215644062,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": true
+        },
+        {
+          "broker_code": "YU",
+          "broker_name": "CGS INTERNATIONAL SEKURITAS INDONESIA",
+          "nval": -1660977000,
+          "nvol": -1900100,
+          "net_lots": -19001,
+          "side_lots": 19001,
+          "average_price": 874.1524130308931,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "AK",
+          "broker_name": "UBS SEKURITAS INDONESIA",
+          "nval": -916807000,
+          "nvol": -971900,
+          "net_lots": -9719,
+          "side_lots": 9719,
+          "average_price": 943.314126967795,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "FS",
+          "broker_name": "YUANTA SEKURITAS INDONESIA",
+          "nval": -878344000,
+          "nvol": -1003800,
+          "net_lots": -10038,
+          "side_lots": 10038,
+          "average_price": 875.0189280733214,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "OD",
+          "broker_name": "BRI DANAREKSA SEKURITAS",
+          "nval": -658481000,
+          "nvol": -719200,
+          "net_lots": -7192,
+          "side_lots": 7192,
+          "average_price": 915.5742491657397,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": false
+        }
+      ],
       "today_buyers": [
         {
           "broker_code": "XL",
           "broker_name": "STOCKBIT SEKURITAS DIGITAL",
           "nval": 7086257500,
           "nvol": 8011400,
+          "net_lots": 80114,
+          "side_lots": 80114,
+          "average_price": 884.521744014779,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1090,6 +1750,10 @@
           "broker_name": "AJAIB SEKURITAS ASIA",
           "nval": 4234661500,
           "nvol": 4814100,
+          "net_lots": 48141,
+          "side_lots": 48141,
+          "average_price": 879.6372115244802,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1097,6 +1761,10 @@
           "broker_name": "MANDIRI SEKURITAS",
           "nval": 3298991000,
           "nvol": 3723500,
+          "net_lots": 37235,
+          "side_lots": 37235,
+          "average_price": 885.9919430643212,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1104,6 +1772,10 @@
           "broker_name": "MIRAE ASSET SEKURITAS INDONESIA",
           "nval": 2648350500,
           "nvol": 3041000,
+          "net_lots": 30410,
+          "side_lots": 30410,
+          "average_price": 870.8814534692535,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1111,6 +1783,10 @@
           "broker_name": "SUCOR SEKURITAS",
           "nval": 1887275000,
           "nvol": 2107500,
+          "net_lots": 21075,
+          "side_lots": 21075,
+          "average_price": 895.5041518386714,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": true
         },
         {
@@ -1118,6 +1794,10 @@
           "broker_name": "MAYBANK SEKURITAS INDONESIA",
           "nval": 1802730000,
           "nvol": 2034100,
+          "net_lots": 20341,
+          "side_lots": 20341,
+          "average_price": 886.2543631089917,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1125,6 +1805,10 @@
           "broker_name": "BCA SEKURITAS",
           "nval": 1260077000,
           "nvol": 1425300,
+          "net_lots": 14253,
+          "side_lots": 14253,
+          "average_price": 884.0784396267452,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1132,6 +1816,10 @@
           "broker_name": "KAY HIAN SEKURITAS",
           "nval": 868477500,
           "nvol": 978900,
+          "net_lots": 9789,
+          "side_lots": 9789,
+          "average_price": 887.1973643885995,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1139,6 +1827,10 @@
           "broker_name": "PANIN SEKURITAS TBK.",
           "nval": 775174500,
           "nvol": 868700,
+          "net_lots": 8687,
+          "side_lots": 8687,
+          "average_price": 892.3385518590998,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": true
         },
         {
@@ -1146,6 +1838,10 @@
           "broker_name": "PHILLIP SEKURITAS INDONESIA",
           "nval": 446934500,
           "nvol": 505700,
+          "net_lots": 5057,
+          "side_lots": 5057,
+          "average_price": 883.7937512359106,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         }
       ],
@@ -1155,6 +1851,10 @@
           "broker_name": "STOCKBIT SEKURITAS DIGITAL",
           "nval": 7086257500,
           "nvol": 8011400,
+          "net_lots": 80114,
+          "side_lots": 80114,
+          "average_price": 884.521744014779,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1162,6 +1862,10 @@
           "broker_name": "AJAIB SEKURITAS ASIA",
           "nval": 4234661500,
           "nvol": 4814100,
+          "net_lots": 48141,
+          "side_lots": 48141,
+          "average_price": 879.6372115244802,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1169,6 +1873,10 @@
           "broker_name": "MANDIRI SEKURITAS",
           "nval": 3298991000,
           "nvol": 3723500,
+          "net_lots": 37235,
+          "side_lots": 37235,
+          "average_price": 885.9919430643212,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1176,6 +1884,10 @@
           "broker_name": "MIRAE ASSET SEKURITAS INDONESIA",
           "nval": 2648350500,
           "nvol": 3041000,
+          "net_lots": 30410,
+          "side_lots": 30410,
+          "average_price": 870.8814534692535,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1183,6 +1895,10 @@
           "broker_name": "MAYBANK SEKURITAS INDONESIA",
           "nval": 1802730000,
           "nvol": 2034100,
+          "net_lots": 20341,
+          "side_lots": 20341,
+          "average_price": 886.2543631089917,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         }
       ],
@@ -1292,15 +2008,32 @@
             "sfrq": 27628,
             "net_value_intensity": 0.08453189193317595
           },
-          "recent_5_business_day_approx": null,
+          "recent_5_business_day_approx": {
+            "bval": 9786030000,
+            "sval": 10062364000,
+            "nval": -276334000,
+            "nvol": -349900,
+            "bfrq": 1239,
+            "sfrq": 2161,
+            "net_value_intensity": -0.013922234715816302
+          },
           "today": {
+            "broker_name": "SEMESTA INDOVEST SEKURITAS",
             "bval": 3705251500,
             "sval": 3096803500,
             "nval": 608448000,
+            "bvol": 5290400,
+            "svol": 4419200,
             "nvol": 871200,
             "bfrq": 432,
             "sfrq": 539,
-            "net_value_intensity": 0.08945061455692434
+            "net_value_intensity": 0.08945061455692434,
+            "side": "BUY",
+            "net_lots": 8712,
+            "side_lots": 8712,
+            "average_price": 698.4022038567493,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "pluang_today_average_price": {
             "visible": true,
@@ -1311,9 +2044,9 @@
             "note": "Visible in Pluang top buyer list."
           },
           "classification": {
-            "status": "ACCUMULATION_OR_HOLD",
+            "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
-            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
+            "reason": "Structural accumulation remains positive, but recent or today flow has turned negative."
           }
         },
         {
@@ -1329,15 +2062,32 @@
             "sfrq": 16718,
             "net_value_intensity": 0.03160540997298045
           },
-          "recent_5_business_day_approx": null,
+          "recent_5_business_day_approx": {
+            "bval": 6855767000,
+            "sval": 7873448500,
+            "nval": -1017681500,
+            "nvol": -1449600,
+            "bfrq": 1312,
+            "sfrq": 2173,
+            "net_value_intensity": -0.06909271576615876
+          },
           "today": {
+            "broker_name": "MANDIRI SEKURITAS",
             "bval": 1616835500,
             "sval": 657643500,
             "nval": 959192000,
+            "bvol": 2271600,
+            "svol": 937700,
             "nvol": 1333900,
             "bfrq": 353,
             "sfrq": 135,
-            "net_value_intensity": 0.42171943552787255
+            "net_value_intensity": 0.42171943552787255,
+            "side": "BUY",
+            "net_lots": 13339,
+            "side_lots": 13339,
+            "average_price": 719.08838743534,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "pluang_today_average_price": {
             "visible": true,
@@ -1348,9 +2098,9 @@
             "note": "Visible in Pluang top buyer list."
           },
           "classification": {
-            "status": "ACCUMULATION_OR_HOLD",
+            "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
-            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
+            "reason": "Structural accumulation remains positive, but recent or today flow has turned negative."
           }
         },
         {
@@ -1366,8 +2116,33 @@
             "sfrq": 4050,
             "net_value_intensity": 0.20481110063430005
           },
-          "recent_5_business_day_approx": null,
-          "today": null,
+          "recent_5_business_day_approx": {
+            "bval": 311998000,
+            "sval": 1824799000,
+            "nval": -1512801000,
+            "nvol": -2080700,
+            "bfrq": 42,
+            "sfrq": 628,
+            "net_value_intensity": -0.707976003335834
+          },
+          "today": {
+            "broker_name": "J.P. MORGAN SEKURITAS INDONESIA",
+            "bval": 0,
+            "sval": 47691500,
+            "nval": -47691500,
+            "bvol": 0,
+            "svol": 67800,
+            "nvol": -67800,
+            "bfrq": 0,
+            "sfrq": 23,
+            "net_value_intensity": -1,
+            "side": "SELL",
+            "net_lots": -678,
+            "side_lots": 678,
+            "average_price": 703.4144542772862,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
+          },
           "pluang_today_average_price": {
             "visible": true,
             "side": "SELL",
@@ -1377,9 +2152,9 @@
             "note": "Visible in Pluang top seller list."
           },
           "classification": {
-            "status": "ACCUMULATION_OR_HOLD",
+            "status": "DISTRIBUTION",
             "confidence": "medium",
-            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
+            "reason": "Historical accumulator is net seller in both recent and today horizon."
           }
         },
         {
@@ -1404,7 +2179,24 @@
             "sfrq": 438,
             "net_value_intensity": 0.37070166783117137
           },
-          "today": null,
+          "today": {
+            "broker_name": "MAYBANK SEKURITAS INDONESIA",
+            "bval": 62726000,
+            "sval": 297641500,
+            "nval": -234915500,
+            "bvol": 89800,
+            "svol": 422300,
+            "nvol": -332500,
+            "bfrq": 22,
+            "sfrq": 247,
+            "net_value_intensity": -0.651877597175106,
+            "side": "SELL",
+            "net_lots": -3325,
+            "side_lots": 3325,
+            "average_price": 706.5127819548873,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
+          },
           "pluang_today_average_price": {
             "visible": true,
             "side": "SELL",
@@ -1414,9 +2206,9 @@
             "note": "Visible in Pluang top seller list."
           },
           "classification": {
-            "status": "ACCUMULATION_OR_HOLD",
+            "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
-            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
+            "reason": "Structural accumulation remains positive, but recent or today flow has turned negative."
           }
         },
         {
@@ -1442,13 +2234,22 @@
             "net_value_intensity": 0.1984815576029098
           },
           "today": {
+            "broker_name": "UBS SEKURITAS INDONESIA",
             "bval": 685829000,
             "sval": 368430000,
             "nval": 317399000,
+            "bvol": 965600,
+            "svol": 524500,
             "nvol": 441100,
             "bfrq": 60,
             "sfrq": 45,
-            "net_value_intensity": 0.30106359063569765
+            "net_value_intensity": 0.30106359063569765,
+            "side": "BUY",
+            "net_lots": 4411,
+            "side_lots": 4411,
+            "average_price": 719.562457492632,
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "pluang_today_average_price": {
             "visible": true,
@@ -1467,39 +2268,114 @@
       ],
       "today_sellers": [
         {
-          "broker_code": "RO",
-          "broker_name": "PLUANG MAJU SEKURITAS",
-          "nval": -7261500,
-          "nvol": -10300,
+          "broker_code": "XL",
+          "broker_name": "STOCKBIT SEKURITAS DIGITAL",
+          "nval": -608288000,
+          "nvol": -858700,
+          "net_lots": -8587,
+          "side_lots": 8587,
+          "average_price": 708.3824385699313,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
-          "broker_code": "AZ",
-          "broker_name": "SUCOR SEKURITAS",
-          "nval": -2908500,
-          "nvol": -3900,
+          "broker_code": "AO",
+          "broker_name": "ERDIKHA ELIT SEKURITAS",
+          "nval": -379924500,
+          "nvol": -521900,
+          "net_lots": -5219,
+          "side_lots": 5219,
+          "average_price": 727.9641693811075,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
-          "broker_code": "IH",
-          "broker_name": "INDO HARVEST SEKURITAS",
-          "nval": -2800000,
-          "nvol": -4000,
+          "broker_code": "SH",
+          "broker_name": "ARTHA SEKURITAS INDONESIA",
+          "nval": -237050000,
+          "nvol": -336500,
+          "net_lots": -3365,
+          "side_lots": 3365,
+          "average_price": 704.4576523031203,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
-          "broker_code": "EP",
-          "broker_name": "MNC SEKURITAS",
-          "nval": -987500,
-          "nvol": -1400,
+          "broker_code": "ZP",
+          "broker_name": "MAYBANK SEKURITAS INDONESIA",
+          "nval": -234915500,
+          "nvol": -332500,
+          "net_lots": -3325,
+          "side_lots": 3325,
+          "average_price": 706.5127819548873,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": true
+        },
+        {
+          "broker_code": "XA",
+          "broker_name": "NH KORINDO SEKURITAS INDONESIA",
+          "nval": -181459500,
+          "nvol": -258200,
+          "net_lots": -2582,
+          "side_lots": 2582,
+          "average_price": 702.786599535244,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
-          "broker_code": "KI",
-          "broker_name": "CIPTADANA SEKURITAS ASIA",
-          "nval": -639000,
-          "nvol": -900,
+          "broker_code": "IN",
+          "broker_name": "INVESTINDO NUSANTARA SEKURITAS",
+          "nval": -168346000,
+          "nvol": -231100,
+          "net_lots": -2311,
+          "side_lots": 2311,
+          "average_price": 728.4552141929901,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
+        },
+        {
+          "broker_code": "GR",
+          "broker_name": "PANIN SEKURITAS TBK.",
+          "nval": -154557500,
+          "nvol": -221100,
+          "net_lots": -2211,
+          "side_lots": 2211,
+          "average_price": 699.0388964269562,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "XC",
+          "broker_name": "AJAIB SEKURITAS ASIA",
+          "nval": -132398000,
+          "nvol": -187500,
+          "net_lots": -1875,
+          "side_lots": 1875,
+          "average_price": 706.1226666666666,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "OD",
+          "broker_name": "BRI DANAREKSA SEKURITAS",
+          "nval": -119592000,
+          "nvol": -168500,
+          "net_lots": -1685,
+          "side_lots": 1685,
+          "average_price": 709.7448071216617,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "BK",
+          "broker_name": "J.P. MORGAN SEKURITAS INDONESIA",
+          "nval": -47691500,
+          "nvol": -67800,
+          "net_lots": -678,
+          "side_lots": 678,
+          "average_price": 703.4144542772862,
+          "record_source": "arjum.brokers",
+          "is_baseline_top5": true
         }
       ],
       "today_buyers": [
@@ -1508,6 +2384,10 @@
           "broker_name": "MANDIRI SEKURITAS",
           "nval": 959192000,
           "nvol": 1333900,
+          "net_lots": 13339,
+          "side_lots": 13339,
+          "average_price": 719.08838743534,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": true
         },
         {
@@ -1515,6 +2395,10 @@
           "broker_name": "SEMESTA INDOVEST SEKURITAS",
           "nval": 608448000,
           "nvol": 871200,
+          "net_lots": 8712,
+          "side_lots": 8712,
+          "average_price": 698.4022038567493,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": true
         },
         {
@@ -1522,6 +2406,10 @@
           "broker_name": "UBS SEKURITAS INDONESIA",
           "nval": 317399000,
           "nvol": 441100,
+          "net_lots": 4411,
+          "side_lots": 4411,
+          "average_price": 719.562457492632,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": true
         },
         {
@@ -1529,6 +2417,10 @@
           "broker_name": "BCA SEKURITAS",
           "nval": 134220000,
           "nvol": 190400,
+          "net_lots": 1904,
+          "side_lots": 1904,
+          "average_price": 704.936974789916,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1536,6 +2428,10 @@
           "broker_name": "MIRAE ASSET SEKURITAS INDONESIA",
           "nval": 112993000,
           "nvol": 163600,
+          "net_lots": 1636,
+          "side_lots": 1636,
+          "average_price": 690.6662591687042,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1543,6 +2439,10 @@
           "broker_name": "KOREA INVESTMENT AND SEKURITAS INDONESIA",
           "nval": 61598000,
           "nvol": 86800,
+          "net_lots": 868,
+          "side_lots": 868,
+          "average_price": 709.6543778801844,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1550,6 +2450,10 @@
           "broker_name": "PHILLIP SEKURITAS INDONESIA",
           "nval": 60810000,
           "nvol": 88800,
+          "net_lots": 888,
+          "side_lots": 888,
+          "average_price": 684.7972972972973,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1557,6 +2461,10 @@
           "broker_name": "OCBC SEKURITAS INDONESIA",
           "nval": 41301500,
           "nvol": 55500,
+          "net_lots": 555,
+          "side_lots": 555,
+          "average_price": 744.1711711711712,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1564,6 +2472,10 @@
           "broker_name": "KB VALBURY SEKURITAS",
           "nval": 29173000,
           "nvol": 38000,
+          "net_lots": 380,
+          "side_lots": 380,
+          "average_price": 767.7105263157895,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1571,6 +2483,10 @@
           "broker_name": "SAMUEL SEKURITAS  INDONESIA",
           "nval": 26386500,
           "nvol": 36600,
+          "net_lots": 366,
+          "side_lots": 366,
+          "average_price": 720.9426229508197,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         }
       ],
@@ -1580,6 +2496,10 @@
           "broker_name": "BCA SEKURITAS",
           "nval": 134220000,
           "nvol": 190400,
+          "net_lots": 1904,
+          "side_lots": 1904,
+          "average_price": 704.936974789916,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1587,6 +2507,10 @@
           "broker_name": "MIRAE ASSET SEKURITAS INDONESIA",
           "nval": 112993000,
           "nvol": 163600,
+          "net_lots": 1636,
+          "side_lots": 1636,
+          "average_price": 690.6662591687042,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1594,6 +2518,10 @@
           "broker_name": "KOREA INVESTMENT AND SEKURITAS INDONESIA",
           "nval": 61598000,
           "nvol": 86800,
+          "net_lots": 868,
+          "side_lots": 868,
+          "average_price": 709.6543778801844,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1601,6 +2529,10 @@
           "broker_name": "PHILLIP SEKURITAS INDONESIA",
           "nval": 60810000,
           "nvol": 88800,
+          "net_lots": 888,
+          "side_lots": 888,
+          "average_price": 684.7972972972973,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         },
         {
@@ -1608,6 +2540,10 @@
           "broker_name": "OCBC SEKURITAS INDONESIA",
           "nval": 41301500,
           "nvol": 55500,
+          "net_lots": 555,
+          "side_lots": 555,
+          "average_price": 744.1711711711712,
+          "record_source": "arjum.brokers",
           "is_baseline_top5": false
         }
       ],
