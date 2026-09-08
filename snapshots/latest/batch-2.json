@@ -1,6 +1,6 @@
 {
   "schema_version": "broker-monitor.report.v3",
-  "generated_at": "2026-09-08T15:41:27.266Z",
+  "generated_at": "2026-09-08T16:02:13.459Z",
   "market_date": "2026-09-08",
   "source_strategy": "hybrid_arjum_primary_pluang_enrichment",
   "refresh": true,
@@ -69,10 +69,23 @@
             "bval": 210016040000,
             "sval": 24722228500,
             "nval": 185293811500,
+            "bvol": 151587400,
+            "svol": 17155000,
             "nvol": 134432400,
             "bfrq": 10901,
             "sfrq": 1570,
-            "net_value_intensity": 0.7893634586471358
+            "net_value_intensity": 0.7893634586471358,
+            "side": "BUY",
+            "net_lots": 1344324,
+            "side_lots": 1344324,
+            "average_price": 1378.3419138541005,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-07-20",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 36191529500,
@@ -109,6 +122,30 @@
             "averagePrice": 1460,
             "note": "Visible in Pluang top seller list."
           },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 1164015,
+            "value": 161611519500,
+            "averagePrice": 1388,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-07-20",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 1388,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-07-20",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 1378.3419138541005,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
           "classification": {
             "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
@@ -123,10 +160,23 @@
             "bval": 28656306500,
             "sval": 20714464500,
             "nval": 7941842000,
+            "bvol": 20154200,
+            "svol": 14821300,
             "nvol": 5332900,
             "bfrq": 7445,
             "sfrq": 5945,
-            "net_value_intensity": 0.16086121077590626
+            "net_value_intensity": 0.16086121077590626,
+            "side": "BUY",
+            "net_lots": 53329,
+            "side_lots": 53329,
+            "average_price": 1489.2163738303736,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-07-20",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 5201424000,
@@ -163,6 +213,30 @@
             "averagePrice": 1451,
             "note": "Visible in Pluang top seller list."
           },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 48986,
+            "value": 7373036500,
+            "averagePrice": 1505,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-07-20",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 1505,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-07-20",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 1489.2163738303736,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
           "classification": {
             "status": "DISTRIBUTION",
             "confidence": "medium",
@@ -177,10 +251,23 @@
             "bval": 1128130500,
             "sval": 996041500,
             "nval": 132089000,
+            "bvol": 813100,
+            "svol": 713100,
             "nvol": 100000,
             "bfrq": 296,
             "sfrq": 238,
-            "net_value_intensity": 0.062183759130616544
+            "net_value_intensity": 0.062183759130616544,
+            "side": "BUY",
+            "net_lots": 1000,
+            "side_lots": 1000,
+            "average_price": 1320.89,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-07-20",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 166423000,
@@ -217,6 +304,30 @@
             "averagePrice": 1465,
             "note": "Visible in Pluang top buyer list."
           },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 744,
+            "value": 100253000,
+            "averagePrice": 1347,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-07-20",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 1347,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-07-20",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 1320.89,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
           "classification": {
             "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
@@ -231,10 +342,23 @@
             "bval": 3452479000,
             "sval": 3592348500,
             "nval": -139869500,
+            "bvol": 2482400,
+            "svol": 2595800,
             "nvol": -113400,
             "bfrq": 860,
             "sfrq": 719,
-            "net_value_intensity": -0.01985421218617489
+            "net_value_intensity": -0.01985421218617489,
+            "side": "SELL",
+            "net_lots": -1134,
+            "side_lots": 1134,
+            "average_price": 1233.4171075837742,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-07-20",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 700065000,
@@ -271,6 +395,30 @@
             "averagePrice": 1456,
             "note": "Visible in Pluang top buyer list."
           },
+          "pluang_structural_broker_summary": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Not visible in Pluang capped top-10 buyer/seller result. This does not mean zero activity.",
+            "period": {
+              "start": "2026-07-20",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 1233.4171075837742,
+            "source": "arjum.broker_levels",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-07-20",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 1233.4171075837742,
+            "cross_source_status": "ARJUM_FALLBACK_PLUANG_NOT_VISIBLE",
+            "note": "Pluang did not expose this broker in its capped net top-broker list. Arjum is used as fallback; absence from Pluang can result from offsetting buys and sells and does not mean inactivity."
+          },
           "classification": {
             "status": "NOT_ACCUMULATOR",
             "confidence": "medium",
@@ -285,10 +433,23 @@
             "bval": 2921460500,
             "sval": 3051297500,
             "nval": -129837000,
+            "bvol": 2055600,
+            "svol": 2160200,
             "nvol": -104600,
             "bfrq": 1042,
             "sfrq": 839,
-            "net_value_intensity": -0.02173819866801903
+            "net_value_intensity": -0.02173819866801903,
+            "side": "SELL",
+            "net_lots": -1046,
+            "side_lots": 1046,
+            "average_price": 1241.2715105162524,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-07-20",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 568712500,
@@ -324,6 +485,30 @@
             "value": 39888000,
             "averagePrice": 1450,
             "note": "Visible in Pluang top buyer list."
+          },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 324,
+            "value": 42868000,
+            "averagePrice": 1323,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-07-20",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 1323,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-07-20",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 1241.2715105162524,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
           },
           "classification": {
             "status": "NOT_ACCUMULATOR",
@@ -682,6 +867,16 @@
           "skipped": false,
           "reason": null
         },
+        "pluang_structural": {
+          "ok": true,
+          "status": 200,
+          "skipped": false,
+          "reason": null,
+          "cache_hit": false,
+          "cache_bypassed": true,
+          "cache_ttl_policy_seconds": 600,
+          "capped": true
+        },
         "pluang_today": {
           "ok": true,
           "status": 200,
@@ -697,6 +892,9 @@
         "Baseline Top 5 is manually supplied and intentionally fixed.",
         "Pluang averagePrice is only available when the broker appears in its capped top-10 buyer/seller result.",
         "Not visible in Pluang does not mean zero activity.",
+        "A full-period Pluang result uses a separate date-range request from the same-day result; the Worker caches each range independently.",
+        "overall_net_average_price is a period net-flow implied average, not a broker inventory cost basis. Pluang is preferred when visible; Arjum broker_levels is the fallback.",
+        "Large offsetting buys and sells can leave a small net position and keep an active broker outside Pluang's capped net top-broker list.",
         "If today_data_status is PENDING_BROKER_RELEASE, today:null means same-day broker data is not released yet.",
         "Crossing candidates are low-confidence because they use aggregate broker-summary similarity, not paired trade evidence.",
         "Recent 5-session window is approximated by business days excluding weekends only; IDX holidays are not yet modeled.",
@@ -750,10 +948,23 @@
             "bval": 109502479300,
             "sval": 90624486900,
             "nval": 18877992400,
+            "bvol": 158468200,
+            "svol": 132993300,
             "nvol": 25474900,
             "bfrq": 11728,
             "sfrq": 13294,
-            "net_value_intensity": 0.09433007834203605
+            "net_value_intensity": 0.09433007834203605,
+            "side": "BUY",
+            "net_lots": 254749,
+            "side_lots": 254749,
+            "average_price": 741.0428460955686,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 17845376500,
@@ -790,6 +1001,30 @@
             "averagePrice": 909,
             "note": "Visible in Pluang top buyer list."
           },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 269961,
+            "value": 19736340400,
+            "averagePrice": 731,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 731,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 741.0428460955686,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
           "classification": {
             "status": "STRONG_ACCUMULATION",
             "confidence": "medium",
@@ -804,10 +1039,23 @@
             "bval": 28135748800,
             "sval": 18228677100,
             "nval": 9907071700,
+            "bvol": 42548800,
+            "svol": 25566700,
             "nvol": 16982100,
             "bfrq": 3922,
             "sfrq": 3522,
-            "net_value_intensity": 0.2136782998535953
+            "net_value_intensity": 0.2136782998535953,
+            "side": "BUY",
+            "net_lots": 169821,
+            "side_lots": 169821,
+            "average_price": 583.3831917136279,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 2739373500,
@@ -844,6 +1092,30 @@
             "averagePrice": 890,
             "note": "Visible in Pluang top seller list."
           },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 194040,
+            "value": 11253401200,
+            "averagePrice": 579,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 579,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 583.3831917136279,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
           "classification": {
             "status": "DISTRIBUTION",
             "confidence": "medium",
@@ -858,10 +1130,23 @@
             "bval": 54217253200,
             "sval": 41905308800,
             "nval": 12311944400,
+            "bvol": 76346100,
+            "svol": 60669000,
             "nvol": 15677100,
             "bfrq": 6101,
             "sfrq": 6227,
-            "net_value_intensity": 0.1280858951720409
+            "net_value_intensity": 0.1280858951720409,
+            "side": "BUY",
+            "net_lots": 156771,
+            "side_lots": 156771,
+            "average_price": 785.3457846157771,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 7292376500,
@@ -898,6 +1183,30 @@
             "averagePrice": 882,
             "note": "Visible in Pluang top buyer list."
           },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 158998,
+            "value": 12431407900,
+            "averagePrice": 781,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 781,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 785.3457846157771,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
           "classification": {
             "status": "STRONG_ACCUMULATION",
             "confidence": "medium",
@@ -912,10 +1221,23 @@
             "bval": 66324512700,
             "sval": 56307622800,
             "nval": 10016889900,
+            "bvol": 95953800,
+            "svol": 79893500,
             "nvol": 16060300,
             "bfrq": 10961,
             "sfrq": 9562,
-            "net_value_intensity": 0.08168242246747795
+            "net_value_intensity": 0.08168242246747795,
+            "side": "BUY",
+            "net_lots": 160603,
+            "side_lots": 160603,
+            "average_price": 623.7050304166173,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 11928284500,
@@ -952,6 +1274,30 @@
             "averagePrice": 914,
             "note": "Visible in Pluang top buyer list."
           },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 158920,
+            "value": 9928798900,
+            "averagePrice": 624,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 624,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 623.7050304166173,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
           "classification": {
             "status": "STRONG_ACCUMULATION",
             "confidence": "medium",
@@ -966,10 +1312,23 @@
             "bval": 10505379500,
             "sval": 4080978000,
             "nval": 6424401500,
+            "bvol": 13984300,
+            "svol": 5559400,
             "nvol": 8424900,
             "bfrq": 839,
             "sfrq": 498,
-            "net_value_intensity": 0.4404390540955821
+            "net_value_intensity": 0.4404390540955821,
+            "side": "BUY",
+            "net_lots": 84249,
+            "side_lots": 84249,
+            "average_price": 762.5492884188536,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 507157500,
@@ -1005,6 +1364,30 @@
             "value": 417666500,
             "averagePrice": 842,
             "note": "Visible in Pluang top seller list."
+          },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 85249,
+            "value": 6479401500,
+            "averagePrice": 760,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 760,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 762.5492884188536,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
           },
           "classification": {
             "status": "DISTRIBUTION",
@@ -1314,6 +1697,16 @@
           "skipped": false,
           "reason": null
         },
+        "pluang_structural": {
+          "ok": true,
+          "status": 200,
+          "skipped": false,
+          "reason": null,
+          "cache_hit": false,
+          "cache_bypassed": true,
+          "cache_ttl_policy_seconds": 600,
+          "capped": true
+        },
         "pluang_today": {
           "ok": true,
           "status": 200,
@@ -1329,6 +1722,9 @@
         "Baseline Top 5 is manually supplied and intentionally fixed.",
         "Pluang averagePrice is only available when the broker appears in its capped top-10 buyer/seller result.",
         "Not visible in Pluang does not mean zero activity.",
+        "A full-period Pluang result uses a separate date-range request from the same-day result; the Worker caches each range independently.",
+        "overall_net_average_price is a period net-flow implied average, not a broker inventory cost basis. Pluang is preferred when visible; Arjum broker_levels is the fallback.",
+        "Large offsetting buys and sells can leave a small net position and keep an active broker outside Pluang's capped net top-broker list.",
         "If today_data_status is PENDING_BROKER_RELEASE, today:null means same-day broker data is not released yet.",
         "Crossing candidates are low-confidence because they use aggregate broker-summary similarity, not paired trade evidence.",
         "Recent 5-session window is approximated by business days excluding weekends only; IDX holidays are not yet modeled.",
@@ -1382,10 +1778,23 @@
             "bval": 2231461889300,
             "sval": 2188300551700,
             "nval": 43161337600,
+            "bvol": 14132680200,
+            "svol": 13920024900,
             "nvol": 212655300,
             "bfrq": 1018134,
             "sfrq": 864003,
-            "net_value_intensity": 0.009765533368855559
+            "net_value_intensity": 0.009765533368855559,
+            "side": "BUY",
+            "net_lots": 2126553,
+            "side_lots": 2126553,
+            "average_price": 202.96384618676328,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-06-09",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 235137545400,
@@ -1422,6 +1831,30 @@
             "averagePrice": 217,
             "note": "Visible in Pluang top buyer list."
           },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 2131570,
+            "value": 43215798900,
+            "averagePrice": 202,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-06-09",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 202,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-06-09",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 202.96384618676328,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
           "classification": {
             "status": "STRONG_ACCUMULATION",
             "confidence": "medium",
@@ -1436,10 +1869,23 @@
             "bval": 348769536300,
             "sval": 326533193800,
             "nval": 22236342500,
+            "bvol": 1969097600,
+            "svol": 1873417600,
             "nvol": 95680000,
             "bfrq": 142782,
             "sfrq": 118694,
-            "net_value_intensity": 0.032927961799750466
+            "net_value_intensity": 0.032927961799750466,
+            "side": "BUY",
+            "net_lots": 956800,
+            "side_lots": 956800,
+            "average_price": 232.40324519230768,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-06-09",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 83701098600,
@@ -1476,6 +1922,30 @@
             "averagePrice": 221,
             "note": "Visible in Pluang top seller list."
           },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 969074,
+            "value": 22438436300,
+            "averagePrice": 231,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-06-09",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 231,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-06-09",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 232.40324519230768,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
           "classification": {
             "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
@@ -1490,10 +1960,23 @@
             "bval": 60133034300,
             "sval": 59824632300,
             "nval": 308402000,
+            "bvol": 368153800,
+            "svol": 358558900,
             "nvol": 9594900,
             "bfrq": 9480,
             "sfrq": 11932,
-            "net_value_intensity": 0.0025709236328209806
+            "net_value_intensity": 0.0025709236328209806,
+            "side": "BUY",
+            "net_lots": 95949,
+            "side_lots": 95949,
+            "average_price": 32.14228392166672,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-06-09",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 4647597000,
@@ -1530,6 +2013,30 @@
             "averagePrice": 213,
             "note": "Visible in Pluang top buyer list."
           },
+          "pluang_structural_broker_summary": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Not visible in Pluang capped top-10 buyer/seller result. This does not mean zero activity.",
+            "period": {
+              "start": "2026-06-09",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 32.14228392166672,
+            "source": "arjum.broker_levels",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-06-09",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 32.14228392166672,
+            "cross_source_status": "ARJUM_FALLBACK_PLUANG_NOT_VISIBLE",
+            "note": "Pluang did not expose this broker in its capped net top-broker list. Arjum is used as fallback; absence from Pluang can result from offsetting buys and sells and does not mean inactivity."
+          },
           "classification": {
             "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
@@ -1544,10 +2051,23 @@
             "bval": 65559777100,
             "sval": 59511703200,
             "nval": 6048073900,
+            "bvol": 386486800,
+            "svol": 359273500,
             "nvol": 27213300,
             "bfrq": 13444,
             "sfrq": 14171,
-            "net_value_intensity": 0.04835693865214451
+            "net_value_intensity": 0.04835693865214451,
+            "side": "BUY",
+            "net_lots": 272133,
+            "side_lots": 272133,
+            "average_price": 222.24698584883126,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-06-09",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 11103636000,
@@ -1584,6 +2104,30 @@
             "averagePrice": 233,
             "note": "Visible in Pluang top seller list."
           },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 258483,
+            "value": 5820478900,
+            "averagePrice": 225,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-06-09",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 225,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-06-09",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 222.24698584883126,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
           "classification": {
             "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
@@ -1598,10 +2142,23 @@
             "bval": 73303353600,
             "sval": 65808861700,
             "nval": 7494491900,
+            "bvol": 435445000,
+            "svol": 399881300,
             "nvol": 35563700,
             "bfrq": 21737,
             "sfrq": 18223,
-            "net_value_intensity": 0.05387371543065349
+            "net_value_intensity": 0.05387371543065349,
+            "side": "BUY",
+            "net_lots": 355637,
+            "side_lots": 355637,
+            "average_price": 210.73431335884624,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-06-09",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 13565625400,
@@ -1637,6 +2194,30 @@
             "value": 2602821600,
             "averagePrice": 213,
             "note": "Visible in Pluang top buyer list."
+          },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 340472,
+            "value": 7238314900,
+            "averagePrice": 212,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-06-09",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 212,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-06-09",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 210.73431335884624,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
           },
           "classification": {
             "status": "STRONG_ACCUMULATION",
@@ -1959,6 +2540,16 @@
           "skipped": false,
           "reason": null
         },
+        "pluang_structural": {
+          "ok": true,
+          "status": 200,
+          "skipped": false,
+          "reason": null,
+          "cache_hit": false,
+          "cache_bypassed": true,
+          "cache_ttl_policy_seconds": 600,
+          "capped": true
+        },
         "pluang_today": {
           "ok": true,
           "status": 200,
@@ -1974,6 +2565,9 @@
         "Baseline Top 5 is manually supplied and intentionally fixed.",
         "Pluang averagePrice is only available when the broker appears in its capped top-10 buyer/seller result.",
         "Not visible in Pluang does not mean zero activity.",
+        "A full-period Pluang result uses a separate date-range request from the same-day result; the Worker caches each range independently.",
+        "overall_net_average_price is a period net-flow implied average, not a broker inventory cost basis. Pluang is preferred when visible; Arjum broker_levels is the fallback.",
+        "Large offsetting buys and sells can leave a small net position and keep an active broker outside Pluang's capped net top-broker list.",
         "If today_data_status is PENDING_BROKER_RELEASE, today:null means same-day broker data is not released yet.",
         "Crossing candidates are low-confidence because they use aggregate broker-summary similarity, not paired trade evidence.",
         "Recent 5-session window is approximated by business days excluding weekends only; IDX holidays are not yet modeled.",
@@ -2027,10 +2621,23 @@
             "bval": 244434957000,
             "sval": 180853051500,
             "nval": 63581905500,
+            "bvol": 49938300,
+            "svol": 35137900,
             "nvol": 14800400,
             "bfrq": 9298,
             "sfrq": 7758,
-            "net_value_intensity": 0.1495031701558075
+            "net_value_intensity": 0.1495031701558075,
+            "side": "BUY",
+            "net_lots": 148004,
+            "side_lots": 148004,
+            "average_price": 4295.958588957055,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 16211517500,
@@ -2067,6 +2674,30 @@
             "averagePrice": null,
             "note": "Not visible in Pluang capped top-10 buyer/seller result. This does not mean zero activity."
           },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 133482,
+            "value": 56370471000,
+            "averagePrice": 4223,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 4223,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 4295.958588957055,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
           "classification": {
             "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
@@ -2081,10 +2712,23 @@
             "bval": 390206094000,
             "sval": 163312685500,
             "nval": 226893408500,
+            "bvol": 77982400,
+            "svol": 33235700,
             "nvol": 44746700,
             "bfrq": 11630,
             "sfrq": 7553,
-            "net_value_intensity": 0.40991094955252555
+            "net_value_intensity": 0.40991094955252555,
+            "side": "BUY",
+            "net_lots": 447467,
+            "side_lots": 447467,
+            "average_price": 5070.617688008278,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 84471005000,
@@ -2121,6 +2765,30 @@
             "averagePrice": 5482,
             "note": "Visible in Pluang top buyer list."
           },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 420388,
+            "value": 213481461000,
+            "averagePrice": 5078,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 5078,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 5070.617688008278,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
           "classification": {
             "status": "STRONG_ACCUMULATION",
             "confidence": "medium",
@@ -2135,10 +2803,23 @@
             "bval": 344112237500,
             "sval": 273069514500,
             "nval": 71042723000,
+            "bvol": 68330600,
+            "svol": 55036700,
             "nvol": 13293900,
             "bfrq": 16300,
             "sfrq": 15756,
-            "net_value_intensity": 0.11510826878757102
+            "net_value_intensity": 0.11510826878757102,
+            "side": "BUY",
+            "net_lots": 132939,
+            "side_lots": 132939,
+            "average_price": 5344.009132007914,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 55648725000,
@@ -2175,6 +2856,30 @@
             "averagePrice": 5480,
             "note": "Visible in Pluang top buyer list."
           },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 155448,
+            "value": 82206057500,
+            "averagePrice": 5288,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 5288,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 5344.009132007914,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
           "classification": {
             "status": "STRONG_ACCUMULATION",
             "confidence": "medium",
@@ -2189,10 +2894,23 @@
             "bval": 53807708500,
             "sval": 18475582500,
             "nval": 35332126000,
+            "bvol": 10669400,
+            "svol": 3672600,
             "nvol": 6996800,
             "bfrq": 2423,
             "sfrq": 3665,
-            "net_value_intensity": 0.488800738195498
+            "net_value_intensity": 0.488800738195498,
+            "side": "BUY",
+            "net_lots": 69968,
+            "side_lots": 69968,
+            "average_price": 5049.755030871255,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 235565000,
@@ -2229,6 +2947,30 @@
             "averagePrice": null,
             "note": "Not visible in Pluang capped top-10 buyer/seller result. This does not mean zero activity."
           },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 39889,
+            "value": 20574532000,
+            "averagePrice": 5157,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 5157,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 5049.755030871255,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
           "classification": {
             "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
@@ -2243,10 +2985,23 @@
             "bval": 836031406000,
             "sval": 795609007500,
             "nval": 40422398500,
+            "bvol": 173554200,
+            "svol": 164853000,
             "nvol": 8701200,
             "bfrq": 40722,
             "sfrq": 45807,
-            "net_value_intensity": 0.024774085126569464
+            "net_value_intensity": 0.024774085126569464,
+            "side": "BUY",
+            "net_lots": 87012,
+            "side_lots": 87012,
+            "average_price": 4645.6119270905165,
+            "average_price_kind": "period_net_implied_average",
+            "average_price_period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "record_source": "arjum.brokers",
+            "average_price_source": "arjum.broker_levels"
           },
           "recent_5_business_day_approx": {
             "bval": 84676430000,
@@ -2282,6 +3037,30 @@
             "value": 1975837500,
             "averagePrice": 5592,
             "note": "Visible in Pluang top buyer list."
+          },
+          "pluang_structural_broker_summary": {
+            "visible": true,
+            "side": "BUY",
+            "lots": 94496,
+            "value": 44268371000,
+            "averagePrice": 4684,
+            "note": "Visible in Pluang top buyer list.",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            }
+          },
+          "overall_net_average_price": {
+            "value": 4684,
+            "source": "pluang.net_broker_summary",
+            "kind": "period_net_implied_average",
+            "period": {
+              "start": "2026-07-01",
+              "end": "2026-09-08"
+            },
+            "arjum_comparison_value": 4645.6119270905165,
+            "cross_source_status": "BOTH_AVAILABLE",
+            "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
           },
           "classification": {
             "status": "EARLY_DISTRIBUTION",
@@ -2616,6 +3395,16 @@
           "skipped": false,
           "reason": null
         },
+        "pluang_structural": {
+          "ok": true,
+          "status": 200,
+          "skipped": false,
+          "reason": null,
+          "cache_hit": false,
+          "cache_bypassed": true,
+          "cache_ttl_policy_seconds": 600,
+          "capped": true
+        },
         "pluang_today": {
           "ok": true,
           "status": 200,
@@ -2631,6 +3420,9 @@
         "Baseline Top 5 is manually supplied and intentionally fixed.",
         "Pluang averagePrice is only available when the broker appears in its capped top-10 buyer/seller result.",
         "Not visible in Pluang does not mean zero activity.",
+        "A full-period Pluang result uses a separate date-range request from the same-day result; the Worker caches each range independently.",
+        "overall_net_average_price is a period net-flow implied average, not a broker inventory cost basis. Pluang is preferred when visible; Arjum broker_levels is the fallback.",
+        "Large offsetting buys and sells can leave a small net position and keep an active broker outside Pluang's capped net top-broker list.",
         "If today_data_status is PENDING_BROKER_RELEASE, today:null means same-day broker data is not released yet.",
         "Crossing candidates are low-confidence because they use aggregate broker-summary similarity, not paired trade evidence.",
         "Recent 5-session window is approximated by business days excluding weekends only; IDX holidays are not yet modeled.",
