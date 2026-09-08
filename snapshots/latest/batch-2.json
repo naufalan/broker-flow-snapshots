@@ -1,6 +1,6 @@
 {
   "schema_version": "broker-monitor.report.v3",
-  "generated_at": "2026-09-08T09:52:28.824Z",
+  "generated_at": "2026-09-08T14:24:31.484Z",
   "market_date": "2026-09-08",
   "source_strategy": "hybrid_arjum_primary_pluang_enrichment",
   "refresh": true,
@@ -34,10 +34,10 @@
         "MG"
       ],
       "today_data_status": {
-        "status": "PENDING_BROKER_RELEASE",
-        "ready": false,
+        "status": "BROKER_RELEASE_WINDOW_PASSED",
+        "ready": true,
         "expected_ready_after": "18:10 WIB",
-        "note": "Today broker data is expected later. Do not interpret today:null as no activity."
+        "note": "Broker release window has passed. If today data is still null, treat it as unavailable or not returned by upstream."
       },
       "horizons": {
         "structural": {
@@ -56,8 +56,8 @@
           "start": "2026-09-08",
           "end": "2026-09-08",
           "source": "arjum + pluang",
-          "status": "PENDING_BROKER_RELEASE",
-          "ready": false
+          "status": "BROKER_RELEASE_WINDOW_PASSED",
+          "ready": true
         }
       },
       "followed_brokers": [
@@ -66,36 +66,36 @@
           "broker_code": "LG",
           "structural": {
             "broker_name": "TRIMEGAH SEKURITAS INDONESIA TBK.",
-            "bval": 210015605000,
-            "sval": 24708501500,
-            "nval": 185307103500,
-            "nvol": 134441500,
-            "bfrq": 10898,
-            "sfrq": 1561,
-            "net_value_intensity": 0.7894677128103159
+            "bval": 210016040000,
+            "sval": 24722228500,
+            "nval": 185293811500,
+            "nvol": 134432400,
+            "bfrq": 10901,
+            "sfrq": 1570,
+            "net_value_intensity": 0.7893634586471358
           },
           "recent_5_business_day_approx": {
-            "bval": 36191094500,
-            "sval": 18489074000,
-            "nval": 17702020500,
-            "nvol": 11548500,
-            "bfrq": 1417,
-            "sfrq": 1068,
-            "net_value_intensity": 0.3237374899457378
+            "bval": 36191529500,
+            "sval": 18502801000,
+            "nval": 17688728500,
+            "nvol": 11539400,
+            "bfrq": 1420,
+            "sfrq": 1077,
+            "net_value_intensity": 0.3234106412546726
           },
           "today": null,
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "SELL",
+            "lots": 91,
+            "value": 13292000,
+            "averagePrice": 1460,
+            "note": "Visible in Pluang top seller list."
           },
           "classification": {
-            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "status": "ACCUMULATION_OR_HOLD",
             "confidence": "medium",
-            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
           }
         },
         {
@@ -103,28 +103,28 @@
           "broker_code": "AK",
           "structural": {
             "broker_name": "UBS SEKURITAS INDONESIA",
-            "bval": 28387458000,
-            "sval": 20063300000,
-            "nval": 8324158000,
-            "nvol": 5596300,
-            "bfrq": 7375,
-            "sfrq": 5758,
-            "net_value_intensity": 0.17180655873330197
+            "bval": 28656306500,
+            "sval": 20714464500,
+            "nval": 7941842000,
+            "nvol": 5332900,
+            "bfrq": 7445,
+            "sfrq": 5945,
+            "net_value_intensity": 0.16086121077590626
           },
           "recent_5_business_day_approx": null,
           "today": null,
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "SELL",
+            "lots": 2634,
+            "value": 382316000,
+            "averagePrice": 1451,
+            "note": "Visible in Pluang top seller list."
           },
           "classification": {
-            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
-            "confidence": "low",
-            "reason": "Structural accumulation remains positive, but today's broker data is pending release and recent data is incomplete."
+            "status": "ACCUMULATION_OR_HOLD",
+            "confidence": "medium",
+            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
           }
         },
         {
@@ -132,28 +132,36 @@
           "broker_code": "BK",
           "structural": {
             "broker_name": "J.P. MORGAN SEKURITAS INDONESIA",
-            "bval": 1031855000,
+            "bval": 1128130500,
             "sval": 996041500,
-            "nval": 35813500,
-            "nvol": 34300,
-            "bfrq": 275,
+            "nval": 132089000,
+            "nvol": 100000,
+            "bfrq": 296,
             "sfrq": 238,
-            "net_value_intensity": 0.01766041807360484
+            "net_value_intensity": 0.062183759130616544
           },
           "recent_5_business_day_approx": null,
-          "today": null,
+          "today": {
+            "bval": 96275500,
+            "sval": 0,
+            "nval": 96275500,
+            "nvol": 65700,
+            "bfrq": 21,
+            "sfrq": 0,
+            "net_value_intensity": 1
+          },
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "BUY",
+            "lots": 657,
+            "value": 96275500,
+            "averagePrice": 1465,
+            "note": "Visible in Pluang top buyer list."
           },
           "classification": {
-            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
-            "confidence": "low",
-            "reason": "Structural accumulation remains positive, but today's broker data is pending release and recent data is incomplete."
+            "status": "ACCUMULATION_OR_HOLD",
+            "confidence": "medium",
+            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
           }
         },
         {
@@ -161,14 +169,22 @@
           "broker_code": "ZP",
           "structural": null,
           "recent_5_business_day_approx": null,
-          "today": null,
+          "today": {
+            "bval": 167035000,
+            "sval": 0,
+            "nval": 167035000,
+            "nvol": 114700,
+            "bfrq": 60,
+            "sfrq": 0,
+            "net_value_intensity": 1
+          },
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "BUY",
+            "lots": 1147,
+            "value": 167035000,
+            "averagePrice": 1456,
+            "note": "Visible in Pluang top buyer list."
           },
           "classification": {
             "status": "NO_STRUCTURAL_DATA",
@@ -181,14 +197,22 @@
           "broker_code": "MG",
           "structural": null,
           "recent_5_business_day_approx": null,
-          "today": null,
+          "today": {
+            "bval": 41060000,
+            "sval": 1172000,
+            "nval": 39888000,
+            "nvol": 27500,
+            "bfrq": 24,
+            "sfrq": 1,
+            "net_value_intensity": 0.944497063837848
+          },
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "BUY",
+            "lots": 275,
+            "value": 39888000,
+            "averagePrice": 1450,
+            "note": "Visible in Pluang top buyer list."
           },
           "classification": {
             "status": "NO_STRUCTURAL_DATA",
@@ -197,10 +221,181 @@
           }
         }
       ],
-      "today_sellers": [],
-      "today_buyers": [],
-      "new_nonbaseline_buyers": [],
-      "crossing_candidates": [],
+      "today_sellers": [
+        {
+          "broker_code": "PC",
+          "broker_name": "FAC SEKURITAS INDONESIA",
+          "nval": -145500,
+          "nvol": -100,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "AG",
+          "broker_name": "KIWOOM SEKURITAS INDONESIA",
+          "nval": -145500,
+          "nvol": -100,
+          "is_baseline_top5": false
+        }
+      ],
+      "today_buyers": [
+        {
+          "broker_code": "XL",
+          "broker_name": "STOCKBIT SEKURITAS DIGITAL",
+          "nval": 194183000,
+          "nvol": 133300,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "ZP",
+          "broker_name": "MAYBANK SEKURITAS INDONESIA",
+          "nval": 167035000,
+          "nvol": 114700,
+          "is_baseline_top5": true
+        },
+        {
+          "broker_code": "BK",
+          "broker_name": "J.P. MORGAN SEKURITAS INDONESIA",
+          "nval": 96275500,
+          "nvol": 65700,
+          "is_baseline_top5": true
+        },
+        {
+          "broker_code": "PD",
+          "broker_name": "INDO PREMIER SEKURITAS",
+          "nval": 83404500,
+          "nvol": 57100,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "DR",
+          "broker_name": "RHB SEKURITAS INDONESIA",
+          "nval": 68236500,
+          "nvol": 47100,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "MG",
+          "broker_name": "SEMESTA INDOVEST SEKURITAS",
+          "nval": 39888000,
+          "nvol": 27500,
+          "is_baseline_top5": true
+        },
+        {
+          "broker_code": "YP",
+          "broker_name": "MIRAE ASSET SEKURITAS INDONESIA",
+          "nval": 32051000,
+          "nvol": 22200,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "BQ",
+          "broker_name": "KOREA INVESTMENT AND SEKURITAS INDONESIA",
+          "nval": 18175000,
+          "nvol": 12500,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "RO",
+          "broker_name": "PLUANG MAJU SEKURITAS",
+          "nval": 12470000,
+          "nvol": 8600,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "TP",
+          "broker_name": "OCBC SEKURITAS INDONESIA",
+          "nval": 10185000,
+          "nvol": 7000,
+          "is_baseline_top5": false
+        }
+      ],
+      "new_nonbaseline_buyers": [
+        {
+          "broker_code": "XL",
+          "broker_name": "STOCKBIT SEKURITAS DIGITAL",
+          "nval": 194183000,
+          "nvol": 133300,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "PD",
+          "broker_name": "INDO PREMIER SEKURITAS",
+          "nval": 83404500,
+          "nvol": 57100,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "DR",
+          "broker_name": "RHB SEKURITAS INDONESIA",
+          "nval": 68236500,
+          "nvol": 47100,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "YP",
+          "broker_name": "MIRAE ASSET SEKURITAS INDONESIA",
+          "nval": 32051000,
+          "nvol": 22200,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "BQ",
+          "broker_name": "KOREA INVESTMENT AND SEKURITAS INDONESIA",
+          "nval": 18175000,
+          "nvol": 12500,
+          "is_baseline_top5": false
+        }
+      ],
+      "crossing_candidates": [
+        {
+          "buyer": "TP",
+          "seller": "HP",
+          "buyer_lots": 70,
+          "seller_lots": 70,
+          "buyer_average_price": 1455,
+          "seller_average_price": 1456,
+          "lot_difference_pct": 0,
+          "price_difference_pct": 0.07,
+          "confidence": "low",
+          "reason": "Aggregate broker-summary similarity only. This is not confirmed crossing."
+        },
+        {
+          "buyer": "TP",
+          "seller": "SQ",
+          "buyer_lots": 70,
+          "seller_lots": 71,
+          "buyer_average_price": 1455,
+          "seller_average_price": 1461,
+          "lot_difference_pct": 1.41,
+          "price_difference_pct": 0.41,
+          "confidence": "low",
+          "reason": "Aggregate broker-summary similarity only. This is not confirmed crossing."
+        },
+        {
+          "buyer": "BQ",
+          "seller": "EP",
+          "buyer_lots": 125,
+          "seller_lots": 122,
+          "buyer_average_price": 1454,
+          "seller_average_price": 1453,
+          "lot_difference_pct": 2.4,
+          "price_difference_pct": 0.07,
+          "confidence": "low",
+          "reason": "Aggregate broker-summary similarity only. This is not confirmed crossing."
+        },
+        {
+          "buyer": "XL",
+          "seller": "XA",
+          "buyer_lots": 1333,
+          "seller_lots": 1390,
+          "buyer_average_price": 1456,
+          "seller_average_price": 1461,
+          "lot_difference_pct": 4.1,
+          "price_difference_pct": 0.34,
+          "confidence": "low",
+          "reason": "Aggregate broker-summary similarity only. This is not confirmed crossing."
+        }
+      ],
       "upstream": {
         "arjum_structural": {
           "ok": true,
@@ -216,19 +411,19 @@
         },
         "arjum_today": {
           "ok": true,
-          "status": 0,
-          "skipped": true,
-          "reason": "PENDING_BROKER_RELEASE"
+          "status": 200,
+          "skipped": false,
+          "reason": null
         },
         "pluang_today": {
           "ok": true,
-          "status": 0,
-          "skipped": true,
-          "reason": "PENDING_BROKER_RELEASE",
+          "status": 200,
+          "skipped": false,
+          "reason": null,
           "cache_hit": false,
-          "cache_bypassed": false,
-          "cache_ttl_policy_seconds": null,
-          "capped": null
+          "cache_bypassed": true,
+          "cache_ttl_policy_seconds": 600,
+          "capped": true
         }
       },
       "limitations": [
@@ -253,10 +448,10 @@
         "YU"
       ],
       "today_data_status": {
-        "status": "PENDING_BROKER_RELEASE",
-        "ready": false,
+        "status": "BROKER_RELEASE_WINDOW_PASSED",
+        "ready": true,
         "expected_ready_after": "18:10 WIB",
-        "note": "Today broker data is expected later. Do not interpret today:null as no activity."
+        "note": "Broker release window has passed. If today data is still null, treat it as unavailable or not returned by upstream."
       },
       "horizons": {
         "structural": {
@@ -275,189 +470,275 @@
           "start": "2026-09-08",
           "end": "2026-09-08",
           "source": "arjum + pluang",
-          "status": "PENDING_BROKER_RELEASE",
-          "ready": false
+          "status": "BROKER_RELEASE_WINDOW_PASSED",
+          "ready": true
         }
       },
       "followed_brokers": [
         {
           "rank": 1,
           "broker_code": "AK",
-          "structural": {
-            "broker_name": "UBS SEKURITAS INDONESIA",
-            "bval": 104186097300,
-            "sval": 86038643900,
-            "nval": 18147453400,
-            "nvol": 24671500,
-            "bfrq": 11142,
-            "sfrq": 12832,
-            "net_value_intensity": 0.09540006881081776
-          },
+          "structural": null,
           "recent_5_business_day_approx": {
-            "bval": 12528994500,
-            "sval": 8011864500,
-            "nval": 4517130000,
-            "nvol": 5190500,
-            "bfrq": 1267,
-            "sfrq": 1187,
-            "net_value_intensity": 0.21990949842944738
+            "bval": 17845376500,
+            "sval": 12597707500,
+            "nval": 5247669000,
+            "nvol": 5993900,
+            "bfrq": 1853,
+            "sfrq": 1649,
+            "net_value_intensity": 0.17237639261515028
           },
-          "today": null,
+          "today": {
+            "bval": 5316382000,
+            "sval": 4585843000,
+            "nval": 730539000,
+            "nvol": 803400,
+            "bfrq": 586,
+            "sfrq": 462,
+            "net_value_intensity": 0.07377523738351734
+          },
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "BUY",
+            "lots": 8034,
+            "value": 730539000,
+            "averagePrice": 909,
+            "note": "Visible in Pluang top buyer list."
           },
           "classification": {
-            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
-            "confidence": "medium",
-            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+            "status": "NO_STRUCTURAL_DATA",
+            "confidence": "low",
+            "reason": "Broker was not visible in the structural Arjum result."
           }
         },
         {
           "rank": 2,
           "broker_code": "BK",
-          "structural": {
-            "broker_name": "J.P. MORGAN SEKURITAS INDONESIA",
-            "bval": 27833928800,
-            "sval": 17053351100,
-            "nval": 10780577700,
-            "nvol": 17962800,
-            "bfrq": 3873,
-            "sfrq": 3380,
-            "net_value_intensity": 0.2401699930139897
-          },
-          "recent_5_business_day_approx": {
-            "bval": 2437553500,
-            "sval": 2201746500,
-            "nval": 235807000,
-            "nvol": 289500,
-            "bfrq": 366,
-            "sfrq": 381,
-            "net_value_intensity": 0.050828142176621474
-          },
+          "structural": null,
+          "recent_5_business_day_approx": null,
           "today": null,
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "SELL",
+            "lots": 9807,
+            "value": 873506000,
+            "averagePrice": 890,
+            "note": "Visible in Pluang top seller list."
           },
           "classification": {
-            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
-            "confidence": "medium",
-            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+            "status": "NO_STRUCTURAL_DATA",
+            "confidence": "low",
+            "reason": "Broker was not visible in the structural Arjum result."
           }
         },
         {
           "rank": 3,
           "broker_code": "CP",
-          "structural": {
-            "broker_name": "KB VALBURY SEKURITAS",
-            "bval": 52144376700,
-            "sval": 41105167800,
-            "nval": 11039208900,
-            "nvol": 14234300,
-            "bfrq": 5919,
-            "sfrq": 6130,
-            "net_value_intensity": 0.11838351553556382
-          },
+          "structural": null,
           "recent_5_business_day_approx": {
-            "bval": 5219500000,
-            "sval": 2433333000,
-            "nval": 2786167000,
-            "nvol": 3267700,
-            "bfrq": 421,
-            "sfrq": 339,
-            "net_value_intensity": 0.3640700117198428
+            "bval": 7292376500,
+            "sval": 3233474000,
+            "nval": 4058902500,
+            "nvol": 4710500,
+            "bfrq": 603,
+            "sfrq": 436,
+            "net_value_intensity": 0.38561278254902065
           },
-          "today": null,
+          "today": {
+            "bval": 2072876500,
+            "sval": 800141000,
+            "nval": 1272735500,
+            "nvol": 1442800,
+            "bfrq": 182,
+            "sfrq": 97,
+            "net_value_intensity": 0.4429960833861959
+          },
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "BUY",
+            "lots": 14428,
+            "value": 1272735500,
+            "averagePrice": 882,
+            "note": "Visible in Pluang top buyer list."
           },
           "classification": {
-            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
-            "confidence": "medium",
-            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+            "status": "NO_STRUCTURAL_DATA",
+            "confidence": "low",
+            "reason": "Broker was not visible in the structural Arjum result."
           }
         },
         {
           "rank": 4,
           "broker_code": "PD",
-          "structural": {
-            "broker_name": "INDO PREMIER SEKURITAS",
-            "bval": 60034904700,
-            "sval": 53853526300,
-            "nval": 6181378400,
-            "nvol": 11864500,
-            "bfrq": 10180,
-            "sfrq": 9199,
-            "net_value_intensity": 0.054275735873470767
+          "structural": null,
+          "recent_5_business_day_approx": {
+            "bval": 11928284500,
+            "sval": 10993386500,
+            "nval": 934898000,
+            "nvol": 721800,
+            "bfrq": 1564,
+            "sfrq": 1414,
+            "net_value_intensity": 0.04078664247471312
           },
-          "recent_5_business_day_approx": null,
-          "today": null,
+          "today": {
+            "bval": 6289608000,
+            "sval": 2454096500,
+            "nval": 3835511500,
+            "nvol": 4195800,
+            "bfrq": 781,
+            "sfrq": 363,
+            "net_value_intensity": 0.4386597808743422
+          },
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "BUY",
+            "lots": 41958,
+            "value": 3835511500,
+            "averagePrice": 914,
+            "note": "Visible in Pluang top buyer list."
           },
           "classification": {
-            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "status": "NO_STRUCTURAL_DATA",
             "confidence": "low",
-            "reason": "Structural accumulation remains positive, but today's broker data is pending release and recent data is incomplete."
+            "reason": "Broker was not visible in the structural Arjum result."
           }
         },
         {
           "rank": 5,
           "broker_code": "YU",
-          "structural": {
-            "broker_name": "CGS INTERNATIONAL SEKURITAS INDONESIA",
-            "bval": 10450179500,
-            "sval": 3608111500,
-            "nval": 6842068000,
-            "nvol": 8920400,
-            "bfrq": 826,
-            "sfrq": 407,
-            "net_value_intensity": 0.48669272815593306
-          },
+          "structural": null,
           "recent_5_business_day_approx": null,
           "today": null,
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "SELL",
+            "lots": 4955,
+            "value": 417666500,
+            "averagePrice": 842,
+            "note": "Visible in Pluang top seller list."
           },
           "classification": {
-            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "status": "NO_STRUCTURAL_DATA",
             "confidence": "low",
-            "reason": "Structural accumulation remains positive, but today's broker data is pending release and recent data is incomplete."
+            "reason": "Broker was not visible in the structural Arjum result."
           }
         }
       ],
       "today_sellers": [],
-      "today_buyers": [],
-      "new_nonbaseline_buyers": [],
+      "today_buyers": [
+        {
+          "broker_code": "LG",
+          "broker_name": "TRIMEGAH SEKURITAS INDONESIA TBK.",
+          "nval": 4129780000,
+          "nvol": 4770300,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "PD",
+          "broker_name": "INDO PREMIER SEKURITAS",
+          "nval": 3835511500,
+          "nvol": 4195800,
+          "is_baseline_top5": true
+        },
+        {
+          "broker_code": "CP",
+          "broker_name": "KB VALBURY SEKURITAS",
+          "nval": 1272735500,
+          "nvol": 1442800,
+          "is_baseline_top5": true
+        },
+        {
+          "broker_code": "AK",
+          "broker_name": "UBS SEKURITAS INDONESIA",
+          "nval": 730539000,
+          "nvol": 803400,
+          "is_baseline_top5": true
+        },
+        {
+          "broker_code": "GR",
+          "broker_name": "PANIN SEKURITAS TBK.",
+          "nval": 658894500,
+          "nvol": 745600,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "AI",
+          "broker_name": "KAY HIAN SEKURITAS",
+          "nval": 565801000,
+          "nvol": 641400,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "TP",
+          "broker_name": "OCBC SEKURITAS INDONESIA",
+          "nval": 373093500,
+          "nvol": 429900,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "AZ",
+          "broker_name": "SUCOR SEKURITAS",
+          "nval": 350737500,
+          "nvol": 406100,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "YB",
+          "broker_name": "YAKIN BERTUMBUH SEKURITAS",
+          "nval": 237830000,
+          "nvol": 261900,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "DR",
+          "broker_name": "RHB SEKURITAS INDONESIA",
+          "nval": 214804500,
+          "nvol": 240600,
+          "is_baseline_top5": false
+        }
+      ],
+      "new_nonbaseline_buyers": [
+        {
+          "broker_code": "LG",
+          "broker_name": "TRIMEGAH SEKURITAS INDONESIA TBK.",
+          "nval": 4129780000,
+          "nvol": 4770300,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "GR",
+          "broker_name": "PANIN SEKURITAS TBK.",
+          "nval": 658894500,
+          "nvol": 745600,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "AI",
+          "broker_name": "KAY HIAN SEKURITAS",
+          "nval": 565801000,
+          "nvol": 641400,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "TP",
+          "broker_name": "OCBC SEKURITAS INDONESIA",
+          "nval": 373093500,
+          "nvol": 429900,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "AZ",
+          "broker_name": "SUCOR SEKURITAS",
+          "nval": 350737500,
+          "nvol": 406100,
+          "is_baseline_top5": false
+        }
+      ],
       "crossing_candidates": [],
       "upstream": {
         "arjum_structural": {
-          "ok": true,
-          "status": 200,
+          "ok": false,
+          "status": 520,
           "skipped": false,
           "reason": null
         },
@@ -469,19 +750,19 @@
         },
         "arjum_today": {
           "ok": true,
-          "status": 0,
-          "skipped": true,
-          "reason": "PENDING_BROKER_RELEASE"
+          "status": 200,
+          "skipped": false,
+          "reason": null
         },
         "pluang_today": {
           "ok": true,
-          "status": 0,
-          "skipped": true,
-          "reason": "PENDING_BROKER_RELEASE",
+          "status": 200,
+          "skipped": false,
+          "reason": null,
           "cache_hit": false,
-          "cache_bypassed": false,
-          "cache_ttl_policy_seconds": null,
-          "capped": null
+          "cache_bypassed": true,
+          "cache_ttl_policy_seconds": 600,
+          "capped": true
         }
       },
       "limitations": [
@@ -506,10 +787,10 @@
         "OD"
       ],
       "today_data_status": {
-        "status": "PENDING_BROKER_RELEASE",
-        "ready": false,
+        "status": "BROKER_RELEASE_WINDOW_PASSED",
+        "ready": true,
         "expected_ready_after": "18:10 WIB",
-        "note": "Today broker data is expected later. Do not interpret today:null as no activity."
+        "note": "Broker release window has passed. If today data is still null, treat it as unavailable or not returned by upstream."
       },
       "horizons": {
         "structural": {
@@ -528,8 +809,8 @@
           "start": "2026-09-08",
           "end": "2026-09-08",
           "source": "arjum + pluang",
-          "status": "PENDING_BROKER_RELEASE",
-          "ready": false
+          "status": "BROKER_RELEASE_WINDOW_PASSED",
+          "ready": true
         }
       },
       "followed_brokers": [
@@ -538,36 +819,44 @@
           "broker_code": "XL",
           "structural": {
             "broker_name": "STOCKBIT SEKURITAS DIGITAL",
-            "bval": 2205802048300,
-            "sval": 2171903340300,
-            "nval": 33898708000,
-            "nvol": 169976100,
-            "bfrq": 1008041,
-            "sfrq": 857498,
-            "net_value_intensity": 0.0077434877386394615
+            "bval": 2231461889300,
+            "sval": 2188300551700,
+            "nval": 43161337600,
+            "nvol": 212655300,
+            "bfrq": 1018134,
+            "sfrq": 864003,
+            "net_value_intensity": 0.009765533368855559
           },
           "recent_5_business_day_approx": {
-            "bval": 209477704400,
-            "sval": 187630249600,
-            "nval": 21847454800,
-            "nvol": 97432600,
-            "bfrq": 88373,
-            "sfrq": 64030,
-            "net_value_intensity": 0.05501641198554285
+            "bval": 235137545400,
+            "sval": 204027461000,
+            "nval": 31110084400,
+            "nvol": 140111800,
+            "bfrq": 98466,
+            "sfrq": 70535,
+            "net_value_intensity": 0.070839169666593
           },
-          "today": null,
+          "today": {
+            "bval": 25659841000,
+            "sval": 16397211400,
+            "nval": 9262629600,
+            "nvol": 42679200,
+            "bfrq": 10093,
+            "sfrq": 6505,
+            "net_value_intensity": 0.22023962858604898
+          },
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "BUY",
+            "lots": 426792,
+            "value": 9262629600,
+            "averagePrice": 217,
+            "note": "Visible in Pluang top buyer list."
           },
           "classification": {
-            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "status": "STRONG_ACCUMULATION",
             "confidence": "medium",
-            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+            "reason": "Structural, recent, and today flows are all positive."
           }
         },
         {
@@ -575,36 +864,36 @@
           "broker_code": "XC",
           "structural": {
             "broker_name": "AJAIB SEKURITAS ASIA",
-            "bval": 342458277500,
-            "sval": 319511631800,
-            "nval": 22946645700,
-            "nvol": 98893000,
-            "bfrq": 140572,
-            "sfrq": 116586,
-            "net_value_intensity": 0.03466418243129046
+            "bval": 348769536300,
+            "sval": 326533193800,
+            "nval": 22236342500,
+            "nvol": 95680000,
+            "bfrq": 142782,
+            "sfrq": 118694,
+            "net_value_intensity": 0.032927961799750466
           },
           "recent_5_business_day_approx": {
-            "bval": 77389839800,
-            "sval": 73030374600,
-            "nval": 4359465200,
-            "nvol": 18414500,
-            "bfrq": 21281,
-            "sfrq": 18030,
-            "net_value_intensity": 0.02898191055895743
+            "bval": 83701098600,
+            "sval": 80051936600,
+            "nval": 3649162000,
+            "nvol": 15201500,
+            "bfrq": 23491,
+            "sfrq": 20138,
+            "net_value_intensity": 0.02228454572181267
           },
           "today": null,
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "SELL",
+            "lots": 32130,
+            "value": 710303200,
+            "averagePrice": 221,
+            "note": "Visible in Pluang top seller list."
           },
           "classification": {
-            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "status": "ACCUMULATION_OR_HOLD",
             "confidence": "medium",
-            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
           }
         },
         {
@@ -612,14 +901,22 @@
           "broker_code": "GR",
           "structural": null,
           "recent_5_business_day_approx": null,
-          "today": null,
+          "today": {
+            "bval": 297294000,
+            "sval": 95496600,
+            "nval": 201797400,
+            "nvol": 943400,
+            "bfrq": 97,
+            "sfrq": 40,
+            "net_value_intensity": 0.5137531295300855
+          },
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "BUY",
+            "lots": 9434,
+            "value": 201797400,
+            "averagePrice": 213,
+            "note": "Visible in Pluang top buyer list."
           },
           "classification": {
             "status": "NO_STRUCTURAL_DATA",
@@ -632,36 +929,36 @@
           "broker_code": "SQ",
           "structural": {
             "broker_name": "BCA SEKURITAS",
-            "bval": 64563051100,
-            "sval": 58351732600,
-            "nval": 6211318500,
-            "nvol": 27912600,
-            "bfrq": 13296,
-            "sfrq": 13935,
-            "net_value_intensity": 0.05053353480375526
+            "bval": 65559777100,
+            "sval": 59511703200,
+            "nval": 6048073900,
+            "nvol": 27213300,
+            "bfrq": 13444,
+            "sfrq": 14171,
+            "net_value_intensity": 0.04835693865214451
           },
           "recent_5_business_day_approx": {
-            "bval": 10106910000,
-            "sval": 7694922600,
-            "nval": 2411987400,
-            "nvol": 11196700,
-            "bfrq": 1523,
-            "sfrq": 1736,
-            "net_value_intensity": 0.13549096063289573
+            "bval": 11103636000,
+            "sval": 8854893200,
+            "nval": 2248742800,
+            "nvol": 10497400,
+            "bfrq": 1671,
+            "sfrq": 1972,
+            "net_value_intensity": 0.11267076734291623
           },
           "today": null,
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "SELL",
+            "lots": 6993,
+            "value": 163244600,
+            "averagePrice": 233,
+            "note": "Visible in Pluang top seller list."
           },
           "classification": {
-            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "status": "ACCUMULATION_OR_HOLD",
             "confidence": "medium",
-            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
           }
         },
         {
@@ -669,43 +966,171 @@
           "broker_code": "OD",
           "structural": {
             "broker_name": "BRI DANAREKSA SEKURITAS",
-            "bval": 69845511800,
-            "sval": 64953841500,
-            "nval": 4891670300,
-            "nvol": 23372900,
-            "bfrq": 20761,
-            "sfrq": 17974,
-            "net_value_intensity": 0.03628852943465864
+            "bval": 73303353600,
+            "sval": 65808861700,
+            "nval": 7494491900,
+            "nvol": 35563700,
+            "bfrq": 21737,
+            "sfrq": 18223,
+            "net_value_intensity": 0.05387371543065349
           },
           "recent_5_business_day_approx": {
-            "bval": 10107783600,
-            "sval": 9049998600,
-            "nval": 1057785000,
-            "nvol": 5149800,
-            "bfrq": 2329,
-            "sfrq": 1894,
-            "net_value_intensity": 0.055214376536757995
+            "bval": 13565625400,
+            "sval": 9905018800,
+            "nval": 3660606600,
+            "nvol": 17340600,
+            "bfrq": 3305,
+            "sfrq": 2143,
+            "net_value_intensity": 0.15596532284358858
           },
-          "today": null,
+          "today": {
+            "bval": 3457841800,
+            "sval": 855020200,
+            "nval": 2602821600,
+            "nvol": 12190800,
+            "bfrq": 976,
+            "sfrq": 249,
+            "net_value_intensity": 0.6035021755854929
+          },
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "BUY",
+            "lots": 121908,
+            "value": 2602821600,
+            "averagePrice": 213,
+            "note": "Visible in Pluang top buyer list."
           },
           "classification": {
-            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "status": "STRONG_ACCUMULATION",
             "confidence": "medium",
-            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+            "reason": "Structural, recent, and today flows are all positive."
           }
         }
       ],
       "today_sellers": [],
-      "today_buyers": [],
-      "new_nonbaseline_buyers": [],
-      "crossing_candidates": [],
+      "today_buyers": [
+        {
+          "broker_code": "XL",
+          "broker_name": "STOCKBIT SEKURITAS DIGITAL",
+          "nval": 9262629600,
+          "nvol": 42679200,
+          "is_baseline_top5": true
+        },
+        {
+          "broker_code": "OD",
+          "broker_name": "BRI DANAREKSA SEKURITAS",
+          "nval": 2602821600,
+          "nvol": 12190800,
+          "is_baseline_top5": true
+        },
+        {
+          "broker_code": "CC",
+          "broker_name": "MANDIRI SEKURITAS",
+          "nval": 1016608000,
+          "nvol": 4999800,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "BR",
+          "broker_name": "TRUST SEKURITAS",
+          "nval": 469481800,
+          "nvol": 2190000,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "CP",
+          "broker_name": "KB VALBURY SEKURITAS",
+          "nval": 415058600,
+          "nvol": 1830300,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "EP",
+          "broker_name": "MNC SEKURITAS",
+          "nval": 347360600,
+          "nvol": 1625100,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "PD",
+          "broker_name": "INDO PREMIER SEKURITAS",
+          "nval": 346664200,
+          "nvol": 1604900,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "DH",
+          "broker_name": "SINARMAS SEKURITAS",
+          "nval": 300711200,
+          "nvol": 1413400,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "AZ",
+          "broker_name": "SUCOR SEKURITAS",
+          "nval": 237181400,
+          "nvol": 1114400,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "GR",
+          "broker_name": "PANIN SEKURITAS TBK.",
+          "nval": 201797400,
+          "nvol": 943400,
+          "is_baseline_top5": true
+        }
+      ],
+      "new_nonbaseline_buyers": [
+        {
+          "broker_code": "CC",
+          "broker_name": "MANDIRI SEKURITAS",
+          "nval": 1016608000,
+          "nvol": 4999800,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "BR",
+          "broker_name": "TRUST SEKURITAS",
+          "nval": 469481800,
+          "nvol": 2190000,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "CP",
+          "broker_name": "KB VALBURY SEKURITAS",
+          "nval": 415058600,
+          "nvol": 1830300,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "EP",
+          "broker_name": "MNC SEKURITAS",
+          "nval": 347360600,
+          "nvol": 1625100,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "PD",
+          "broker_name": "INDO PREMIER SEKURITAS",
+          "nval": 346664200,
+          "nvol": 1604900,
+          "is_baseline_top5": false
+        }
+      ],
+      "crossing_candidates": [
+        {
+          "buyer": "PD",
+          "seller": "BK",
+          "buyer_lots": 16049,
+          "seller_lots": 15506,
+          "buyer_average_price": 216,
+          "seller_average_price": 217,
+          "lot_difference_pct": 3.38,
+          "price_difference_pct": 0.46,
+          "confidence": "low",
+          "reason": "Aggregate broker-summary similarity only. This is not confirmed crossing."
+        }
+      ],
       "upstream": {
         "arjum_structural": {
           "ok": true,
@@ -721,19 +1146,19 @@
         },
         "arjum_today": {
           "ok": true,
-          "status": 0,
-          "skipped": true,
-          "reason": "PENDING_BROKER_RELEASE"
+          "status": 200,
+          "skipped": false,
+          "reason": null
         },
         "pluang_today": {
           "ok": true,
-          "status": 0,
-          "skipped": true,
-          "reason": "PENDING_BROKER_RELEASE",
+          "status": 200,
+          "skipped": false,
+          "reason": null,
           "cache_hit": false,
-          "cache_bypassed": false,
-          "cache_ttl_policy_seconds": null,
-          "capped": null
+          "cache_bypassed": true,
+          "cache_ttl_policy_seconds": 600,
+          "capped": true
         }
       },
       "limitations": [
@@ -758,10 +1183,10 @@
         "AK"
       ],
       "today_data_status": {
-        "status": "PENDING_BROKER_RELEASE",
-        "ready": false,
+        "status": "BROKER_RELEASE_WINDOW_PASSED",
+        "ready": true,
         "expected_ready_after": "18:10 WIB",
-        "note": "Today broker data is expected later. Do not interpret today:null as no activity."
+        "note": "Broker release window has passed. If today data is still null, treat it as unavailable or not returned by upstream."
       },
       "horizons": {
         "structural": {
@@ -780,8 +1205,8 @@
           "start": "2026-09-08",
           "end": "2026-09-08",
           "source": "arjum + pluang",
-          "status": "PENDING_BROKER_RELEASE",
-          "ready": false
+          "status": "BROKER_RELEASE_WINDOW_PASSED",
+          "ready": true
         }
       },
       "followed_brokers": [
@@ -790,28 +1215,36 @@
           "broker_code": "AI",
           "structural": {
             "broker_name": "KAY HIAN SEKURITAS",
-            "bval": 243510164500,
-            "sval": 180333564000,
-            "nval": 63176600500,
-            "nvol": 14724000,
-            "bfrq": 9285,
-            "sfrq": 7728,
-            "net_value_intensity": 0.14905635320731186
+            "bval": 244434957000,
+            "sval": 180853051500,
+            "nval": 63581905500,
+            "nvol": 14800400,
+            "bfrq": 9298,
+            "sfrq": 7758,
+            "net_value_intensity": 0.1495031701558075
           },
           "recent_5_business_day_approx": null,
-          "today": null,
+          "today": {
+            "bval": 924792500,
+            "sval": 519487500,
+            "nval": 405305000,
+            "nvol": 76400,
+            "bfrq": 13,
+            "sfrq": 30,
+            "net_value_intensity": 0.28062771761708255
+          },
           "pluang_today_average_price": {
             "visible": false,
             "side": null,
             "lots": null,
             "value": null,
             "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "note": "Not visible in Pluang capped top-10 buyer/seller result. This does not mean zero activity."
           },
           "classification": {
-            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
-            "confidence": "low",
-            "reason": "Structural accumulation remains positive, but today's broker data is pending release and recent data is incomplete."
+            "status": "ACCUMULATION_OR_HOLD",
+            "confidence": "medium",
+            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
           }
         },
         {
@@ -819,36 +1252,44 @@
           "broker_code": "HP",
           "structural": {
             "broker_name": "HENAN PUTIHRAI SEKURITAS",
-            "bval": 374587381500,
-            "sval": 162017740500,
-            "nval": 212569641000,
-            "nvol": 42134300,
-            "bfrq": 11293,
-            "sfrq": 7485,
-            "net_value_intensity": 0.3961379276584691
+            "bval": 390206094000,
+            "sval": 163312685500,
+            "nval": 226893408500,
+            "nvol": 44746700,
+            "bfrq": 11630,
+            "sfrq": 7553,
+            "net_value_intensity": 0.40991094955252555
           },
           "recent_5_business_day_approx": {
-            "bval": 68852292500,
-            "sval": 9987600000,
-            "nval": 58864692500,
-            "nvol": 10997400,
-            "bfrq": 1325,
-            "sfrq": 409,
-            "net_value_intensity": 0.7466358797990497
+            "bval": 84471005000,
+            "sval": 11282545000,
+            "nval": 73188460000,
+            "nvol": 13609800,
+            "bfrq": 1662,
+            "sfrq": 477,
+            "net_value_intensity": 0.7643420008970947
           },
-          "today": null,
+          "today": {
+            "bval": 15618712500,
+            "sval": 1294945000,
+            "nval": 14323767500,
+            "nvol": 2612400,
+            "bfrq": 337,
+            "sfrq": 68,
+            "net_value_intensity": 0.846875816185825
+          },
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "BUY",
+            "lots": 26124,
+            "value": 14323767500,
+            "averagePrice": 5482,
+            "note": "Visible in Pluang top buyer list."
           },
           "classification": {
-            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "status": "STRONG_ACCUMULATION",
             "confidence": "medium",
-            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+            "reason": "Structural, recent, and today flows are all positive."
           }
         },
         {
@@ -856,36 +1297,44 @@
           "broker_code": "AZ",
           "structural": {
             "broker_name": "SUCOR SEKURITAS",
-            "bval": 336823690000,
-            "sval": 270577662000,
-            "nval": 66246028000,
-            "nvol": 12418600,
-            "bfrq": 15954,
-            "sfrq": 15612,
-            "net_value_intensity": 0.1090646699778831
+            "bval": 344112237500,
+            "sval": 273069514500,
+            "nval": 71042723000,
+            "nvol": 13293900,
+            "bfrq": 16300,
+            "sfrq": 15756,
+            "net_value_intensity": 0.11510826878757102
           },
           "recent_5_business_day_approx": {
-            "bval": 48360177500,
-            "sval": 31534360000,
-            "nval": 16825817500,
-            "nvol": 3166100,
-            "bfrq": 1689,
-            "sfrq": 1275,
-            "net_value_intensity": 0.21060034924164872
+            "bval": 55648725000,
+            "sval": 34026212500,
+            "nval": 21622512500,
+            "nvol": 4041400,
+            "bfrq": 2035,
+            "sfrq": 1419,
+            "net_value_intensity": 0.24112102113257675
           },
-          "today": null,
+          "today": {
+            "bval": 7288547500,
+            "sval": 2491852500,
+            "nval": 4796695000,
+            "nvol": 875300,
+            "bfrq": 346,
+            "sfrq": 144,
+            "net_value_intensity": 0.4904395525745368
+          },
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "BUY",
+            "lots": 8753,
+            "value": 4796695000,
+            "averagePrice": 5480,
+            "note": "Visible in Pluang top buyer list."
           },
           "classification": {
-            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "status": "STRONG_ACCUMULATION",
             "confidence": "medium",
-            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+            "reason": "Structural, recent, and today flows are all positive."
           }
         },
         {
@@ -893,28 +1342,36 @@
           "broker_code": "BB",
           "structural": {
             "broker_name": "VERDHANA SEKURITAS INDONESIA",
-            "bval": 53572143500,
-            "sval": 18459342500,
-            "nval": 35112801000,
-            "nvol": 6957000,
-            "bfrq": 2223,
-            "sfrq": 3646,
-            "net_value_intensity": 0.48746462067990654
+            "bval": 53807708500,
+            "sval": 18475582500,
+            "nval": 35332126000,
+            "nvol": 6996800,
+            "bfrq": 2423,
+            "sfrq": 3665,
+            "net_value_intensity": 0.488800738195498
           },
           "recent_5_business_day_approx": null,
-          "today": null,
+          "today": {
+            "bval": 235565000,
+            "sval": 16240000,
+            "nval": 219325000,
+            "nvol": 39800,
+            "bfrq": 200,
+            "sfrq": 19,
+            "net_value_intensity": 0.8710112984253688
+          },
           "pluang_today_average_price": {
             "visible": false,
             "side": null,
             "lots": null,
             "value": null,
             "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "note": "Not visible in Pluang capped top-10 buyer/seller result. This does not mean zero activity."
           },
           "classification": {
-            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
-            "confidence": "low",
-            "reason": "Structural accumulation remains positive, but today's broker data is pending release and recent data is incomplete."
+            "status": "ACCUMULATION_OR_HOLD",
+            "confidence": "medium",
+            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
           }
         },
         {
@@ -922,35 +1379,175 @@
           "broker_code": "AK",
           "structural": {
             "broker_name": "UBS SEKURITAS INDONESIA",
-            "bval": 826578451000,
-            "sval": 788131890000,
-            "nval": 38446561000,
-            "nvol": 8347900,
-            "bfrq": 40035,
-            "sfrq": 45382,
-            "net_value_intensity": 0.02381019061052759
+            "bval": 836031406000,
+            "sval": 795609007500,
+            "nval": 40422398500,
+            "nvol": 8701200,
+            "bfrq": 40722,
+            "sfrq": 45807,
+            "net_value_intensity": 0.024774085126569464
           },
           "recent_5_business_day_approx": null,
-          "today": null,
+          "today": {
+            "bval": 9452955000,
+            "sval": 7477117500,
+            "nval": 1975837500,
+            "nvol": 353300,
+            "bfrq": 687,
+            "sfrq": 425,
+            "net_value_intensity": 0.11670579083462283
+          },
           "pluang_today_average_price": {
-            "visible": false,
-            "side": null,
-            "lots": null,
-            "value": null,
-            "averagePrice": null,
-            "note": "Today broker data is pending release. Do not interpret this as no activity."
+            "visible": true,
+            "side": "BUY",
+            "lots": 3533,
+            "value": 1975837500,
+            "averagePrice": 5592,
+            "note": "Visible in Pluang top buyer list."
           },
           "classification": {
-            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
-            "confidence": "low",
-            "reason": "Structural accumulation remains positive, but today's broker data is pending release and recent data is incomplete."
+            "status": "ACCUMULATION_OR_HOLD",
+            "confidence": "medium",
+            "reason": "Structural accumulation remains positive and no negative short-horizon signal is visible."
           }
         }
       ],
       "today_sellers": [],
-      "today_buyers": [],
-      "new_nonbaseline_buyers": [],
-      "crossing_candidates": [],
+      "today_buyers": [
+        {
+          "broker_code": "HP",
+          "broker_name": "HENAN PUTIHRAI SEKURITAS",
+          "nval": 14323767500,
+          "nvol": 2612400,
+          "is_baseline_top5": true
+        },
+        {
+          "broker_code": "XL",
+          "broker_name": "STOCKBIT SEKURITAS DIGITAL",
+          "nval": 10019832500,
+          "nvol": 1810200,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "TP",
+          "broker_name": "OCBC SEKURITAS INDONESIA",
+          "nval": 4977192500,
+          "nvol": 895500,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "LG",
+          "broker_name": "TRIMEGAH SEKURITAS INDONESIA TBK.",
+          "nval": 4882960000,
+          "nvol": 901100,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "AZ",
+          "broker_name": "SUCOR SEKURITAS",
+          "nval": 4796695000,
+          "nvol": 875300,
+          "is_baseline_top5": true
+        },
+        {
+          "broker_code": "NI",
+          "broker_name": "BNI SEKURITAS",
+          "nval": 3740247500,
+          "nvol": 673300,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "XC",
+          "broker_name": "AJAIB SEKURITAS ASIA",
+          "nval": 3607947500,
+          "nvol": 653300,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "CD",
+          "broker_name": "MEGA CAPITAL SEKURITAS",
+          "nval": 3377685000,
+          "nvol": 619800,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "AF",
+          "broker_name": "HARITA KENCANA SEKURITAS",
+          "nval": 2094707500,
+          "nvol": 374300,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "AK",
+          "broker_name": "UBS SEKURITAS INDONESIA",
+          "nval": 1975837500,
+          "nvol": 353300,
+          "is_baseline_top5": true
+        }
+      ],
+      "new_nonbaseline_buyers": [
+        {
+          "broker_code": "XL",
+          "broker_name": "STOCKBIT SEKURITAS DIGITAL",
+          "nval": 10019832500,
+          "nvol": 1810200,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "TP",
+          "broker_name": "OCBC SEKURITAS INDONESIA",
+          "nval": 4977192500,
+          "nvol": 895500,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "LG",
+          "broker_name": "TRIMEGAH SEKURITAS INDONESIA TBK.",
+          "nval": 4882960000,
+          "nvol": 901100,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "NI",
+          "broker_name": "BNI SEKURITAS",
+          "nval": 3740247500,
+          "nvol": 673300,
+          "is_baseline_top5": false
+        },
+        {
+          "broker_code": "XC",
+          "broker_name": "AJAIB SEKURITAS ASIA",
+          "nval": 3607947500,
+          "nvol": 653300,
+          "is_baseline_top5": false
+        }
+      ],
+      "crossing_candidates": [
+        {
+          "buyer": "XC",
+          "seller": "XA",
+          "buyer_lots": 6533,
+          "seller_lots": 6447,
+          "buyer_average_price": 5522,
+          "seller_average_price": 5537,
+          "lot_difference_pct": 1.32,
+          "price_difference_pct": 0.27,
+          "confidence": "low",
+          "reason": "Aggregate broker-summary similarity only. This is not confirmed crossing."
+        },
+        {
+          "buyer": "NI",
+          "seller": "XA",
+          "buyer_lots": 6733,
+          "seller_lots": 6447,
+          "buyer_average_price": 5555,
+          "seller_average_price": 5537,
+          "lot_difference_pct": 4.25,
+          "price_difference_pct": 0.32,
+          "confidence": "low",
+          "reason": "Aggregate broker-summary similarity only. This is not confirmed crossing."
+        }
+      ],
       "upstream": {
         "arjum_structural": {
           "ok": true,
@@ -966,19 +1563,19 @@
         },
         "arjum_today": {
           "ok": true,
-          "status": 0,
-          "skipped": true,
-          "reason": "PENDING_BROKER_RELEASE"
+          "status": 200,
+          "skipped": false,
+          "reason": null
         },
         "pluang_today": {
           "ok": true,
-          "status": 0,
-          "skipped": true,
-          "reason": "PENDING_BROKER_RELEASE",
+          "status": 200,
+          "skipped": false,
+          "reason": null,
           "cache_hit": false,
-          "cache_bypassed": false,
-          "cache_ttl_policy_seconds": null,
-          "capped": null
+          "cache_bypassed": true,
+          "cache_ttl_policy_seconds": 600,
+          "capped": true
         }
       },
       "limitations": [
