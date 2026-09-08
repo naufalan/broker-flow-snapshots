@@ -3,7 +3,8 @@ name: Refresh broker-flow snapshots
 on:
   schedule:
     # GitHub cron uses UTC. 11:00 UTC = 18:00 Asia/Jakarta (WIB).
-    - cron: "0 11 * * 1-5"
+    - cron: "15 15 * * 1-5"
+      timezone: "Asia/Jakarta"
   workflow_dispatch:
     inputs:
       market_date:
