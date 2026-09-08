@@ -1,0 +1,141 @@
+name: Refresh broker flow snapshot
+
+  on:
+    workflow_dispatch:
+
+    # GitHub Actions cron uses UTC.
+    # 11:15 UTC = 18:15 WIB.
+    schedule:
+      - cron: "15 11 * * 1-5"
+
+  permissions:
+    contents: write
+
+  concurrency:
+    group: broker-flow-snapshot
+    cancel-in-progress: false
+
+  jobs:
+    refresh:
+      runs-on: ubuntu-latest
+      timeout-minutes: 15
+
+      env:
+        WORKER_BASE_URL: https://broker-monitor-poc.pemudatersesat.workers.dev
+        BATCH_COUNT: "3"
+        TZ: Asia/Jakarta
+
+      steps:
+        - name: Check out repository
+          uses: actions/checkout@v4
+
+        - name: Fetch and validate all batches
+          shell: bash
+          run: |
+            set -Eeuo pipefail
+
+            snapshot_tmp="$(mktemp -d)"
+            trap 'rm -rf "$snapshot_tmp"' EXIT
+
+            market_date="$(TZ=Asia/Jakarta date +%F)"
+            fetched_at="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+
+            echo "Fetching broker-flow data for ${market_date}"
+
+            for batch in $(seq 1 "$BATCH_COUNT"); do
+              output="${snapshot_tmp}/batch-${batch}.json"
+              url="${WORKER_BASE_URL}/api/v1/report?batch=${batch}&batch_count=${BATCH_COUNT}&refresh=1&date=${market_date}"
+
+              curl \
+                --fail-with-body \
+                --silent \
+                --show-error \
+                --location \
+                --retry 2 \
+                --retry-all-errors \
+                --connect-timeout 15 \
+                --max-time 180 \
+                --header "Accept: application/json" \
+                --output "$output" \
+                "$url"
+
+              jq -e \
+                --argjson expected_batch "$batch" \
+                --argjson expected_batch_count "$BATCH_COUNT" \
+                --arg expected_market_date "$market_date" \
+                '
+                  .schema_version == "broker-monitor.report.v3"
+                  and .batching.batch == $expected_batch
+                  and .batching.batch_count == $expected_batch_count
+                  and .market_date == $expected_market_date
+                  and .ticker_count == (.tickers | length)
+                ' \
+                "$output" > /dev/null
+            done
+
+            total_tickers="$(
+              jq -s '[.[].tickers[].ticker] | length' \
+                "$snapshot_tmp"/batch-*.json
+            )"
+
+            unique_tickers="$(
+              jq -s '[.[].tickers[].ticker] | unique | length' \
+                "$snapshot_tmp"/batch-*.json
+            )"
+
+            if [ "$total_tickers" -ne "$unique_tickers" ]; then
+              echo "Duplicate ticker detected across batches."
+              exit 1
+            fi
+
+            jq -n \
+              --arg status "SUCCESS" \
+              --arg fetched_at "$fetched_at" \
+              --arg market_date "$market_date" \
+              --arg source "$WORKER_BASE_URL" \
+              --argjson batch_count "$BATCH_COUNT" \
+              --argjson ticker_count "$total_tickers" \
+              '{
+                schema_version: "broker-monitor.snapshot-manifest.v1",
+                status: $status,
+                fetched_at: $fetched_at,
+                market_date: $market_date,
+                source: $source,
+                batch_count: $batch_count,
+                ticker_count: $ticker_count,
+                files: [
+                  "batch-1.json",
+                  "batch-2.json",
+                  "batch-3.json"
+                ]
+              }' > "$snapshot_tmp/manifest.json"
+
+            mkdir -p snapshots/latest
+
+            cp "$snapshot_tmp/manifest.json" snapshots/latest/manifest.json
+
+            for batch in $(seq 1 "$BATCH_COUNT"); do
+              cp \
+                "$snapshot_tmp/batch-${batch}.json" \
+                "snapshots/latest/batch-${batch}.json"
+            done
+
+            echo "MARKET_DATE=${market_date}" >> "$GITHUB_ENV"
+
+        - name: Commit updated snapshot
+          shell: bash
+          run: |
+            set -Eeuo pipefail
+
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+            git add snapshots/latest
+
+            if git diff --cached --quiet; then
+              echo "No snapshot changes."
+              exit 0
+            fi
+
+            git commit -m "chore: refresh broker flow ${MARKET_DATE}"
+            git push
