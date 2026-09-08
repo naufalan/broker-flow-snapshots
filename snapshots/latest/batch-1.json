@@ -1,0 +1,1037 @@
+{
+  "schema_version": "broker-monitor.report.v3",
+  "generated_at": "2026-09-08T09:52:26.326Z",
+  "market_date": "2026-09-08",
+  "source_strategy": "hybrid_arjum_primary_pluang_enrichment",
+  "refresh": true,
+  "batching": {
+    "enabled": true,
+    "batch": 1,
+    "batch_count": 3,
+    "watchlist_total_enabled_tickers": 12,
+    "tickers_in_this_batch": 4,
+    "start_index": 0,
+    "end_index_exclusive": 4,
+    "tickers_per_batch": 4,
+    "ticker_codes_in_this_batch": [
+      "ASPR",
+      "COCO",
+      "DMAS",
+      "IATA"
+    ]
+  },
+  "ticker_count": 4,
+  "tickers": [
+    {
+      "ticker": "ASPR",
+      "enabled": true,
+      "tracking_start": "2026-07-01",
+      "baseline_top5": [
+        "YP",
+        "MG",
+        "AK",
+        "BK",
+        "CC"
+      ],
+      "today_data_status": {
+        "status": "PENDING_BROKER_RELEASE",
+        "ready": false,
+        "expected_ready_after": "18:10 WIB",
+        "note": "Today broker data is expected later. Do not interpret today:null as no activity."
+      },
+      "horizons": {
+        "structural": {
+          "start": "2026-07-01",
+          "end": "2026-09-08",
+          "source": "arjum"
+        },
+        "recent_5_business_day_approx": {
+          "start": "2026-09-02",
+          "raw_start_before_tracking_floor": "2026-09-02",
+          "end": "2026-09-08",
+          "source": "arjum",
+          "limitation": "Weekend-adjusted only. IDX holidays are not yet handled in v0.2. Recent start is floored at tracking_start."
+        },
+        "today": {
+          "start": "2026-09-08",
+          "end": "2026-09-08",
+          "source": "arjum + pluang",
+          "status": "PENDING_BROKER_RELEASE",
+          "ready": false
+        }
+      },
+      "followed_brokers": [
+        {
+          "rank": 1,
+          "broker_code": "YP",
+          "structural": {
+            "broker_name": "MIRAE ASSET SEKURITAS INDONESIA",
+            "bval": 33201251100,
+            "sval": 27956415600,
+            "nval": 5244835500,
+            "nvol": 35119400,
+            "bfrq": 14557,
+            "sfrq": 13337,
+            "net_value_intensity": 0.08575924790799777
+          },
+          "recent_5_business_day_approx": {
+            "bval": 1446994600,
+            "sval": 811989600,
+            "nval": 635005000,
+            "nvol": 4078800,
+            "bfrq": 442,
+            "sfrq": 406,
+            "net_value_intensity": 0.28110201036377325
+          },
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "medium",
+            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+          }
+        },
+        {
+          "rank": 2,
+          "broker_code": "MG",
+          "structural": {
+            "broker_name": "SEMESTA INDOVEST SEKURITAS",
+            "bval": 3024737800,
+            "sval": 1499352900,
+            "nval": 1525384900,
+            "nvol": 9800200,
+            "bfrq": 1202,
+            "sfrq": 1036,
+            "net_value_intensity": 0.3371693896411051
+          },
+          "recent_5_business_day_approx": {
+            "bval": 75133200,
+            "sval": 4668100,
+            "nval": 70465100,
+            "nvol": 464000,
+            "bfrq": 17,
+            "sfrq": 17,
+            "net_value_intensity": 0.8830069184336596
+          },
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "medium",
+            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+          }
+        },
+        {
+          "rank": 3,
+          "broker_code": "AK",
+          "structural": {
+            "broker_name": "UBS SEKURITAS INDONESIA",
+            "bval": 18606689500,
+            "sval": 18193949800,
+            "nval": 412739700,
+            "nvol": 2332700,
+            "bfrq": 6367,
+            "sfrq": 9691,
+            "net_value_intensity": 0.011215557877550242
+          },
+          "recent_5_business_day_approx": null,
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "low",
+            "reason": "Structural accumulation remains positive, but today's broker data is pending release and recent data is incomplete."
+          }
+        },
+        {
+          "rank": 4,
+          "broker_code": "BK",
+          "structural": {
+            "broker_name": "J.P. MORGAN SEKURITAS INDONESIA",
+            "bval": 7162201700,
+            "sval": 4355689400,
+            "nval": 2806512300,
+            "nvol": 18089100,
+            "bfrq": 3446,
+            "sfrq": 3447,
+            "net_value_intensity": 0.24366546580736467
+          },
+          "recent_5_business_day_approx": null,
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "low",
+            "reason": "Structural accumulation remains positive, but today's broker data is pending release and recent data is incomplete."
+          }
+        },
+        {
+          "rank": 5,
+          "broker_code": "CC",
+          "structural": {
+            "broker_name": "MANDIRI SEKURITAS",
+            "bval": 43719532800,
+            "sval": 43497113300,
+            "nval": 222419500,
+            "nvol": 1836400,
+            "bfrq": 16694,
+            "sfrq": 20037,
+            "net_value_intensity": 0.002550195518238347
+          },
+          "recent_5_business_day_approx": null,
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "low",
+            "reason": "Structural accumulation remains positive, but today's broker data is pending release and recent data is incomplete."
+          }
+        }
+      ],
+      "today_sellers": [],
+      "today_buyers": [],
+      "new_nonbaseline_buyers": [],
+      "crossing_candidates": [],
+      "upstream": {
+        "arjum_structural": {
+          "ok": true,
+          "status": 200,
+          "skipped": false,
+          "reason": null
+        },
+        "arjum_recent": {
+          "ok": true,
+          "status": 200,
+          "skipped": false,
+          "reason": null
+        },
+        "arjum_today": {
+          "ok": true,
+          "status": 0,
+          "skipped": true,
+          "reason": "PENDING_BROKER_RELEASE"
+        },
+        "pluang_today": {
+          "ok": true,
+          "status": 0,
+          "skipped": true,
+          "reason": "PENDING_BROKER_RELEASE",
+          "cache_hit": false,
+          "cache_bypassed": false,
+          "cache_ttl_policy_seconds": null,
+          "capped": null
+        }
+      },
+      "limitations": [
+        "Baseline Top 5 is manually supplied and intentionally fixed.",
+        "Pluang averagePrice is only available when the broker appears in its capped top-10 buyer/seller result.",
+        "Not visible in Pluang does not mean zero activity.",
+        "If today_data_status is PENDING_BROKER_RELEASE, today:null means same-day broker data is not released yet.",
+        "Crossing candidates are low-confidence because they use aggregate broker-summary similarity, not paired trade evidence.",
+        "Recent 5-session window is approximated by business days excluding weekends only; IDX holidays are not yet modeled.",
+        "The recent window is floored at tracking_start to avoid using pre-tracking data."
+      ]
+    },
+    {
+      "ticker": "COCO",
+      "enabled": true,
+      "tracking_start": "2026-08-04",
+      "baseline_top5": [
+        "LG",
+        "GR",
+        "RF",
+        "KK",
+        "BQ"
+      ],
+      "today_data_status": {
+        "status": "PENDING_BROKER_RELEASE",
+        "ready": false,
+        "expected_ready_after": "18:10 WIB",
+        "note": "Today broker data is expected later. Do not interpret today:null as no activity."
+      },
+      "horizons": {
+        "structural": {
+          "start": "2026-08-04",
+          "end": "2026-09-08",
+          "source": "arjum"
+        },
+        "recent_5_business_day_approx": {
+          "start": "2026-09-02",
+          "raw_start_before_tracking_floor": "2026-09-02",
+          "end": "2026-09-08",
+          "source": "arjum",
+          "limitation": "Weekend-adjusted only. IDX holidays are not yet handled in v0.2. Recent start is floored at tracking_start."
+        },
+        "today": {
+          "start": "2026-09-08",
+          "end": "2026-09-08",
+          "source": "arjum + pluang",
+          "status": "PENDING_BROKER_RELEASE",
+          "ready": false
+        }
+      },
+      "followed_brokers": [
+        {
+          "rank": 1,
+          "broker_code": "LG",
+          "structural": {
+            "broker_name": "TRIMEGAH SEKURITAS INDONESIA TBK.",
+            "bval": 35155828000,
+            "sval": 16056238800,
+            "nval": 19099589200,
+            "nvol": 144405000,
+            "bfrq": 3917,
+            "sfrq": 3421,
+            "net_value_intensity": 0.3729509545980675
+          },
+          "recent_5_business_day_approx": {
+            "bval": 26987035600,
+            "sval": 6543615400,
+            "nval": 20443420200,
+            "nvol": 157935900,
+            "bfrq": 2708,
+            "sfrq": 864,
+            "net_value_intensity": 0.6096935069945406
+          },
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "medium",
+            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+          }
+        },
+        {
+          "rank": 2,
+          "broker_code": "GR",
+          "structural": {
+            "broker_name": "PANIN SEKURITAS TBK.",
+            "bval": 38293421700,
+            "sval": 28837496800,
+            "nval": 9455924900,
+            "nvol": 81752000,
+            "bfrq": 5666,
+            "sfrq": 6802,
+            "net_value_intensity": 0.14085796993824834
+          },
+          "recent_5_business_day_approx": {
+            "bval": 12724521500,
+            "sval": 9079240800,
+            "nval": 3645280700,
+            "nvol": 28052700,
+            "bfrq": 1715,
+            "sfrq": 2005,
+            "net_value_intensity": 0.16718585764439378
+          },
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "medium",
+            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+          }
+        },
+        {
+          "rank": 3,
+          "broker_code": "RF",
+          "structural": {
+            "broker_name": "BUANA CAPITAL SEKURITAS",
+            "bval": 8518535800,
+            "sval": 225584000,
+            "nval": 8292951800,
+            "nvol": 64187400,
+            "bfrq": 916,
+            "sfrq": 44,
+            "net_value_intensity": 0.9484032686743381
+          },
+          "recent_5_business_day_approx": {
+            "bval": 8488235800,
+            "sval": 145490000,
+            "nval": 8342745800,
+            "nvol": 64585400,
+            "bfrq": 904,
+            "sfrq": 9,
+            "net_value_intensity": 0.966297285002959
+          },
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "medium",
+            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+          }
+        },
+        {
+          "rank": 4,
+          "broker_code": "KK",
+          "structural": {
+            "broker_name": "PHILLIP SEKURITAS INDONESIA",
+            "bval": 32571372200,
+            "sval": 31595335200,
+            "nval": 976037000,
+            "nvol": 9668500,
+            "bfrq": 7255,
+            "sfrq": 7477,
+            "net_value_intensity": 0.01521095657777198
+          },
+          "recent_5_business_day_approx": null,
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "low",
+            "reason": "Structural accumulation remains positive, but today's broker data is pending release and recent data is incomplete."
+          }
+        },
+        {
+          "rank": 5,
+          "broker_code": "BQ",
+          "structural": {
+            "broker_name": "KOREA INVESTMENT AND SEKURITAS INDONESIA",
+            "bval": 26254481100,
+            "sval": 22027349200,
+            "nval": 4227131900,
+            "nvol": 33758600,
+            "bfrq": 7574,
+            "sfrq": 6352,
+            "net_value_intensity": 0.08755119418080552
+          },
+          "recent_5_business_day_approx": {
+            "bval": 14967293000,
+            "sval": 10467674500,
+            "nval": 4499618500,
+            "nvol": 35216000,
+            "bfrq": 4104,
+            "sfrq": 2967,
+            "net_value_intensity": 0.17690679180148353
+          },
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "medium",
+            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+          }
+        }
+      ],
+      "today_sellers": [],
+      "today_buyers": [],
+      "new_nonbaseline_buyers": [],
+      "crossing_candidates": [],
+      "upstream": {
+        "arjum_structural": {
+          "ok": true,
+          "status": 200,
+          "skipped": false,
+          "reason": null
+        },
+        "arjum_recent": {
+          "ok": true,
+          "status": 200,
+          "skipped": false,
+          "reason": null
+        },
+        "arjum_today": {
+          "ok": true,
+          "status": 0,
+          "skipped": true,
+          "reason": "PENDING_BROKER_RELEASE"
+        },
+        "pluang_today": {
+          "ok": true,
+          "status": 0,
+          "skipped": true,
+          "reason": "PENDING_BROKER_RELEASE",
+          "cache_hit": false,
+          "cache_bypassed": false,
+          "cache_ttl_policy_seconds": null,
+          "capped": null
+        }
+      },
+      "limitations": [
+        "Baseline Top 5 is manually supplied and intentionally fixed.",
+        "Pluang averagePrice is only available when the broker appears in its capped top-10 buyer/seller result.",
+        "Not visible in Pluang does not mean zero activity.",
+        "If today_data_status is PENDING_BROKER_RELEASE, today:null means same-day broker data is not released yet.",
+        "Crossing candidates are low-confidence because they use aggregate broker-summary similarity, not paired trade evidence.",
+        "Recent 5-session window is approximated by business days excluding weekends only; IDX holidays are not yet modeled.",
+        "The recent window is floored at tracking_start to avoid using pre-tracking data."
+      ]
+    },
+    {
+      "ticker": "DMAS",
+      "enabled": true,
+      "tracking_start": "2026-03-05",
+      "baseline_top5": [
+        "ZP",
+        "GR",
+        "AK",
+        "BK",
+        "IN"
+      ],
+      "today_data_status": {
+        "status": "PENDING_BROKER_RELEASE",
+        "ready": false,
+        "expected_ready_after": "18:10 WIB",
+        "note": "Today broker data is expected later. Do not interpret today:null as no activity."
+      },
+      "horizons": {
+        "structural": {
+          "start": "2026-03-05",
+          "end": "2026-09-08",
+          "source": "arjum"
+        },
+        "recent_5_business_day_approx": {
+          "start": "2026-09-02",
+          "raw_start_before_tracking_floor": "2026-09-02",
+          "end": "2026-09-08",
+          "source": "arjum",
+          "limitation": "Weekend-adjusted only. IDX holidays are not yet handled in v0.2. Recent start is floored at tracking_start."
+        },
+        "today": {
+          "start": "2026-09-08",
+          "end": "2026-09-08",
+          "source": "arjum + pluang",
+          "status": "PENDING_BROKER_RELEASE",
+          "ready": false
+        }
+      },
+      "followed_brokers": [
+        {
+          "rank": 1,
+          "broker_code": "ZP",
+          "structural": {
+            "broker_name": "MAYBANK SEKURITAS INDONESIA",
+            "bval": 232577051000,
+            "sval": 90821492800,
+            "nval": 141755558200,
+            "nvol": 899282300,
+            "bfrq": 81553,
+            "sfrq": 31959,
+            "net_value_intensity": 0.43833084878596784
+          },
+          "recent_5_business_day_approx": {
+            "bval": 9450624800,
+            "sval": 2255284600,
+            "nval": 7195340200,
+            "nvol": 35910800,
+            "bfrq": 950,
+            "sfrq": 334,
+            "net_value_intensity": 0.614675883276527
+          },
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "medium",
+            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+          }
+        },
+        {
+          "rank": 2,
+          "broker_code": "GR",
+          "structural": null,
+          "recent_5_business_day_approx": null,
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "NO_STRUCTURAL_DATA",
+            "confidence": "low",
+            "reason": "Broker was not visible in the structural Arjum result."
+          }
+        },
+        {
+          "rank": 3,
+          "broker_code": "AK",
+          "structural": {
+            "broker_name": "UBS SEKURITAS INDONESIA",
+            "bval": 281662426300,
+            "sval": 248053699500,
+            "nval": 33608726800,
+            "nvol": 215786000,
+            "bfrq": 41381,
+            "sfrq": 59417,
+            "net_value_intensity": 0.06344667485673135
+          },
+          "recent_5_business_day_approx": {
+            "bval": 62114469700,
+            "sval": 39273149700,
+            "nval": 22841320000,
+            "nvol": 113020500,
+            "bfrq": 7542,
+            "sfrq": 6356,
+            "net_value_intensity": 0.22528707287114783
+          },
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "medium",
+            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+          }
+        },
+        {
+          "rank": 4,
+          "broker_code": "BK",
+          "structural": {
+            "broker_name": "J.P. MORGAN SEKURITAS INDONESIA",
+            "bval": 77793825200,
+            "sval": 59430604000,
+            "nval": 18363221200,
+            "nvol": 119269700,
+            "bfrq": 9347,
+            "sfrq": 14298,
+            "net_value_intensity": 0.13381889294096622
+          },
+          "recent_5_business_day_approx": {
+            "bval": 10740447700,
+            "sval": 5810035200,
+            "nval": 4930412500,
+            "nvol": 23931100,
+            "bfrq": 946,
+            "sfrq": 473,
+            "net_value_intensity": 0.2979014286042373
+          },
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "medium",
+            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+          }
+        },
+        {
+          "rank": 5,
+          "broker_code": "IN",
+          "structural": {
+            "broker_name": "INVESTINDO NUSANTARA SEKURITAS",
+            "bval": 10661288800,
+            "sval": 1492094500,
+            "nval": 9169194300,
+            "nvol": 60766600,
+            "bfrq": 917,
+            "sfrq": 307,
+            "net_value_intensity": 0.7544561109991487
+          },
+          "recent_5_business_day_approx": {
+            "bval": 100100000,
+            "sval": 71500000,
+            "nval": 28600000,
+            "nvol": 150000,
+            "bfrq": 14,
+            "sfrq": 11,
+            "net_value_intensity": 0.16666666666666666
+          },
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "medium",
+            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+          }
+        }
+      ],
+      "today_sellers": [],
+      "today_buyers": [],
+      "new_nonbaseline_buyers": [],
+      "crossing_candidates": [],
+      "upstream": {
+        "arjum_structural": {
+          "ok": true,
+          "status": 200,
+          "skipped": false,
+          "reason": null
+        },
+        "arjum_recent": {
+          "ok": true,
+          "status": 200,
+          "skipped": false,
+          "reason": null
+        },
+        "arjum_today": {
+          "ok": true,
+          "status": 0,
+          "skipped": true,
+          "reason": "PENDING_BROKER_RELEASE"
+        },
+        "pluang_today": {
+          "ok": true,
+          "status": 0,
+          "skipped": true,
+          "reason": "PENDING_BROKER_RELEASE",
+          "cache_hit": false,
+          "cache_bypassed": false,
+          "cache_ttl_policy_seconds": null,
+          "capped": null
+        }
+      },
+      "limitations": [
+        "Baseline Top 5 is manually supplied and intentionally fixed.",
+        "Pluang averagePrice is only available when the broker appears in its capped top-10 buyer/seller result.",
+        "Not visible in Pluang does not mean zero activity.",
+        "If today_data_status is PENDING_BROKER_RELEASE, today:null means same-day broker data is not released yet.",
+        "Crossing candidates are low-confidence because they use aggregate broker-summary similarity, not paired trade evidence.",
+        "Recent 5-session window is approximated by business days excluding weekends only; IDX holidays are not yet modeled.",
+        "The recent window is floored at tracking_start to avoid using pre-tracking data."
+      ]
+    },
+    {
+      "ticker": "IATA",
+      "enabled": true,
+      "tracking_start": "2026-06-08",
+      "baseline_top5": [
+        "XL",
+        "GR",
+        "AK",
+        "CP",
+        "OD"
+      ],
+      "today_data_status": {
+        "status": "PENDING_BROKER_RELEASE",
+        "ready": false,
+        "expected_ready_after": "18:10 WIB",
+        "note": "Today broker data is expected later. Do not interpret today:null as no activity."
+      },
+      "horizons": {
+        "structural": {
+          "start": "2026-06-08",
+          "end": "2026-09-08",
+          "source": "arjum"
+        },
+        "recent_5_business_day_approx": {
+          "start": "2026-09-02",
+          "raw_start_before_tracking_floor": "2026-09-02",
+          "end": "2026-09-08",
+          "source": "arjum",
+          "limitation": "Weekend-adjusted only. IDX holidays are not yet handled in v0.2. Recent start is floored at tracking_start."
+        },
+        "today": {
+          "start": "2026-09-08",
+          "end": "2026-09-08",
+          "source": "arjum + pluang",
+          "status": "PENDING_BROKER_RELEASE",
+          "ready": false
+        }
+      },
+      "followed_brokers": [
+        {
+          "rank": 1,
+          "broker_code": "XL",
+          "structural": {
+            "broker_name": "STOCKBIT SEKURITAS DIGITAL",
+            "bval": 1177357985100,
+            "sval": 1144238313000,
+            "nval": 33119672100,
+            "nvol": 334813000,
+            "bfrq": 496195,
+            "sfrq": 410754,
+            "net_value_intensity": 0.014265904940968945
+          },
+          "recent_5_business_day_approx": null,
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "low",
+            "reason": "Structural accumulation remains positive, but today's broker data is pending release and recent data is incomplete."
+          }
+        },
+        {
+          "rank": 2,
+          "broker_code": "GR",
+          "structural": {
+            "broker_name": "PANIN SEKURITAS TBK.",
+            "bval": 66930776300,
+            "sval": 58203543300,
+            "nval": 8727233000,
+            "nvol": 128433700,
+            "bfrq": 9724,
+            "sfrq": 13020,
+            "net_value_intensity": 0.06974292126969778
+          },
+          "recent_5_business_day_approx": null,
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "low",
+            "reason": "Structural accumulation remains positive, but today's broker data is pending release and recent data is incomplete."
+          }
+        },
+        {
+          "rank": 3,
+          "broker_code": "AK",
+          "structural": {
+            "broker_name": "UBS SEKURITAS INDONESIA",
+            "bval": 376535417400,
+            "sval": 359737436500,
+            "nval": 16797980900,
+            "nvol": 161950600,
+            "bfrq": 43850,
+            "sfrq": 65363,
+            "net_value_intensity": 0.022814885556383
+          },
+          "recent_5_business_day_approx": {
+            "bval": 85095328000,
+            "sval": 68725843000,
+            "nval": 16369485000,
+            "nvol": 120466200,
+            "bfrq": 9418,
+            "sfrq": 11295,
+            "net_value_intensity": 0.10641893371101693
+          },
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "medium",
+            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+          }
+        },
+        {
+          "rank": 4,
+          "broker_code": "CP",
+          "structural": {
+            "broker_name": "KB VALBURY SEKURITAS",
+            "bval": 177506401700,
+            "sval": 165026640700,
+            "nval": 12479761000,
+            "nvol": 112982900,
+            "bfrq": 64507,
+            "sfrq": 33331,
+            "net_value_intensity": 0.03643374347934148
+          },
+          "recent_5_business_day_approx": {
+            "bval": 30451125300,
+            "sval": 25226742400,
+            "nval": 5224382900,
+            "nvol": 39286700,
+            "bfrq": 3557,
+            "sfrq": 3909,
+            "net_value_intensity": 0.09383230924269034
+          },
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "medium",
+            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+          }
+        },
+        {
+          "rank": 5,
+          "broker_code": "OD",
+          "structural": {
+            "broker_name": "BRI DANAREKSA SEKURITAS",
+            "bval": 79204508200,
+            "sval": 67963464500,
+            "nval": 11241043700,
+            "nvol": 134107200,
+            "bfrq": 13081,
+            "sfrq": 13173,
+            "net_value_intensity": 0.0763824050421264
+          },
+          "recent_5_business_day_approx": {
+            "bval": 13257315000,
+            "sval": 11348681800,
+            "nval": 1908633200,
+            "nvol": 15657700,
+            "bfrq": 1625,
+            "sfrq": 1771,
+            "net_value_intensity": 0.07756780656006587
+          },
+          "today": null,
+          "pluang_today_average_price": {
+            "visible": false,
+            "side": null,
+            "lots": null,
+            "value": null,
+            "averagePrice": null,
+            "note": "Today broker data is pending release. Do not interpret this as no activity."
+          },
+          "classification": {
+            "status": "STRUCTURAL_ACCUMULATION_TODAY_PENDING",
+            "confidence": "medium",
+            "reason": "Structural and recent flows are positive. Today's broker data is pending release."
+          }
+        }
+      ],
+      "today_sellers": [],
+      "today_buyers": [],
+      "new_nonbaseline_buyers": [],
+      "crossing_candidates": [],
+      "upstream": {
+        "arjum_structural": {
+          "ok": true,
+          "status": 200,
+          "skipped": false,
+          "reason": null
+        },
+        "arjum_recent": {
+          "ok": true,
+          "status": 200,
+          "skipped": false,
+          "reason": null
+        },
+        "arjum_today": {
+          "ok": true,
+          "status": 0,
+          "skipped": true,
+          "reason": "PENDING_BROKER_RELEASE"
+        },
+        "pluang_today": {
+          "ok": true,
+          "status": 0,
+          "skipped": true,
+          "reason": "PENDING_BROKER_RELEASE",
+          "cache_hit": false,
+          "cache_bypassed": false,
+          "cache_ttl_policy_seconds": null,
+          "capped": null
+        }
+      },
+      "limitations": [
+        "Baseline Top 5 is manually supplied and intentionally fixed.",
+        "Pluang averagePrice is only available when the broker appears in its capped top-10 buyer/seller result.",
+        "Not visible in Pluang does not mean zero activity.",
+        "If today_data_status is PENDING_BROKER_RELEASE, today:null means same-day broker data is not released yet.",
+        "Crossing candidates are low-confidence because they use aggregate broker-summary similarity, not paired trade evidence.",
+        "Recent 5-session window is approximated by business days excluding weekends only; IDX holidays are not yet modeled.",
+        "The recent window is floored at tracking_start to avoid using pre-tracking data."
+      ]
+    }
+  ]
+}
