@@ -1,6 +1,6 @@
 {
   "schema_version": "broker-monitor.report.v3",
-  "generated_at": "2026-09-08T16:02:09.779Z",
+  "generated_at": "2026-09-09T07:32:53.219Z",
   "market_date": "2026-09-08",
   "source_strategy": "hybrid_arjum_primary_pluang_enrichment",
   "refresh": true,
@@ -34,10 +34,10 @@
         "CC"
       ],
       "today_data_status": {
-        "status": "BROKER_RELEASE_WINDOW_PASSED",
+        "status": "FINAL_OR_HISTORICAL_DATE",
         "ready": true,
         "expected_ready_after": "18:10 WIB",
-        "note": "Broker release window has passed. If today data is still null, treat it as unavailable or not returned by upstream."
+        "note": "Historical date requested. Same-day broker release gating does not apply."
       },
       "horizons": {
         "structural": {
@@ -56,7 +56,7 @@
           "start": "2026-09-08",
           "end": "2026-09-08",
           "source": "arjum + pluang",
-          "status": "BROKER_RELEASE_WINDOW_PASSED",
+          "status": "FINAL_OR_HISTORICAL_DATE",
           "ready": true
         }
       },
@@ -145,6 +145,27 @@
             "arjum_comparison_value": 149.44452122696524,
             "cross_source_status": "BOTH_AVAILABLE",
             "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
+          "activity": {
+            "broker_code": "YP",
+            "broker_name": "MIRAE ASSET SEKURITAS INDONESIA",
+            "observation_count": 48,
+            "period_start": "2026-07-01",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 342960,
+            "gross_daily_net_lots": 948940,
+            "buy_lots": 645950,
+            "sell_lots": 302990,
+            "directional_efficiency": 0.3614137880161022,
+            "two_way_share": 0.31929310599194893,
+            "sign_switch_count": 21,
+            "inventory_reset_count": 0,
+            "inventory_reset_dates": [],
+            "max_cumulative_net_lots": 397610,
+            "min_cumulative_net_lots": -43572,
+            "activity_style": "MIXED_TRADING",
+            "ending_position": "NET_BUY_RESIDUAL",
+            "interpretation": "Two-way trading is material. Interpret the net buy residual cautiously."
           },
           "classification": {
             "status": "EARLY_DISTRIBUTION",
@@ -237,6 +258,27 @@
             "cross_source_status": "BOTH_AVAILABLE",
             "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
           },
+          "activity": {
+            "broker_code": "MG",
+            "broker_name": "SEMESTA INDOVEST SEKURITAS",
+            "observation_count": 46,
+            "period_start": "2026-07-01",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 98063,
+            "gross_daily_net_lots": 142367,
+            "buy_lots": 120215,
+            "sell_lots": 22152,
+            "directional_efficiency": 0.6888042875104483,
+            "two_way_share": 0.15559785624477582,
+            "sign_switch_count": 21,
+            "inventory_reset_count": 0,
+            "inventory_reset_dates": [],
+            "max_cumulative_net_lots": 98193,
+            "min_cumulative_net_lots": -4118,
+            "activity_style": "DIRECTIONAL_ACCUMULATION",
+            "ending_position": "NET_BUY_RESIDUAL",
+            "interpretation": "Flow is comparatively directional with ending position net buy residual."
+          },
           "classification": {
             "status": "STRONG_ACCUMULATION",
             "confidence": "medium",
@@ -327,6 +369,27 @@
             "arjum_comparison_value": 197.5729686708632,
             "cross_source_status": "BOTH_AVAILABLE",
             "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
+          "activity": {
+            "broker_code": "AK",
+            "broker_name": "UBS SEKURITAS INDONESIA",
+            "observation_count": 48,
+            "period_start": "2026-07-01",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 13821,
+            "gross_daily_net_lots": 838011,
+            "buy_lots": 425916,
+            "sell_lots": 412095,
+            "directional_efficiency": 0.016492623605179408,
+            "two_way_share": 0.4917536881974103,
+            "sign_switch_count": 33,
+            "inventory_reset_count": 0,
+            "inventory_reset_dates": [],
+            "max_cumulative_net_lots": 115260,
+            "min_cumulative_net_lots": -18377,
+            "activity_style": "ACTIVE_TRADING",
+            "ending_position": "NEAR_FLAT",
+            "interpretation": "Repeated two-way trading dominates the period; near flat is a residual position, not sufficient evidence of persistent accumulation."
           },
           "classification": {
             "status": "DISTRIBUTION",
@@ -419,6 +482,27 @@
             "cross_source_status": "BOTH_AVAILABLE",
             "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
           },
+          "activity": {
+            "broker_code": "BK",
+            "broker_name": "J.P. MORGAN SEKURITAS INDONESIA",
+            "observation_count": 47,
+            "period_start": "2026-07-01",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 170754,
+            "gross_daily_net_lots": 411978,
+            "buy_lots": 291366,
+            "sell_lots": 120612,
+            "directional_efficiency": 0.41447358839549686,
+            "two_way_share": 0.29276320580225157,
+            "sign_switch_count": 33,
+            "inventory_reset_count": 0,
+            "inventory_reset_dates": [],
+            "max_cumulative_net_lots": 194563,
+            "min_cumulative_net_lots": -1278,
+            "activity_style": "MIXED_TRADING",
+            "ending_position": "NET_BUY_RESIDUAL",
+            "interpretation": "Two-way trading is material. Interpret the net buy residual cautiously."
+          },
           "classification": {
             "status": "DISTRIBUTION",
             "confidence": "medium",
@@ -510,6 +594,32 @@
             "cross_source_status": "ARJUM_FALLBACK_PLUANG_NOT_VISIBLE",
             "note": "Pluang did not expose this broker in its capped net top-broker list. Arjum is used as fallback; absence from Pluang can result from offsetting buys and sells and does not mean inactivity."
           },
+          "activity": {
+            "broker_code": "CC",
+            "broker_name": "MANDIRI SEKURITAS",
+            "observation_count": 48,
+            "period_start": "2026-07-01",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 18238,
+            "gross_daily_net_lots": 1042394,
+            "buy_lots": 530316,
+            "sell_lots": 512078,
+            "directional_efficiency": 0.017496263409037274,
+            "two_way_share": 0.49125186829548134,
+            "sign_switch_count": 25,
+            "inventory_reset_count": 4,
+            "inventory_reset_dates": [
+              "2026-07-21",
+              "2026-07-28",
+              "2026-08-03",
+              "2026-09-04"
+            ],
+            "max_cumulative_net_lots": 115730,
+            "min_cumulative_net_lots": -60954,
+            "activity_style": "ACTIVE_TRADING",
+            "ending_position": "NEAR_FLAT",
+            "interpretation": "Repeated two-way trading dominates the period; near flat is a residual position, not sufficient evidence of persistent accumulation."
+          },
           "classification": {
             "status": "DISTRIBUTION",
             "confidence": "medium",
@@ -517,6 +627,340 @@
           }
         }
       ],
+      "broker_activity_chart": {
+        "path": "/api/v1/chart/ASPR.svg?date=2026-09-08&start=2026-07-01&brokers=YP%2CMG%2CAK%2CBK%2CCC%2CXL&featured=YP%2CMG%2CAK%2CBK%2CCC",
+        "period": {
+          "start": "2026-07-01",
+          "end": "2026-09-08"
+        },
+        "flow_basis": "cumulative_net_lots_zero_anchored",
+        "price_overlay": "daily_ohlc_candles",
+        "candidate_brokers": [
+          "YP",
+          "MG",
+          "AK",
+          "BK",
+          "CC",
+          "XL"
+        ],
+        "displayed_tracked_brokers": [
+          "YP",
+          "MG",
+          "AK",
+          "BK",
+          "CC"
+        ],
+        "candle_count": 48
+      },
+      "broker_activity_analysis": [
+        {
+          "broker_code": "AK",
+          "broker_name": "UBS SEKURITAS INDONESIA",
+          "observation_count": 48,
+          "period_start": "2026-07-01",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 13821,
+          "gross_daily_net_lots": 838011,
+          "buy_lots": 425916,
+          "sell_lots": 412095,
+          "directional_efficiency": 0.016492623605179408,
+          "two_way_share": 0.4917536881974103,
+          "sign_switch_count": 33,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 115260,
+          "min_cumulative_net_lots": -18377,
+          "activity_style": "ACTIVE_TRADING",
+          "ending_position": "NEAR_FLAT",
+          "interpretation": "Repeated two-way trading dominates the period; near flat is a residual position, not sufficient evidence of persistent accumulation."
+        },
+        {
+          "broker_code": "BK",
+          "broker_name": "J.P. MORGAN SEKURITAS INDONESIA",
+          "observation_count": 47,
+          "period_start": "2026-07-01",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 170754,
+          "gross_daily_net_lots": 411978,
+          "buy_lots": 291366,
+          "sell_lots": 120612,
+          "directional_efficiency": 0.41447358839549686,
+          "two_way_share": 0.29276320580225157,
+          "sign_switch_count": 33,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 194563,
+          "min_cumulative_net_lots": -1278,
+          "activity_style": "MIXED_TRADING",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Two-way trading is material. Interpret the net buy residual cautiously."
+        },
+        {
+          "broker_code": "CC",
+          "broker_name": "MANDIRI SEKURITAS",
+          "observation_count": 48,
+          "period_start": "2026-07-01",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 18238,
+          "gross_daily_net_lots": 1042394,
+          "buy_lots": 530316,
+          "sell_lots": 512078,
+          "directional_efficiency": 0.017496263409037274,
+          "two_way_share": 0.49125186829548134,
+          "sign_switch_count": 25,
+          "inventory_reset_count": 4,
+          "inventory_reset_dates": [
+            "2026-07-21",
+            "2026-07-28",
+            "2026-08-03",
+            "2026-09-04"
+          ],
+          "max_cumulative_net_lots": 115730,
+          "min_cumulative_net_lots": -60954,
+          "activity_style": "ACTIVE_TRADING",
+          "ending_position": "NEAR_FLAT",
+          "interpretation": "Repeated two-way trading dominates the period; near flat is a residual position, not sufficient evidence of persistent accumulation."
+        },
+        {
+          "broker_code": "MG",
+          "broker_name": "SEMESTA INDOVEST SEKURITAS",
+          "observation_count": 46,
+          "period_start": "2026-07-01",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 98063,
+          "gross_daily_net_lots": 142367,
+          "buy_lots": 120215,
+          "sell_lots": 22152,
+          "directional_efficiency": 0.6888042875104483,
+          "two_way_share": 0.15559785624477582,
+          "sign_switch_count": 21,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 98193,
+          "min_cumulative_net_lots": -4118,
+          "activity_style": "DIRECTIONAL_ACCUMULATION",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Flow is comparatively directional with ending position net buy residual."
+        },
+        {
+          "broker_code": "XL",
+          "broker_name": "STOCKBIT SEKURITAS DIGITAL",
+          "observation_count": 48,
+          "period_start": "2026-07-01",
+          "period_end": "2026-09-08",
+          "ending_net_lots": -349257,
+          "gross_daily_net_lots": 1506427,
+          "buy_lots": 578585,
+          "sell_lots": 927842,
+          "directional_efficiency": 0.23184462307167888,
+          "two_way_share": 0.38407768846416057,
+          "sign_switch_count": 19,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 90494,
+          "min_cumulative_net_lots": -540146,
+          "activity_style": "ACTIVE_TRADING",
+          "ending_position": "NET_SELL_RESIDUAL",
+          "interpretation": "Repeated two-way trading dominates the period; net sell residual is a residual position, not sufficient evidence of persistent accumulation."
+        },
+        {
+          "broker_code": "YP",
+          "broker_name": "MIRAE ASSET SEKURITAS INDONESIA",
+          "observation_count": 48,
+          "period_start": "2026-07-01",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 342960,
+          "gross_daily_net_lots": 948940,
+          "buy_lots": 645950,
+          "sell_lots": 302990,
+          "directional_efficiency": 0.3614137880161022,
+          "two_way_share": 0.31929310599194893,
+          "sign_switch_count": 21,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 397610,
+          "min_cumulative_net_lots": -43572,
+          "activity_style": "MIXED_TRADING",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Two-way trading is material. Interpret the net buy residual cautiously."
+        }
+      ],
+      "today_broker_summary": {
+        "top_5_net_buyers": [
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "XL",
+            "broker_name": "STOCKBIT SEKURITAS DIGITAL",
+            "side": "BUY",
+            "net_value": 327567200,
+            "net_lots": 22443,
+            "gross_side_lots": 57746,
+            "side_transaction_count": 993,
+            "gross_side_lots_per_transaction": 58.15307150050352,
+            "net_average_price": 145.955175333066,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "OD",
+            "broker_name": "BRI DANAREKSA SEKURITAS",
+            "side": "BUY",
+            "net_value": 49477700,
+            "net_lots": 3355,
+            "gross_side_lots": 5613,
+            "side_transaction_count": 42,
+            "gross_side_lots_per_transaction": 133.64285714285714,
+            "net_average_price": 147.47451564828614,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "SQ",
+            "broker_name": "BCA SEKURITAS",
+            "side": "BUY",
+            "net_value": 43991000,
+            "net_lots": 3018,
+            "gross_side_lots": 3020,
+            "side_transaction_count": 22,
+            "gross_side_lots_per_transaction": 137.27272727272728,
+            "net_average_price": 145.76209410205433,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "KK",
+            "broker_name": "PHILLIP SEKURITAS INDONESIA",
+            "side": "BUY",
+            "net_value": 28466200,
+            "net_lots": 1944,
+            "gross_side_lots": 2192,
+            "side_transaction_count": 17,
+            "gross_side_lots_per_transaction": 128.94117647058823,
+            "net_average_price": 146.43106995884773,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "PD",
+            "broker_name": "INDO PREMIER SEKURITAS",
+            "side": "BUY",
+            "net_value": 14806900,
+            "net_lots": 1013,
+            "gross_side_lots": 1400,
+            "side_transaction_count": 47,
+            "gross_side_lots_per_transaction": 29.78723404255319,
+            "net_average_price": 146.16880552813424,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          }
+        ],
+        "top_5_net_sellers": [
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "BK",
+            "broker_name": "J.P. MORGAN SEKURITAS INDONESIA",
+            "side": "SELL",
+            "net_value": -148131600,
+            "net_lots": -10137,
+            "gross_side_lots": 10137,
+            "side_transaction_count": 130,
+            "gross_side_lots_per_transaction": 77.97692307692307,
+            "net_average_price": 146.12962414915654,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "AK",
+            "broker_name": "UBS SEKURITAS INDONESIA",
+            "side": "SELL",
+            "net_value": -139674100,
+            "net_lots": -9506,
+            "gross_side_lots": 9921,
+            "side_transaction_count": 122,
+            "gross_side_lots_per_transaction": 81.31967213114754,
+            "net_average_price": 146.9325689038502,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "YP",
+            "broker_name": "MIRAE ASSET SEKURITAS INDONESIA",
+            "side": "SELL",
+            "net_value": -119486200,
+            "net_lots": -8234,
+            "gross_side_lots": 9040,
+            "side_transaction_count": 86,
+            "gross_side_lots_per_transaction": 105.11627906976744,
+            "net_average_price": 145.11318921544813,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "HP",
+            "broker_name": "HENAN PUTIHRAI SEKURITAS",
+            "side": "SELL",
+            "net_value": -62239800,
+            "net_lots": -4263,
+            "gross_side_lots": 4263,
+            "side_transaction_count": 54,
+            "gross_side_lots_per_transaction": 78.94444444444444,
+            "net_average_price": 146,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "YB",
+            "broker_name": "YAKIN BERTUMBUH SEKURITAS",
+            "side": "SELL",
+            "net_value": -44201800,
+            "net_lots": -3022,
+            "gross_side_lots": 4068,
+            "side_transaction_count": 39,
+            "gross_side_lots_per_transaction": 104.3076923076923,
+            "net_average_price": 146.2667107875579,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          }
+        ],
+        "tracked_brokers_outside_today_top_5": [
+          {
+            "group": "TRACKED_OUTSIDE_TODAY_TOP_5",
+            "broker_code": "MG",
+            "broker_name": "SEMESTA INDOVEST SEKURITAS",
+            "side": "BUY",
+            "net_value": 894300,
+            "net_lots": 61,
+            "gross_side_lots": 80,
+            "side_transaction_count": 2,
+            "gross_side_lots_per_transaction": 40,
+            "net_average_price": 146.60655737704917,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TRACKED_OUTSIDE_TODAY_TOP_5",
+            "broker_code": "CC",
+            "broker_name": "MANDIRI SEKURITAS",
+            "side": "SELL",
+            "net_value": -2376100,
+            "net_lots": -126,
+            "gross_side_lots": 9096,
+            "side_transaction_count": 120,
+            "gross_side_lots_per_transaction": 75.8,
+            "net_average_price": 188.5793650793651,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          }
+        ]
+      },
       "today_sellers": [
         {
           "broker_code": "BK",
@@ -831,6 +1275,22 @@
           "skipped": false,
           "reason": null
         },
+        "arjum_broker_accumulation": {
+          "ok": true,
+          "status": 200,
+          "cache_hit": false,
+          "cache_bypassed": true,
+          "cache_ttl_policy_seconds": 3888000,
+          "broker_count": 6
+        },
+        "arjum_history": {
+          "ok": true,
+          "status": 200,
+          "cache_hit": false,
+          "cache_bypassed": true,
+          "cache_ttl_policy_seconds": 3888000,
+          "candle_count": 48
+        },
         "pluang_structural": {
           "ok": true,
           "status": 200,
@@ -838,7 +1298,7 @@
           "reason": null,
           "cache_hit": false,
           "cache_bypassed": true,
-          "cache_ttl_policy_seconds": 600,
+          "cache_ttl_policy_seconds": 3888000,
           "capped": true
         },
         "pluang_today": {
@@ -848,7 +1308,7 @@
           "reason": null,
           "cache_hit": false,
           "cache_bypassed": true,
-          "cache_ttl_policy_seconds": 600,
+          "cache_ttl_policy_seconds": 3888000,
           "capped": true
         }
       },
@@ -859,6 +1319,8 @@
         "A full-period Pluang result uses a separate date-range request from the same-day result; the Worker caches each range independently.",
         "overall_net_average_price is a period net-flow implied average, not a broker inventory cost basis. Pluang is preferred when visible; Arjum broker_levels is the fallback.",
         "Large offsetting buys and sells can leave a small net position and keep an active broker outside Pluang's capped net top-broker list.",
+        "ACTIVE_TRADING is determined from daily net-lot churn, two-way participation, and repeated direction changes; a positive ending residual alone must not be called persistent accumulation.",
+        "Today lots per transaction uses gross lots on the broker's displayed side divided by that side's transaction frequency: B.lot/B.Freq for buyers and S.lot/S.Freq for sellers.",
         "If today_data_status is PENDING_BROKER_RELEASE, today:null means same-day broker data is not released yet.",
         "Crossing candidates are low-confidence because they use aggregate broker-summary similarity, not paired trade evidence.",
         "Recent 5-session window is approximated by business days excluding weekends only; IDX holidays are not yet modeled.",
@@ -877,10 +1339,10 @@
         "BQ"
       ],
       "today_data_status": {
-        "status": "BROKER_RELEASE_WINDOW_PASSED",
+        "status": "FINAL_OR_HISTORICAL_DATE",
         "ready": true,
         "expected_ready_after": "18:10 WIB",
-        "note": "Broker release window has passed. If today data is still null, treat it as unavailable or not returned by upstream."
+        "note": "Historical date requested. Same-day broker release gating does not apply."
       },
       "horizons": {
         "structural": {
@@ -899,7 +1361,7 @@
           "start": "2026-09-08",
           "end": "2026-09-08",
           "source": "arjum + pluang",
-          "status": "BROKER_RELEASE_WINDOW_PASSED",
+          "status": "FINAL_OR_HISTORICAL_DATE",
           "ready": true
         }
       },
@@ -988,6 +1450,27 @@
             "arjum_comparison_value": 132.37371534795486,
             "cross_source_status": "BOTH_AVAILABLE",
             "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
+          "activity": {
+            "broker_code": "LG",
+            "broker_name": "TRIMEGAH SEKURITAS INDONESIA TBK.",
+            "observation_count": 24,
+            "period_start": "2026-08-04",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 1467518,
+            "gross_daily_net_lots": 2477588,
+            "buy_lots": 1972553,
+            "sell_lots": 505035,
+            "directional_efficiency": 0.5923172052819112,
+            "two_way_share": 0.20384139735904436,
+            "sign_switch_count": 9,
+            "inventory_reset_count": 0,
+            "inventory_reset_dates": [],
+            "max_cumulative_net_lots": 1467518,
+            "min_cumulative_net_lots": -197464,
+            "activity_style": "DIRECTIONAL_ACCUMULATION",
+            "ending_position": "NET_BUY_RESIDUAL",
+            "interpretation": "Flow is comparatively directional with ending position net buy residual."
           },
           "classification": {
             "status": "STRONG_ACCUMULATION",
@@ -1080,6 +1563,27 @@
             "cross_source_status": "BOTH_AVAILABLE",
             "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
           },
+          "activity": {
+            "broker_code": "GR",
+            "broker_name": "PANIN SEKURITAS TBK.",
+            "observation_count": 24,
+            "period_start": "2026-08-04",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 759791,
+            "gross_daily_net_lots": 2282637,
+            "buy_lots": 1521214,
+            "sell_lots": 761423,
+            "directional_efficiency": 0.3328566916246429,
+            "two_way_share": 0.33357165418767853,
+            "sign_switch_count": 12,
+            "inventory_reset_count": 0,
+            "inventory_reset_dates": [],
+            "max_cumulative_net_lots": 826743,
+            "min_cumulative_net_lots": -200559,
+            "activity_style": "MIXED_TRADING",
+            "ending_position": "NET_BUY_RESIDUAL",
+            "interpretation": "Two-way trading is material. Interpret the net buy residual cautiously."
+          },
           "classification": {
             "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
@@ -1170,6 +1674,27 @@
             "arjum_comparison_value": 132.83724218518867,
             "cross_source_status": "BOTH_AVAILABLE",
             "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
+          "activity": {
+            "broker_code": "RF",
+            "broker_name": "BUANA CAPITAL SEKURITAS",
+            "observation_count": 11,
+            "period_start": "2026-08-04",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 1210074,
+            "gross_daily_net_lots": 1226034,
+            "buy_lots": 1218054,
+            "sell_lots": 7980,
+            "directional_efficiency": 0.986982416474584,
+            "two_way_share": 0.0065087917627080485,
+            "sign_switch_count": 5,
+            "inventory_reset_count": 0,
+            "inventory_reset_dates": [],
+            "max_cumulative_net_lots": 1210074,
+            "min_cumulative_net_lots": -3980,
+            "activity_style": "DIRECTIONAL_ACCUMULATION",
+            "ending_position": "NET_BUY_RESIDUAL",
+            "interpretation": "Flow is comparatively directional with ending position net buy residual."
           },
           "classification": {
             "status": "STRONG_ACCUMULATION",
@@ -1262,6 +1787,29 @@
             "cross_source_status": "ARJUM_FALLBACK_PLUANG_NOT_VISIBLE",
             "note": "Pluang did not expose this broker in its capped net top-broker list. Arjum is used as fallback; absence from Pluang can result from offsetting buys and sells and does not mean inactivity."
           },
+          "activity": {
+            "broker_code": "KK",
+            "broker_name": "PHILLIP SEKURITAS INDONESIA",
+            "observation_count": 24,
+            "period_start": "2026-08-04",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 44450,
+            "gross_daily_net_lots": 1015908,
+            "buy_lots": 530179,
+            "sell_lots": 485729,
+            "directional_efficiency": 0.04375396197293456,
+            "two_way_share": 0.4781230190135327,
+            "sign_switch_count": 11,
+            "inventory_reset_count": 1,
+            "inventory_reset_dates": [
+              "2026-08-21"
+            ],
+            "max_cumulative_net_lots": 316632,
+            "min_cumulative_net_lots": 0,
+            "activity_style": "ACTIVE_TRADING",
+            "ending_position": "NEAR_FLAT",
+            "interpretation": "Repeated two-way trading dominates the period; near flat is a residual position, not sufficient evidence of persistent accumulation."
+          },
           "classification": {
             "status": "DISTRIBUTION",
             "confidence": "medium",
@@ -1353,6 +1901,27 @@
             "cross_source_status": "ARJUM_FALLBACK_PLUANG_NOT_VISIBLE",
             "note": "Pluang did not expose this broker in its capped net top-broker list. Arjum is used as fallback; absence from Pluang can result from offsetting buys and sells and does not mean inactivity."
           },
+          "activity": {
+            "broker_code": "BQ",
+            "broker_name": "KOREA INVESTMENT AND SEKURITAS INDONESIA",
+            "observation_count": 24,
+            "period_start": "2026-08-04",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 131101,
+            "gross_daily_net_lots": 938735,
+            "buy_lots": 534918,
+            "sell_lots": 403817,
+            "directional_efficiency": 0.13965709172450158,
+            "two_way_share": 0.4301714541377492,
+            "sign_switch_count": 17,
+            "inventory_reset_count": 0,
+            "inventory_reset_dates": [],
+            "max_cumulative_net_lots": 337586,
+            "min_cumulative_net_lots": -36728,
+            "activity_style": "ACTIVE_TRADING",
+            "ending_position": "NET_BUY_RESIDUAL",
+            "interpretation": "Repeated two-way trading dominates the period; net buy residual is a residual position, not sufficient evidence of persistent accumulation."
+          },
           "classification": {
             "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
@@ -1360,6 +1929,414 @@
           }
         }
       ],
+      "broker_activity_chart": {
+        "path": "/api/v1/chart/COCO.svg?date=2026-09-08&start=2026-08-04&brokers=LG%2CGR%2CRF%2CKK%2CBQ%2CXL%2CYP%2CCC&featured=LG%2CGR%2CRF%2CKK%2CBQ",
+        "period": {
+          "start": "2026-08-04",
+          "end": "2026-09-08"
+        },
+        "flow_basis": "cumulative_net_lots_zero_anchored",
+        "price_overlay": "daily_ohlc_candles",
+        "candidate_brokers": [
+          "LG",
+          "GR",
+          "RF",
+          "KK",
+          "BQ",
+          "XL",
+          "YP",
+          "CC"
+        ],
+        "displayed_tracked_brokers": [
+          "LG",
+          "GR",
+          "RF",
+          "KK",
+          "BQ"
+        ],
+        "candle_count": 24
+      },
+      "broker_activity_analysis": [
+        {
+          "broker_code": "BQ",
+          "broker_name": "KOREA INVESTMENT AND SEKURITAS INDONESIA",
+          "observation_count": 24,
+          "period_start": "2026-08-04",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 131101,
+          "gross_daily_net_lots": 938735,
+          "buy_lots": 534918,
+          "sell_lots": 403817,
+          "directional_efficiency": 0.13965709172450158,
+          "two_way_share": 0.4301714541377492,
+          "sign_switch_count": 17,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 337586,
+          "min_cumulative_net_lots": -36728,
+          "activity_style": "ACTIVE_TRADING",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Repeated two-way trading dominates the period; net buy residual is a residual position, not sufficient evidence of persistent accumulation."
+        },
+        {
+          "broker_code": "CC",
+          "broker_name": "MANDIRI SEKURITAS",
+          "observation_count": 24,
+          "period_start": "2026-08-04",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 309806,
+          "gross_daily_net_lots": 2172426,
+          "buy_lots": 1241116,
+          "sell_lots": 931310,
+          "directional_efficiency": 0.14260830978822753,
+          "two_way_share": 0.4286958451058862,
+          "sign_switch_count": 15,
+          "inventory_reset_count": 4,
+          "inventory_reset_dates": [
+            "2026-08-06",
+            "2026-08-13",
+            "2026-08-24",
+            "2026-09-03"
+          ],
+          "max_cumulative_net_lots": 309806,
+          "min_cumulative_net_lots": -93110,
+          "activity_style": "ACTIVE_TRADING",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Repeated two-way trading dominates the period; net buy residual is a residual position, not sufficient evidence of persistent accumulation."
+        },
+        {
+          "broker_code": "GR",
+          "broker_name": "PANIN SEKURITAS TBK.",
+          "observation_count": 24,
+          "period_start": "2026-08-04",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 759791,
+          "gross_daily_net_lots": 2282637,
+          "buy_lots": 1521214,
+          "sell_lots": 761423,
+          "directional_efficiency": 0.3328566916246429,
+          "two_way_share": 0.33357165418767853,
+          "sign_switch_count": 12,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 826743,
+          "min_cumulative_net_lots": -200559,
+          "activity_style": "MIXED_TRADING",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Two-way trading is material. Interpret the net buy residual cautiously."
+        },
+        {
+          "broker_code": "KK",
+          "broker_name": "PHILLIP SEKURITAS INDONESIA",
+          "observation_count": 24,
+          "period_start": "2026-08-04",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 44450,
+          "gross_daily_net_lots": 1015908,
+          "buy_lots": 530179,
+          "sell_lots": 485729,
+          "directional_efficiency": 0.04375396197293456,
+          "two_way_share": 0.4781230190135327,
+          "sign_switch_count": 11,
+          "inventory_reset_count": 1,
+          "inventory_reset_dates": [
+            "2026-08-21"
+          ],
+          "max_cumulative_net_lots": 316632,
+          "min_cumulative_net_lots": 0,
+          "activity_style": "ACTIVE_TRADING",
+          "ending_position": "NEAR_FLAT",
+          "interpretation": "Repeated two-way trading dominates the period; near flat is a residual position, not sufficient evidence of persistent accumulation."
+        },
+        {
+          "broker_code": "LG",
+          "broker_name": "TRIMEGAH SEKURITAS INDONESIA TBK.",
+          "observation_count": 24,
+          "period_start": "2026-08-04",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 1467518,
+          "gross_daily_net_lots": 2477588,
+          "buy_lots": 1972553,
+          "sell_lots": 505035,
+          "directional_efficiency": 0.5923172052819112,
+          "two_way_share": 0.20384139735904436,
+          "sign_switch_count": 9,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 1467518,
+          "min_cumulative_net_lots": -197464,
+          "activity_style": "DIRECTIONAL_ACCUMULATION",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Flow is comparatively directional with ending position net buy residual."
+        },
+        {
+          "broker_code": "RF",
+          "broker_name": "BUANA CAPITAL SEKURITAS",
+          "observation_count": 11,
+          "period_start": "2026-08-04",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 1210074,
+          "gross_daily_net_lots": 1226034,
+          "buy_lots": 1218054,
+          "sell_lots": 7980,
+          "directional_efficiency": 0.986982416474584,
+          "two_way_share": 0.0065087917627080485,
+          "sign_switch_count": 5,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 1210074,
+          "min_cumulative_net_lots": -3980,
+          "activity_style": "DIRECTIONAL_ACCUMULATION",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Flow is comparatively directional with ending position net buy residual."
+        },
+        {
+          "broker_code": "XL",
+          "broker_name": "STOCKBIT SEKURITAS DIGITAL",
+          "observation_count": 24,
+          "period_start": "2026-08-04",
+          "period_end": "2026-09-08",
+          "ending_net_lots": -2917774,
+          "gross_daily_net_lots": 5955156,
+          "buy_lots": 1518691,
+          "sell_lots": 4436465,
+          "directional_efficiency": 0.4899576098426305,
+          "two_way_share": 0.25502119507868476,
+          "sign_switch_count": 14,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 115476,
+          "min_cumulative_net_lots": -2917774,
+          "activity_style": "MIXED_TRADING",
+          "ending_position": "NET_SELL_RESIDUAL",
+          "interpretation": "Two-way trading is material. Interpret the net sell residual cautiously."
+        },
+        {
+          "broker_code": "YP",
+          "broker_name": "MIRAE ASSET SEKURITAS INDONESIA",
+          "observation_count": 24,
+          "period_start": "2026-08-04",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 90504,
+          "gross_daily_net_lots": 1653728,
+          "buy_lots": 872116,
+          "sell_lots": 781612,
+          "directional_efficiency": 0.05472725865438573,
+          "two_way_share": 0.4726363706728071,
+          "sign_switch_count": 8,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 725662,
+          "min_cumulative_net_lots": -18990,
+          "activity_style": "ACTIVE_TRADING",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Repeated two-way trading dominates the period; net buy residual is a residual position, not sufficient evidence of persistent accumulation."
+        }
+      ],
+      "today_broker_summary": {
+        "top_5_net_buyers": [
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "AK",
+            "broker_name": "UBS SEKURITAS INDONESIA",
+            "side": "BUY",
+            "net_value": 15142285200,
+            "net_lots": 1083450,
+            "gross_side_lots": 1602220,
+            "side_transaction_count": 3415,
+            "gross_side_lots_per_transaction": 469.17130307467056,
+            "net_average_price": 139.75988924269694,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "RF",
+            "broker_name": "BUANA CAPITAL SEKURITAS",
+            "side": "BUY",
+            "net_value": 7781337500,
+            "net_lots": 568200,
+            "gross_side_lots": 578000,
+            "side_transaction_count": 781,
+            "gross_side_lots_per_transaction": 740.0768245838668,
+            "net_average_price": 136.9471576909539,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "MG",
+            "broker_name": "SEMESTA INDOVEST SEKURITAS",
+            "side": "BUY",
+            "net_value": 6805362900,
+            "net_lots": 480004,
+            "gross_side_lots": 1194497,
+            "side_transaction_count": 2617,
+            "gross_side_lots_per_transaction": 456.43752388230797,
+            "net_average_price": 141.77721227323104,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "IF",
+            "broker_name": "SAMUEL SEKURITAS  INDONESIA",
+            "side": "BUY",
+            "net_value": 6393025800,
+            "net_lots": 461783,
+            "gross_side_lots": 484371,
+            "side_transaction_count": 772,
+            "gross_side_lots_per_transaction": 627.4235751295337,
+            "net_average_price": 138.44220770361838,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "CP",
+            "broker_name": "KB VALBURY SEKURITAS",
+            "side": "BUY",
+            "net_value": 4918901300,
+            "net_lots": 354872,
+            "gross_side_lots": 689862,
+            "side_transaction_count": 1392,
+            "gross_side_lots_per_transaction": 495.5905172413793,
+            "net_average_price": 138.6105778985099,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          }
+        ],
+        "top_5_net_sellers": [
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "XL",
+            "broker_name": "STOCKBIT SEKURITAS DIGITAL",
+            "side": "SELL",
+            "net_value": -13021187500,
+            "net_lots": -940117,
+            "gross_side_lots": 4253984,
+            "side_transaction_count": 18888,
+            "gross_side_lots_per_transaction": 225.22151630664973,
+            "net_average_price": 138.50603169605486,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "XC",
+            "broker_name": "AJAIB SEKURITAS ASIA",
+            "side": "SELL",
+            "net_value": -5598363200,
+            "net_lots": -405210,
+            "gross_side_lots": 955907,
+            "side_transaction_count": 3417,
+            "gross_side_lots_per_transaction": 279.750365817969,
+            "net_average_price": 138.15955183731893,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "AZ",
+            "broker_name": "SUCOR SEKURITAS",
+            "side": "SELL",
+            "net_value": -3829003700,
+            "net_lots": -278679,
+            "gross_side_lots": 772210,
+            "side_transaction_count": 1452,
+            "gross_side_lots_per_transaction": 531.8250688705234,
+            "net_average_price": 137.39835796741053,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "AG",
+            "broker_name": "KIWOOM SEKURITAS INDONESIA",
+            "side": "SELL",
+            "net_value": -3378875900,
+            "net_lots": -243020,
+            "gross_side_lots": 261999,
+            "side_transaction_count": 378,
+            "gross_side_lots_per_transaction": 693.1190476190476,
+            "net_average_price": 139.03694757633116,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "YP",
+            "broker_name": "MIRAE ASSET SEKURITAS INDONESIA",
+            "side": "SELL",
+            "net_value": -2899706000,
+            "net_lots": -215497,
+            "gross_side_lots": 1860402,
+            "side_transaction_count": 4770,
+            "gross_side_lots_per_transaction": 390.02138364779876,
+            "net_average_price": 134.5589961809213,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          }
+        ],
+        "tracked_brokers_outside_today_top_5": [
+          {
+            "group": "TRACKED_OUTSIDE_TODAY_TOP_5",
+            "broker_code": "LG",
+            "broker_name": "TRIMEGAH SEKURITAS INDONESIA TBK.",
+            "side": "BUY",
+            "net_value": 326491800,
+            "net_lots": 23468,
+            "gross_side_lots": 106874,
+            "side_transaction_count": 279,
+            "gross_side_lots_per_transaction": 383.06093189964156,
+            "net_average_price": 139.12212374296914,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TRACKED_OUTSIDE_TODAY_TOP_5",
+            "broker_code": "GR",
+            "broker_name": "PANIN SEKURITAS TBK.",
+            "side": "SELL",
+            "net_value": -830893600,
+            "net_lots": -57729,
+            "gross_side_lots": 142895,
+            "side_transaction_count": 366,
+            "gross_side_lots_per_transaction": 390.42349726775956,
+            "net_average_price": 143.93001784198583,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TRACKED_OUTSIDE_TODAY_TOP_5",
+            "broker_code": "KK",
+            "broker_name": "PHILLIP SEKURITAS INDONESIA",
+            "side": "SELL",
+            "net_value": -741262300,
+            "net_lots": -52235,
+            "gross_side_lots": 240810,
+            "side_transaction_count": 936,
+            "gross_side_lots_per_transaction": 257.27564102564105,
+            "net_average_price": 141.90912223604863,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TRACKED_OUTSIDE_TODAY_TOP_5",
+            "broker_code": "BQ",
+            "broker_name": "KOREA INVESTMENT AND SEKURITAS INDONESIA",
+            "side": "SELL",
+            "net_value": -2865214800,
+            "net_lots": -206485,
+            "gross_side_lots": 342326,
+            "side_transaction_count": 1408,
+            "gross_side_lots_per_transaction": 243.12926136363637,
+            "net_average_price": 138.76140155459234,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          }
+        ]
+      },
       "today_sellers": [
         {
           "broker_code": "XL",
@@ -1661,6 +2638,22 @@
           "skipped": false,
           "reason": null
         },
+        "arjum_broker_accumulation": {
+          "ok": true,
+          "status": 200,
+          "cache_hit": false,
+          "cache_bypassed": true,
+          "cache_ttl_policy_seconds": 3888000,
+          "broker_count": 8
+        },
+        "arjum_history": {
+          "ok": true,
+          "status": 200,
+          "cache_hit": false,
+          "cache_bypassed": true,
+          "cache_ttl_policy_seconds": 3888000,
+          "candle_count": 24
+        },
         "pluang_structural": {
           "ok": true,
           "status": 200,
@@ -1668,7 +2661,7 @@
           "reason": null,
           "cache_hit": false,
           "cache_bypassed": true,
-          "cache_ttl_policy_seconds": 600,
+          "cache_ttl_policy_seconds": 3888000,
           "capped": true
         },
         "pluang_today": {
@@ -1678,7 +2671,7 @@
           "reason": null,
           "cache_hit": false,
           "cache_bypassed": true,
-          "cache_ttl_policy_seconds": 600,
+          "cache_ttl_policy_seconds": 3888000,
           "capped": true
         }
       },
@@ -1689,6 +2682,8 @@
         "A full-period Pluang result uses a separate date-range request from the same-day result; the Worker caches each range independently.",
         "overall_net_average_price is a period net-flow implied average, not a broker inventory cost basis. Pluang is preferred when visible; Arjum broker_levels is the fallback.",
         "Large offsetting buys and sells can leave a small net position and keep an active broker outside Pluang's capped net top-broker list.",
+        "ACTIVE_TRADING is determined from daily net-lot churn, two-way participation, and repeated direction changes; a positive ending residual alone must not be called persistent accumulation.",
+        "Today lots per transaction uses gross lots on the broker's displayed side divided by that side's transaction frequency: B.lot/B.Freq for buyers and S.lot/S.Freq for sellers.",
         "If today_data_status is PENDING_BROKER_RELEASE, today:null means same-day broker data is not released yet.",
         "Crossing candidates are low-confidence because they use aggregate broker-summary similarity, not paired trade evidence.",
         "Recent 5-session window is approximated by business days excluding weekends only; IDX holidays are not yet modeled.",
@@ -1707,10 +2702,10 @@
         "IN"
       ],
       "today_data_status": {
-        "status": "BROKER_RELEASE_WINDOW_PASSED",
+        "status": "FINAL_OR_HISTORICAL_DATE",
         "ready": true,
         "expected_ready_after": "18:10 WIB",
-        "note": "Broker release window has passed. If today data is still null, treat it as unavailable or not returned by upstream."
+        "note": "Historical date requested. Same-day broker release gating does not apply."
       },
       "horizons": {
         "structural": {
@@ -1729,7 +2724,7 @@
           "start": "2026-09-08",
           "end": "2026-09-08",
           "source": "arjum + pluang",
-          "status": "BROKER_RELEASE_WINDOW_PASSED",
+          "status": "FINAL_OR_HISTORICAL_DATE",
           "ready": true
         }
       },
@@ -1818,6 +2813,27 @@
             "arjum_comparison_value": 157.09866036756083,
             "cross_source_status": "BOTH_AVAILABLE",
             "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
+          "activity": {
+            "broker_code": "ZP",
+            "broker_name": "MAYBANK SEKURITAS INDONESIA",
+            "observation_count": 119,
+            "period_start": "2026-03-05",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 8889304,
+            "gross_daily_net_lots": 13396442,
+            "buy_lots": 11142873,
+            "sell_lots": 2253569,
+            "directional_efficiency": 0.6635570847841539,
+            "two_way_share": 0.16822145760792306,
+            "sign_switch_count": 43,
+            "inventory_reset_count": 0,
+            "inventory_reset_dates": [],
+            "max_cumulative_net_lots": 8992823,
+            "min_cumulative_net_lots": -10941,
+            "activity_style": "DIRECTIONAL_ACCUMULATION",
+            "ending_position": "NET_BUY_RESIDUAL",
+            "interpretation": "Flow is comparatively directional with ending position net buy residual."
           },
           "classification": {
             "status": "EARLY_DISTRIBUTION",
@@ -1910,6 +2926,27 @@
             "cross_source_status": "ARJUM_FALLBACK_PLUANG_NOT_VISIBLE",
             "note": "Pluang did not expose this broker in its capped net top-broker list. Arjum is used as fallback; absence from Pluang can result from offsetting buys and sells and does not mean inactivity."
           },
+          "activity": {
+            "broker_code": "GR",
+            "broker_name": "PANIN SEKURITAS TBK.",
+            "observation_count": 119,
+            "period_start": "2026-03-05",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 269854,
+            "gross_daily_net_lots": 3398264,
+            "buy_lots": 1834059,
+            "sell_lots": 1564205,
+            "directional_efficiency": 0.079409369019005,
+            "two_way_share": 0.4602953154904975,
+            "sign_switch_count": 65,
+            "inventory_reset_count": 0,
+            "inventory_reset_dates": [],
+            "max_cumulative_net_lots": 1200955,
+            "min_cumulative_net_lots": -69725,
+            "activity_style": "ACTIVE_TRADING",
+            "ending_position": "NET_BUY_RESIDUAL",
+            "interpretation": "Repeated two-way trading dominates the period; net buy residual is a residual position, not sufficient evidence of persistent accumulation."
+          },
           "classification": {
             "status": "NOT_ACCUMULATOR",
             "confidence": "medium",
@@ -2000,6 +3037,29 @@
             "arjum_comparison_value": 142.3743525460609,
             "cross_source_status": "BOTH_AVAILABLE",
             "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
+          "activity": {
+            "broker_code": "AK",
+            "broker_name": "UBS SEKURITAS INDONESIA",
+            "observation_count": 118,
+            "period_start": "2026-03-05",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 1691240,
+            "gross_daily_net_lots": 14130464,
+            "buy_lots": 7910852,
+            "sell_lots": 6219612,
+            "directional_efficiency": 0.1196875063692176,
+            "two_way_share": 0.44015624681539123,
+            "sign_switch_count": 52,
+            "inventory_reset_count": 1,
+            "inventory_reset_dates": [
+              "2026-06-24"
+            ],
+            "max_cumulative_net_lots": 3646504,
+            "min_cumulative_net_lots": -63159,
+            "activity_style": "ACTIVE_TRADING",
+            "ending_position": "NET_BUY_RESIDUAL",
+            "interpretation": "Repeated two-way trading dominates the period; net buy residual is a residual position, not sufficient evidence of persistent accumulation."
           },
           "classification": {
             "status": "EARLY_DISTRIBUTION",
@@ -2092,6 +3152,27 @@
             "cross_source_status": "BOTH_AVAILABLE",
             "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
           },
+          "activity": {
+            "broker_code": "BK",
+            "broker_name": "J.P. MORGAN SEKURITAS INDONESIA",
+            "observation_count": 98,
+            "period_start": "2026-03-05",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 1133456,
+            "gross_daily_net_lots": 4964974,
+            "buy_lots": 3049215,
+            "sell_lots": 1915759,
+            "directional_efficiency": 0.22829042005053804,
+            "two_way_share": 0.385854789974731,
+            "sign_switch_count": 36,
+            "inventory_reset_count": 0,
+            "inventory_reset_dates": [],
+            "max_cumulative_net_lots": 1626432,
+            "min_cumulative_net_lots": -113895,
+            "activity_style": "ACTIVE_TRADING",
+            "ending_position": "NET_BUY_RESIDUAL",
+            "interpretation": "Repeated two-way trading dominates the period; net buy residual is a residual position, not sufficient evidence of persistent accumulation."
+          },
           "classification": {
             "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
@@ -2183,6 +3264,27 @@
             "cross_source_status": "BOTH_AVAILABLE",
             "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
           },
+          "activity": {
+            "broker_code": "IN",
+            "broker_name": "INVESTINDO NUSANTARA SEKURITAS",
+            "observation_count": 28,
+            "period_start": "2026-03-17",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 607166,
+            "gross_daily_net_lots": 635406,
+            "buy_lots": 621286,
+            "sell_lots": 14120,
+            "directional_efficiency": 0.9555559752347318,
+            "two_way_share": 0.022222012382634094,
+            "sign_switch_count": 13,
+            "inventory_reset_count": 0,
+            "inventory_reset_dates": [],
+            "max_cumulative_net_lots": 607666,
+            "min_cumulative_net_lots": 0,
+            "activity_style": "DIRECTIONAL_ACCUMULATION",
+            "ending_position": "NET_BUY_RESIDUAL",
+            "interpretation": "Flow is comparatively directional with ending position net buy residual."
+          },
           "classification": {
             "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
@@ -2190,6 +3292,362 @@
           }
         }
       ],
+      "broker_activity_chart": {
+        "path": "/api/v1/chart/DMAS.svg?date=2026-09-08&start=2026-03-05&brokers=ZP%2CGR%2CAK%2CBK%2CIN%2CXL%2CCC&featured=ZP%2CGR%2CAK%2CBK%2CIN",
+        "period": {
+          "start": "2026-03-05",
+          "end": "2026-09-08"
+        },
+        "flow_basis": "cumulative_net_lots_zero_anchored",
+        "price_overlay": "daily_ohlc_candles",
+        "candidate_brokers": [
+          "ZP",
+          "GR",
+          "AK",
+          "BK",
+          "IN",
+          "XL",
+          "CC"
+        ],
+        "displayed_tracked_brokers": [
+          "ZP",
+          "GR",
+          "AK",
+          "BK",
+          "IN"
+        ],
+        "candle_count": 119
+      },
+      "broker_activity_analysis": [
+        {
+          "broker_code": "AK",
+          "broker_name": "UBS SEKURITAS INDONESIA",
+          "observation_count": 118,
+          "period_start": "2026-03-05",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 1691240,
+          "gross_daily_net_lots": 14130464,
+          "buy_lots": 7910852,
+          "sell_lots": 6219612,
+          "directional_efficiency": 0.1196875063692176,
+          "two_way_share": 0.44015624681539123,
+          "sign_switch_count": 52,
+          "inventory_reset_count": 1,
+          "inventory_reset_dates": [
+            "2026-06-24"
+          ],
+          "max_cumulative_net_lots": 3646504,
+          "min_cumulative_net_lots": -63159,
+          "activity_style": "ACTIVE_TRADING",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Repeated two-way trading dominates the period; net buy residual is a residual position, not sufficient evidence of persistent accumulation."
+        },
+        {
+          "broker_code": "BK",
+          "broker_name": "J.P. MORGAN SEKURITAS INDONESIA",
+          "observation_count": 98,
+          "period_start": "2026-03-05",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 1133456,
+          "gross_daily_net_lots": 4964974,
+          "buy_lots": 3049215,
+          "sell_lots": 1915759,
+          "directional_efficiency": 0.22829042005053804,
+          "two_way_share": 0.385854789974731,
+          "sign_switch_count": 36,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 1626432,
+          "min_cumulative_net_lots": -113895,
+          "activity_style": "ACTIVE_TRADING",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Repeated two-way trading dominates the period; net buy residual is a residual position, not sufficient evidence of persistent accumulation."
+        },
+        {
+          "broker_code": "CC",
+          "broker_name": "MANDIRI SEKURITAS",
+          "observation_count": 119,
+          "period_start": "2026-03-05",
+          "period_end": "2026-09-08",
+          "ending_net_lots": -193339,
+          "gross_daily_net_lots": 9618555,
+          "buy_lots": 4712608,
+          "sell_lots": 4905947,
+          "directional_efficiency": 0.020100628420797094,
+          "two_way_share": 0.48994968578960146,
+          "sign_switch_count": 59,
+          "inventory_reset_count": 2,
+          "inventory_reset_dates": [
+            "2026-05-18",
+            "2026-09-03"
+          ],
+          "max_cumulative_net_lots": 443749,
+          "min_cumulative_net_lots": -1377230,
+          "activity_style": "ACTIVE_TRADING",
+          "ending_position": "NEAR_FLAT",
+          "interpretation": "Repeated two-way trading dominates the period; near flat is a residual position, not sufficient evidence of persistent accumulation."
+        },
+        {
+          "broker_code": "GR",
+          "broker_name": "PANIN SEKURITAS TBK.",
+          "observation_count": 119,
+          "period_start": "2026-03-05",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 269854,
+          "gross_daily_net_lots": 3398264,
+          "buy_lots": 1834059,
+          "sell_lots": 1564205,
+          "directional_efficiency": 0.079409369019005,
+          "two_way_share": 0.4602953154904975,
+          "sign_switch_count": 65,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 1200955,
+          "min_cumulative_net_lots": -69725,
+          "activity_style": "ACTIVE_TRADING",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Repeated two-way trading dominates the period; net buy residual is a residual position, not sufficient evidence of persistent accumulation."
+        },
+        {
+          "broker_code": "XL",
+          "broker_name": "STOCKBIT SEKURITAS DIGITAL",
+          "observation_count": 119,
+          "period_start": "2026-03-05",
+          "period_end": "2026-09-08",
+          "ending_net_lots": -1783228,
+          "gross_daily_net_lots": 10846186,
+          "buy_lots": 4531479,
+          "sell_lots": 6314707,
+          "directional_efficiency": 0.16441060479693045,
+          "two_way_share": 0.41779469760153476,
+          "sign_switch_count": 50,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 337268,
+          "min_cumulative_net_lots": -2642972,
+          "activity_style": "ACTIVE_TRADING",
+          "ending_position": "NET_SELL_RESIDUAL",
+          "interpretation": "Repeated two-way trading dominates the period; net sell residual is a residual position, not sufficient evidence of persistent accumulation."
+        },
+        {
+          "broker_code": "ZP",
+          "broker_name": "MAYBANK SEKURITAS INDONESIA",
+          "observation_count": 119,
+          "period_start": "2026-03-05",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 8889304,
+          "gross_daily_net_lots": 13396442,
+          "buy_lots": 11142873,
+          "sell_lots": 2253569,
+          "directional_efficiency": 0.6635570847841539,
+          "two_way_share": 0.16822145760792306,
+          "sign_switch_count": 43,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 8992823,
+          "min_cumulative_net_lots": -10941,
+          "activity_style": "DIRECTIONAL_ACCUMULATION",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Flow is comparatively directional with ending position net buy residual."
+        },
+        {
+          "broker_code": "IN",
+          "broker_name": "INVESTINDO NUSANTARA SEKURITAS",
+          "observation_count": 28,
+          "period_start": "2026-03-17",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 607166,
+          "gross_daily_net_lots": 635406,
+          "buy_lots": 621286,
+          "sell_lots": 14120,
+          "directional_efficiency": 0.9555559752347318,
+          "two_way_share": 0.022222012382634094,
+          "sign_switch_count": 13,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 607666,
+          "min_cumulative_net_lots": 0,
+          "activity_style": "DIRECTIONAL_ACCUMULATION",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Flow is comparatively directional with ending position net buy residual."
+        }
+      ],
+      "today_broker_summary": {
+        "top_5_net_buyers": [
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "XL",
+            "broker_name": "STOCKBIT SEKURITAS DIGITAL",
+            "side": "BUY",
+            "net_value": 3000450800,
+            "net_lots": 144422,
+            "gross_side_lots": 789040,
+            "side_transaction_count": 7583,
+            "gross_side_lots_per_transaction": 104.05380456283793,
+            "net_average_price": 207.75579897799506,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "AZ",
+            "broker_name": "SUCOR SEKURITAS",
+            "side": "BUY",
+            "net_value": 2788640800,
+            "net_lots": 136819,
+            "gross_side_lots": 154720,
+            "side_transaction_count": 316,
+            "gross_side_lots_per_transaction": 489.62025316455697,
+            "net_average_price": 203.81970340376702,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "YP",
+            "broker_name": "MIRAE ASSET SEKURITAS INDONESIA",
+            "side": "BUY",
+            "net_value": 2699837600,
+            "net_lots": 132289,
+            "gross_side_lots": 281405,
+            "side_transaction_count": 949,
+            "gross_side_lots_per_transaction": 296.52792413066385,
+            "net_average_price": 204.08632614956647,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "PD",
+            "broker_name": "INDO PREMIER SEKURITAS",
+            "side": "BUY",
+            "net_value": 1819364400,
+            "net_lots": 89278,
+            "gross_side_lots": 165379,
+            "side_transaction_count": 838,
+            "gross_side_lots_per_transaction": 197.34964200477327,
+            "net_average_price": 203.7864199466834,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "CP",
+            "broker_name": "KB VALBURY SEKURITAS",
+            "side": "BUY",
+            "net_value": 1717516600,
+            "net_lots": 82710,
+            "gross_side_lots": 233819,
+            "side_transaction_count": 643,
+            "gross_side_lots_per_transaction": 363.6376360808709,
+            "net_average_price": 207.65525329464393,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          }
+        ],
+        "top_5_net_sellers": [
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "AK",
+            "broker_name": "UBS SEKURITAS INDONESIA",
+            "side": "SELL",
+            "net_value": -9529806800,
+            "net_lots": -466620,
+            "gross_side_lots": 553498,
+            "side_transaction_count": 2209,
+            "gross_side_lots_per_transaction": 250.56496152105024,
+            "net_average_price": 204.23056877116284,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "AI",
+            "broker_name": "KAY HIAN SEKURITAS",
+            "side": "SELL",
+            "net_value": -5498864000,
+            "net_lots": -269680,
+            "gross_side_lots": 271345,
+            "side_transaction_count": 998,
+            "gross_side_lots_per_transaction": 271.8887775551102,
+            "net_average_price": 203.90329279145655,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "MG",
+            "broker_name": "SEMESTA INDOVEST SEKURITAS",
+            "side": "SELL",
+            "net_value": -4486499000,
+            "net_lots": -217585,
+            "gross_side_lots": 323652,
+            "side_transaction_count": 692,
+            "gross_side_lots_per_transaction": 467.70520231213874,
+            "net_average_price": 206.1952340464646,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "ZP",
+            "broker_name": "MAYBANK SEKURITAS INDONESIA",
+            "side": "SELL",
+            "net_value": -2105783200,
+            "net_lots": -103519,
+            "gross_side_lots": 179921,
+            "side_transaction_count": 819,
+            "gross_side_lots_per_transaction": 219.68376068376068,
+            "net_average_price": 203.41997121301404,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "BK",
+            "broker_name": "J.P. MORGAN SEKURITAS INDONESIA",
+            "side": "SELL",
+            "net_value": -1209768600,
+            "net_lots": -59241,
+            "gross_side_lots": 89218,
+            "side_transaction_count": 434,
+            "gross_side_lots_per_transaction": 205.57142857142858,
+            "net_average_price": 204.21137387957666,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          }
+        ],
+        "tracked_brokers_outside_today_top_5": [
+          {
+            "group": "TRACKED_OUTSIDE_TODAY_TOP_5",
+            "broker_code": "GR",
+            "broker_name": "PANIN SEKURITAS TBK.",
+            "side": "BUY",
+            "net_value": 870713400,
+            "net_lots": 43002,
+            "gross_side_lots": 50598,
+            "side_transaction_count": 143,
+            "gross_side_lots_per_transaction": 353.83216783216784,
+            "net_average_price": 202.48207060136738,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TRACKED_OUTSIDE_TODAY_TOP_5",
+            "broker_code": "IN",
+            "broker_name": "INVESTINDO NUSANTARA SEKURITAS",
+            "side": "SELL",
+            "net_value": -10400000,
+            "net_lots": -500,
+            "gross_side_lots": 500,
+            "side_transaction_count": 1,
+            "gross_side_lots_per_transaction": 500,
+            "net_average_price": 208,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          }
+        ]
+      },
       "today_sellers": [
         {
           "broker_code": "AK",
@@ -2491,6 +3949,22 @@
           "skipped": false,
           "reason": null
         },
+        "arjum_broker_accumulation": {
+          "ok": true,
+          "status": 200,
+          "cache_hit": false,
+          "cache_bypassed": true,
+          "cache_ttl_policy_seconds": 3888000,
+          "broker_count": 7
+        },
+        "arjum_history": {
+          "ok": true,
+          "status": 200,
+          "cache_hit": false,
+          "cache_bypassed": true,
+          "cache_ttl_policy_seconds": 3888000,
+          "candle_count": 119
+        },
         "pluang_structural": {
           "ok": true,
           "status": 200,
@@ -2498,7 +3972,7 @@
           "reason": null,
           "cache_hit": false,
           "cache_bypassed": true,
-          "cache_ttl_policy_seconds": 600,
+          "cache_ttl_policy_seconds": 3888000,
           "capped": true
         },
         "pluang_today": {
@@ -2508,7 +3982,7 @@
           "reason": null,
           "cache_hit": false,
           "cache_bypassed": true,
-          "cache_ttl_policy_seconds": 600,
+          "cache_ttl_policy_seconds": 3888000,
           "capped": true
         }
       },
@@ -2519,6 +3993,8 @@
         "A full-period Pluang result uses a separate date-range request from the same-day result; the Worker caches each range independently.",
         "overall_net_average_price is a period net-flow implied average, not a broker inventory cost basis. Pluang is preferred when visible; Arjum broker_levels is the fallback.",
         "Large offsetting buys and sells can leave a small net position and keep an active broker outside Pluang's capped net top-broker list.",
+        "ACTIVE_TRADING is determined from daily net-lot churn, two-way participation, and repeated direction changes; a positive ending residual alone must not be called persistent accumulation.",
+        "Today lots per transaction uses gross lots on the broker's displayed side divided by that side's transaction frequency: B.lot/B.Freq for buyers and S.lot/S.Freq for sellers.",
         "If today_data_status is PENDING_BROKER_RELEASE, today:null means same-day broker data is not released yet.",
         "Crossing candidates are low-confidence because they use aggregate broker-summary similarity, not paired trade evidence.",
         "Recent 5-session window is approximated by business days excluding weekends only; IDX holidays are not yet modeled.",
@@ -2537,10 +4013,10 @@
         "OD"
       ],
       "today_data_status": {
-        "status": "BROKER_RELEASE_WINDOW_PASSED",
+        "status": "FINAL_OR_HISTORICAL_DATE",
         "ready": true,
         "expected_ready_after": "18:10 WIB",
-        "note": "Broker release window has passed. If today data is still null, treat it as unavailable or not returned by upstream."
+        "note": "Historical date requested. Same-day broker release gating does not apply."
       },
       "horizons": {
         "structural": {
@@ -2559,7 +4035,7 @@
           "start": "2026-09-08",
           "end": "2026-09-08",
           "source": "arjum + pluang",
-          "status": "BROKER_RELEASE_WINDOW_PASSED",
+          "status": "FINAL_OR_HISTORICAL_DATE",
           "ready": true
         }
       },
@@ -2648,6 +4124,27 @@
             "arjum_comparison_value": 89.89908730773519,
             "cross_source_status": "BOTH_AVAILABLE",
             "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
+          "activity": {
+            "broker_code": "XL",
+            "broker_name": "STOCKBIT SEKURITAS DIGITAL",
+            "observation_count": 64,
+            "period_start": "2026-06-08",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 2762596,
+            "gross_daily_net_lots": 17746172,
+            "buy_lots": 10254384,
+            "sell_lots": 7491788,
+            "directional_efficiency": 0.15567278396715642,
+            "two_way_share": 0.4221636080164218,
+            "sign_switch_count": 27,
+            "inventory_reset_count": 0,
+            "inventory_reset_dates": [],
+            "max_cumulative_net_lots": 5176849,
+            "min_cumulative_net_lots": 0,
+            "activity_style": "ACTIVE_TRADING",
+            "ending_position": "NET_BUY_RESIDUAL",
+            "interpretation": "Repeated two-way trading dominates the period; net buy residual is a residual position, not sufficient evidence of persistent accumulation."
           },
           "classification": {
             "status": "DISTRIBUTION",
@@ -2740,6 +4237,27 @@
             "cross_source_status": "BOTH_AVAILABLE",
             "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
           },
+          "activity": {
+            "broker_code": "GR",
+            "broker_name": "PANIN SEKURITAS TBK.",
+            "observation_count": 64,
+            "period_start": "2026-06-08",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 1315609,
+            "gross_daily_net_lots": 4958891,
+            "buy_lots": 3137250,
+            "sell_lots": 1821641,
+            "directional_efficiency": 0.26530306877081994,
+            "two_way_share": 0.36734846561459006,
+            "sign_switch_count": 28,
+            "inventory_reset_count": 0,
+            "inventory_reset_dates": [],
+            "max_cumulative_net_lots": 1867572,
+            "min_cumulative_net_lots": -11967,
+            "activity_style": "ACTIVE_TRADING",
+            "ending_position": "NET_BUY_RESIDUAL",
+            "interpretation": "Repeated two-way trading dominates the period; net buy residual is a residual position, not sufficient evidence of persistent accumulation."
+          },
           "classification": {
             "status": "EARLY_DISTRIBUTION",
             "confidence": "medium",
@@ -2830,6 +4348,29 @@
             "arjum_comparison_value": 118.31665235788566,
             "cross_source_status": "BOTH_AVAILABLE",
             "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
+          },
+          "activity": {
+            "broker_code": "AK",
+            "broker_name": "UBS SEKURITAS INDONESIA",
+            "observation_count": 64,
+            "period_start": "2026-06-08",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 2415766,
+            "gross_daily_net_lots": 17946504,
+            "buy_lots": 10181135,
+            "sell_lots": 7765369,
+            "directional_efficiency": 0.13460928100537017,
+            "two_way_share": 0.4326953594973149,
+            "sign_switch_count": 30,
+            "inventory_reset_count": 1,
+            "inventory_reset_dates": [
+              "2026-08-12"
+            ],
+            "max_cumulative_net_lots": 2639398,
+            "min_cumulative_net_lots": 0,
+            "activity_style": "ACTIVE_TRADING",
+            "ending_position": "NET_BUY_RESIDUAL",
+            "interpretation": "Repeated two-way trading dominates the period; net buy residual is a residual position, not sufficient evidence of persistent accumulation."
           },
           "classification": {
             "status": "STRONG_ACCUMULATION",
@@ -2922,6 +4463,27 @@
             "cross_source_status": "BOTH_AVAILABLE",
             "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
           },
+          "activity": {
+            "broker_code": "CP",
+            "broker_name": "KB VALBURY SEKURITAS",
+            "observation_count": 63,
+            "period_start": "2026-06-08",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 1787943,
+            "gross_daily_net_lots": 5141895,
+            "buy_lots": 3464919,
+            "sell_lots": 1676976,
+            "directional_efficiency": 0.3477206360689979,
+            "two_way_share": 0.326139681965501,
+            "sign_switch_count": 27,
+            "inventory_reset_count": 0,
+            "inventory_reset_dates": [],
+            "max_cumulative_net_lots": 1787943,
+            "min_cumulative_net_lots": -132202,
+            "activity_style": "MIXED_TRADING",
+            "ending_position": "NET_BUY_RESIDUAL",
+            "interpretation": "Two-way trading is material. Interpret the net buy residual cautiously."
+          },
           "classification": {
             "status": "STRONG_ACCUMULATION",
             "confidence": "medium",
@@ -3013,6 +4575,27 @@
             "cross_source_status": "BOTH_AVAILABLE",
             "note": "Preferred Pluang net-summary average for the full tracking period. This is a net-flow implied average, not a broker inventory cost basis."
           },
+          "activity": {
+            "broker_code": "OD",
+            "broker_name": "BRI DANAREKSA SEKURITAS",
+            "observation_count": 64,
+            "period_start": "2026-06-08",
+            "period_end": "2026-09-08",
+            "ending_net_lots": 1448804,
+            "gross_daily_net_lots": 4661880,
+            "buy_lots": 3055342,
+            "sell_lots": 1606538,
+            "directional_efficiency": 0.31077676817078087,
+            "two_way_share": 0.34461161591460954,
+            "sign_switch_count": 35,
+            "inventory_reset_count": 0,
+            "inventory_reset_dates": [],
+            "max_cumulative_net_lots": 1566284,
+            "min_cumulative_net_lots": -14778,
+            "activity_style": "MIXED_TRADING",
+            "ending_position": "NET_BUY_RESIDUAL",
+            "interpretation": "Two-way trading is material. Interpret the net buy residual cautiously."
+          },
           "classification": {
             "status": "STRONG_ACCUMULATION",
             "confidence": "medium",
@@ -3020,6 +4603,367 @@
           }
         }
       ],
+      "broker_activity_chart": {
+        "path": "/api/v1/chart/IATA.svg?date=2026-09-08&start=2026-06-08&brokers=XL%2CGR%2CAK%2CCP%2COD%2CCC%2CMG&featured=XL%2CGR%2CAK%2CCP%2COD",
+        "period": {
+          "start": "2026-06-08",
+          "end": "2026-09-08"
+        },
+        "flow_basis": "cumulative_net_lots_zero_anchored",
+        "price_overlay": "daily_ohlc_candles",
+        "candidate_brokers": [
+          "XL",
+          "GR",
+          "AK",
+          "CP",
+          "OD",
+          "CC",
+          "MG"
+        ],
+        "displayed_tracked_brokers": [
+          "XL",
+          "GR",
+          "AK",
+          "CP",
+          "OD"
+        ],
+        "candle_count": 64
+      },
+      "broker_activity_analysis": [
+        {
+          "broker_code": "AK",
+          "broker_name": "UBS SEKURITAS INDONESIA",
+          "observation_count": 64,
+          "period_start": "2026-06-08",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 2415766,
+          "gross_daily_net_lots": 17946504,
+          "buy_lots": 10181135,
+          "sell_lots": 7765369,
+          "directional_efficiency": 0.13460928100537017,
+          "two_way_share": 0.4326953594973149,
+          "sign_switch_count": 30,
+          "inventory_reset_count": 1,
+          "inventory_reset_dates": [
+            "2026-08-12"
+          ],
+          "max_cumulative_net_lots": 2639398,
+          "min_cumulative_net_lots": 0,
+          "activity_style": "ACTIVE_TRADING",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Repeated two-way trading dominates the period; net buy residual is a residual position, not sufficient evidence of persistent accumulation."
+        },
+        {
+          "broker_code": "CC",
+          "broker_name": "MANDIRI SEKURITAS",
+          "observation_count": 64,
+          "period_start": "2026-06-08",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 569919,
+          "gross_daily_net_lots": 10027411,
+          "buy_lots": 5298665,
+          "sell_lots": 4728746,
+          "directional_efficiency": 0.05683610654834034,
+          "two_way_share": 0.4715819467258298,
+          "sign_switch_count": 24,
+          "inventory_reset_count": 2,
+          "inventory_reset_dates": [
+            "2026-08-10",
+            "2026-08-31"
+          ],
+          "max_cumulative_net_lots": 2116063,
+          "min_cumulative_net_lots": -393377,
+          "activity_style": "ACTIVE_TRADING",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Repeated two-way trading dominates the period; net buy residual is a residual position, not sufficient evidence of persistent accumulation."
+        },
+        {
+          "broker_code": "CP",
+          "broker_name": "KB VALBURY SEKURITAS",
+          "observation_count": 63,
+          "period_start": "2026-06-08",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 1787943,
+          "gross_daily_net_lots": 5141895,
+          "buy_lots": 3464919,
+          "sell_lots": 1676976,
+          "directional_efficiency": 0.3477206360689979,
+          "two_way_share": 0.326139681965501,
+          "sign_switch_count": 27,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 1787943,
+          "min_cumulative_net_lots": -132202,
+          "activity_style": "MIXED_TRADING",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Two-way trading is material. Interpret the net buy residual cautiously."
+        },
+        {
+          "broker_code": "GR",
+          "broker_name": "PANIN SEKURITAS TBK.",
+          "observation_count": 64,
+          "period_start": "2026-06-08",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 1315609,
+          "gross_daily_net_lots": 4958891,
+          "buy_lots": 3137250,
+          "sell_lots": 1821641,
+          "directional_efficiency": 0.26530306877081994,
+          "two_way_share": 0.36734846561459006,
+          "sign_switch_count": 28,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 1867572,
+          "min_cumulative_net_lots": -11967,
+          "activity_style": "ACTIVE_TRADING",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Repeated two-way trading dominates the period; net buy residual is a residual position, not sufficient evidence of persistent accumulation."
+        },
+        {
+          "broker_code": "MG",
+          "broker_name": "SEMESTA INDOVEST SEKURITAS",
+          "observation_count": 61,
+          "period_start": "2026-06-08",
+          "period_end": "2026-09-08",
+          "ending_net_lots": -634277,
+          "gross_daily_net_lots": 8947601,
+          "buy_lots": 4156662,
+          "sell_lots": 4790939,
+          "directional_efficiency": 0.07088793968349728,
+          "two_way_share": 0.46455603015825137,
+          "sign_switch_count": 34,
+          "inventory_reset_count": 4,
+          "inventory_reset_dates": [
+            "2026-08-04",
+            "2026-08-11",
+            "2026-08-19",
+            "2026-08-31"
+          ],
+          "max_cumulative_net_lots": 292105,
+          "min_cumulative_net_lots": -720230,
+          "activity_style": "ACTIVE_TRADING",
+          "ending_position": "NET_SELL_RESIDUAL",
+          "interpretation": "Repeated two-way trading dominates the period; net sell residual is a residual position, not sufficient evidence of persistent accumulation."
+        },
+        {
+          "broker_code": "OD",
+          "broker_name": "BRI DANAREKSA SEKURITAS",
+          "observation_count": 64,
+          "period_start": "2026-06-08",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 1448804,
+          "gross_daily_net_lots": 4661880,
+          "buy_lots": 3055342,
+          "sell_lots": 1606538,
+          "directional_efficiency": 0.31077676817078087,
+          "two_way_share": 0.34461161591460954,
+          "sign_switch_count": 35,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 1566284,
+          "min_cumulative_net_lots": -14778,
+          "activity_style": "MIXED_TRADING",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Two-way trading is material. Interpret the net buy residual cautiously."
+        },
+        {
+          "broker_code": "XL",
+          "broker_name": "STOCKBIT SEKURITAS DIGITAL",
+          "observation_count": 64,
+          "period_start": "2026-06-08",
+          "period_end": "2026-09-08",
+          "ending_net_lots": 2762596,
+          "gross_daily_net_lots": 17746172,
+          "buy_lots": 10254384,
+          "sell_lots": 7491788,
+          "directional_efficiency": 0.15567278396715642,
+          "two_way_share": 0.4221636080164218,
+          "sign_switch_count": 27,
+          "inventory_reset_count": 0,
+          "inventory_reset_dates": [],
+          "max_cumulative_net_lots": 5176849,
+          "min_cumulative_net_lots": 0,
+          "activity_style": "ACTIVE_TRADING",
+          "ending_position": "NET_BUY_RESIDUAL",
+          "interpretation": "Repeated two-way trading dominates the period; net buy residual is a residual position, not sufficient evidence of persistent accumulation."
+        }
+      ],
+      "today_broker_summary": {
+        "top_5_net_buyers": [
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "AK",
+            "broker_name": "UBS SEKURITAS INDONESIA",
+            "side": "BUY",
+            "net_value": 11784553700,
+            "net_lots": 796260,
+            "gross_side_lots": 2670841,
+            "side_transaction_count": 2973,
+            "gross_side_lots_per_transaction": 898.3656239488732,
+            "net_average_price": 147.99881571346043,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "CP",
+            "broker_name": "KB VALBURY SEKURITAS",
+            "side": "BUY",
+            "net_value": 9357875000,
+            "net_lots": 658114,
+            "gross_side_lots": 1321355,
+            "side_transaction_count": 1858,
+            "gross_side_lots_per_transaction": 711.170613562971,
+            "net_average_price": 142.19231014687426,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "TP",
+            "broker_name": "OCBC SEKURITAS INDONESIA",
+            "side": "BUY",
+            "net_value": 3094774400,
+            "net_lots": 224702,
+            "gross_side_lots": 288920,
+            "side_transaction_count": 371,
+            "gross_side_lots_per_transaction": 778.7601078167116,
+            "net_average_price": 137.72794189637833,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "AO",
+            "broker_name": "ERDIKHA ELIT SEKURITAS",
+            "side": "BUY",
+            "net_value": 2689220200,
+            "net_lots": 191454,
+            "gross_side_lots": 362818,
+            "side_transaction_count": 288,
+            "gross_side_lots_per_transaction": 1259.7847222222222,
+            "net_average_price": 140.4629937217295,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_BUY",
+            "broker_code": "YB",
+            "broker_name": "YAKIN BERTUMBUH SEKURITAS",
+            "side": "BUY",
+            "net_value": 2297704100,
+            "net_lots": 161430,
+            "gross_side_lots": 365647,
+            "side_transaction_count": 541,
+            "gross_side_lots_per_transaction": 675.8724584103512,
+            "net_average_price": 142.33439261599455,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          }
+        ],
+        "top_5_net_sellers": [
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "XL",
+            "broker_name": "STOCKBIT SEKURITAS DIGITAL",
+            "side": "SELL",
+            "net_value": -8284186200,
+            "net_lots": -585534,
+            "gross_side_lots": 4633762,
+            "side_transaction_count": 17939,
+            "gross_side_lots_per_transaction": 258.30659457048887,
+            "net_average_price": 141.48087386898115,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "MU",
+            "broker_name": "MINNA PADI INVESTAMA SEKURITAS TBK",
+            "side": "SELL",
+            "net_value": -5235227300,
+            "net_lots": -375709,
+            "gross_side_lots": 376709,
+            "side_transaction_count": 557,
+            "gross_side_lots_per_transaction": 676.3177737881508,
+            "net_average_price": 139.3426109036515,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "AZ",
+            "broker_name": "SUCOR SEKURITAS",
+            "side": "SELL",
+            "net_value": -4388009100,
+            "net_lots": -309201,
+            "gross_side_lots": 747510,
+            "side_transaction_count": 916,
+            "gross_side_lots_per_transaction": 816.0589519650655,
+            "net_average_price": 141.9144537048716,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "MG",
+            "broker_name": "SEMESTA INDOVEST SEKURITAS",
+            "side": "SELL",
+            "net_value": -3339299000,
+            "net_lots": -244609,
+            "gross_side_lots": 2905665,
+            "side_transaction_count": 4101,
+            "gross_side_lots_per_transaction": 708.5259692757863,
+            "net_average_price": 136.51578641832475,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TOP_5_NET_SELL",
+            "broker_code": "ZP",
+            "broker_name": "MAYBANK SEKURITAS INDONESIA",
+            "side": "SELL",
+            "net_value": -3253722500,
+            "net_lots": -232553,
+            "gross_side_lots": 384529,
+            "side_transaction_count": 431,
+            "gross_side_lots_per_transaction": 892.1786542923434,
+            "net_average_price": 139.91315958082674,
+            "is_tracked_broker": false,
+            "record_source": "arjum.brokers"
+          }
+        ],
+        "tracked_brokers_outside_today_top_5": [
+          {
+            "group": "TRACKED_OUTSIDE_TODAY_TOP_5",
+            "broker_code": "GR",
+            "broker_name": "PANIN SEKURITAS TBK.",
+            "side": "BUY",
+            "net_value": 422058500,
+            "net_lots": 31272,
+            "gross_side_lots": 216428,
+            "side_transaction_count": 204,
+            "gross_side_lots_per_transaction": 1060.921568627451,
+            "net_average_price": 134.9637055512919,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          },
+          {
+            "group": "TRACKED_OUTSIDE_TODAY_TOP_5",
+            "broker_code": "OD",
+            "broker_name": "BRI DANAREKSA SEKURITAS",
+            "side": "BUY",
+            "net_value": 1471282900,
+            "net_lots": 107732,
+            "gross_side_lots": 332488,
+            "side_transaction_count": 491,
+            "gross_side_lots_per_transaction": 677.1649694501018,
+            "net_average_price": 136.56879107414696,
+            "is_tracked_broker": true,
+            "record_source": "arjum.brokers"
+          }
+        ]
+      },
       "today_sellers": [
         {
           "broker_code": "XL",
@@ -3321,6 +5265,22 @@
           "skipped": false,
           "reason": null
         },
+        "arjum_broker_accumulation": {
+          "ok": true,
+          "status": 200,
+          "cache_hit": false,
+          "cache_bypassed": true,
+          "cache_ttl_policy_seconds": 3888000,
+          "broker_count": 7
+        },
+        "arjum_history": {
+          "ok": true,
+          "status": 200,
+          "cache_hit": false,
+          "cache_bypassed": true,
+          "cache_ttl_policy_seconds": 3888000,
+          "candle_count": 64
+        },
         "pluang_structural": {
           "ok": true,
           "status": 200,
@@ -3328,7 +5288,7 @@
           "reason": null,
           "cache_hit": false,
           "cache_bypassed": true,
-          "cache_ttl_policy_seconds": 600,
+          "cache_ttl_policy_seconds": 3888000,
           "capped": true
         },
         "pluang_today": {
@@ -3338,7 +5298,7 @@
           "reason": null,
           "cache_hit": false,
           "cache_bypassed": true,
-          "cache_ttl_policy_seconds": 600,
+          "cache_ttl_policy_seconds": 3888000,
           "capped": true
         }
       },
@@ -3349,6 +5309,8 @@
         "A full-period Pluang result uses a separate date-range request from the same-day result; the Worker caches each range independently.",
         "overall_net_average_price is a period net-flow implied average, not a broker inventory cost basis. Pluang is preferred when visible; Arjum broker_levels is the fallback.",
         "Large offsetting buys and sells can leave a small net position and keep an active broker outside Pluang's capped net top-broker list.",
+        "ACTIVE_TRADING is determined from daily net-lot churn, two-way participation, and repeated direction changes; a positive ending residual alone must not be called persistent accumulation.",
+        "Today lots per transaction uses gross lots on the broker's displayed side divided by that side's transaction frequency: B.lot/B.Freq for buyers and S.lot/S.Freq for sellers.",
         "If today_data_status is PENDING_BROKER_RELEASE, today:null means same-day broker data is not released yet.",
         "Crossing candidates are low-confidence because they use aggregate broker-summary similarity, not paired trade evidence.",
         "Recent 5-session window is approximated by business days excluding weekends only; IDX holidays are not yet modeled.",

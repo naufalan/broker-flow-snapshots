@@ -1,12 +1,18 @@
 {
   "schema_version": "broker-monitor.snapshot-manifest.v1",
   "status": "READY",
-  "fetched_at": "2026-09-08T16:02:17Z",
+  "fetched_at": "2026-09-09T07:33:09Z",
   "market_date": "2026-09-08",
   "source": "https://broker-monitor-poc.pemudatersesat.workers.dev",
   "batch_count": 3,
   "ticker_count": 12,
   "pending_ticker_count": 0,
+  "charts": {
+    "format": "svg",
+    "count": 12,
+    "directory": "charts",
+    "raw_url_template": "https://raw.githubusercontent.com/naufalan/broker-flow-snapshots/refs/heads/master/snapshots/latest/charts/{TICKER}.svg"
+  },
   "files": [
     "batch-1.json",
     "batch-2.json",
