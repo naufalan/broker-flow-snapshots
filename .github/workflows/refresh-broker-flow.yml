@@ -90,14 +90,49 @@ jobs:
             cp "$work_dir/batch-$batch.json" "$SNAPSHOT_DIR/batch-$batch.json"
           done
 
+          mkdir -p "$SNAPSHOT_DIR/charts"
+          rm -f "$SNAPSHOT_DIR/charts/"*.svg
+          chart_count=0
+
+          for batch in $(seq 1 "$BATCH_COUNT"); do
+            while IFS=$'\t' read -r ticker chart_path; do
+              if [[ -z "$ticker" || -z "$chart_path" ]]; then
+                echo "Missing chart metadata in batch $batch" >&2
+                exit 1
+              fi
+
+              chart_output="$SNAPSHOT_DIR/charts/$ticker.svg"
+              curl --fail --silent --show-error --location \
+                --retry 3 --retry-all-errors --retry-delay 3 \
+                --connect-timeout 15 --max-time 180 \
+                "$WORKER_BASE_URL$chart_path" --output "$chart_output"
+
+              if ! grep -q '<svg' "$chart_output"; then
+                echo "Invalid SVG chart for $ticker" >&2
+                exit 1
+              fi
+
+              chart_count=$((chart_count + 1))
+            done < <(jq -r '.tickers[] | [.ticker, .broker_activity_chart.path] | @tsv' "$work_dir/batch-$batch.json")
+          done
+
+          if [[ "$chart_count" -ne "$ticker_count" ]]; then
+            echo "Chart count $chart_count does not match ticker count $ticker_count" >&2
+            exit 1
+          fi
+
+          chart_raw_url_template="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$GITHUB_REF/$SNAPSHOT_DIR/charts/{TICKER}.svg"
+
           jq -n \
             --arg schema_version "broker-monitor.snapshot-manifest.v1" \
             --arg status "$snapshot_status" \
             --arg fetched_at "$fetched_at" \
             --arg market_date "$market_date" \
             --arg source "$WORKER_BASE_URL" \
+            --arg chart_raw_url_template "$chart_raw_url_template" \
             --argjson batch_count "$BATCH_COUNT" \
             --argjson ticker_count "$ticker_count" \
+            --argjson chart_count "$chart_count" \
             --argjson pending_ticker_count "$pending_count" '
               {
                 schema_version: $schema_version,
@@ -108,6 +143,12 @@ jobs:
                 batch_count: $batch_count,
                 ticker_count: $ticker_count,
                 pending_ticker_count: $pending_ticker_count,
+                charts: {
+                  format: "svg",
+                  count: $chart_count,
+                  directory: "charts",
+                  raw_url_template: $chart_raw_url_template
+                },
                 files: ["batch-1.json", "batch-2.json", "batch-3.json"]
               }
             ' > "$SNAPSHOT_DIR/manifest.json"
@@ -116,6 +157,7 @@ jobs:
           echo "snapshot_status=$snapshot_status" >> "$GITHUB_OUTPUT"
           echo "ticker_count=$ticker_count" >> "$GITHUB_OUTPUT"
           echo "pending_count=$pending_count" >> "$GITHUB_OUTPUT"
+          echo "chart_count=$chart_count" >> "$GITHUB_OUTPUT"
 
       - name: Commit snapshot
         shell: bash
@@ -143,4 +185,5 @@ jobs:
             echo "- Status: ${{ steps.snapshot.outputs.snapshot_status }}"
             echo "- Tickers: ${{ steps.snapshot.outputs.ticker_count }}"
             echo "- Pending today data: ${{ steps.snapshot.outputs.pending_count }}"
+            echo "- Broker-flow charts: ${{ steps.snapshot.outputs.chart_count }}"
           } >> "$GITHUB_STEP_SUMMARY"
