@@ -1,8 +1,8 @@
 {
   "schema_version": "broker-monitor.snapshot-manifest.v1",
   "status": "READY",
-  "fetched_at": "2026-11-05T15:14:23Z",
-  "market_date": "2026-11-05",
+  "fetched_at": "2026-11-06T15:13:56Z",
+  "market_date": "2026-11-06",
   "source": "https://broker-monitor-poc.pemudatersesat.workers.dev",
   "batch_count": 3,
   "ticker_count": 12,
